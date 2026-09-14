@@ -1,25 +1,19 @@
-# Fall 2026 Lab
+# Fall 2026 Lab — Design Log
 
-My repository for the Fall 2026 lab course.
+This is my personal design website for Fall 2026: a place for my lab work, design experiments, and notes. This log records how the site changes and the decisions I make along the way.
 
-## Two versions
+[Visit my website](https://ixthecreator.github.io/fall-2026-lab/) · [View the original design](https://ixthecreator.github.io/fall-2026-lab/original/)
 
-- [Basic version](https://ixthecreator.github.io/fall-2026-lab/): A simple HTML page.
-- [Original styled version](https://ixthecreator.github.io/fall-2026-lab/original/): The first design, using HTML and CSS.
+## Log
 
-Both pages include a link to the other version.
+### September 14, 2026 — A personal design space
 
-## Files
+I want this site to be my own design space. I changed this README into a project log so it reflects the site's development and my design decisions.
 
-- `index.html`: The webpage, written in basic HTML.
-- `original/index.html`: The original page structure.
-- `original/styles.css`: The original layout, colors, and responsive styles.
-- `original/favicon.svg`: The original browser tab icon.
-- `labs/`: Lab assignments.
-- `notes/`: Course notes.
+### September 9, 2026 — First versions
 
-## Updating the webpage
+The repository and website went live for the Fall 2026 lab course. The first design used a blue-and-white palette, a two-column introduction, and links to lab work and course notes.
 
-Edit `index.html` to change the basic page. It uses headings (`h1`, `h2`), paragraphs (`p`), a list (`ul`, `li`), and links (`a`). Edit the files in `original/` to change the styled version. Open either HTML file in a browser to view it.
+I chose to simplify the homepage to focus on the content and basic HTML structure. I then decided to keep both versions: the basic page as the homepage, and the original design as a reference for studying layout, typography, spacing, and mobile adaptation.
 
-GitHub Pages publishes the page from `main`, using the root folder. Push changes to `main` to update the website. Deployment progress appears in the repository's Actions tab.
+Both versions remain accessible and link to each other.
