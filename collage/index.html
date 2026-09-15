@@ -5,62 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
       name="description"
-      content="Borrowed Face — an interactive collage about facial features, identity, and the space between them."
+      content="An interactive collage of movable facial features."
     />
-    <title>Face — Borrowed Face</title>
+    <title>Borrowed Face</title>
     <link rel="icon" href="assets/node.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="styles.css" />
     <script src="interaction.js" defer></script>
   </head>
-  <body class="face">
-    <a class="skip" href="#work">Skip to collage</a>
-    <header class="site-header">
-      <a class="wordmark" href="index.html"
-        >BF<span aria-hidden="true">↗</span></a
-      >
-      <p class="edition">
-        A study of borrowed identity<br />Web collage / Fall 2026
+  <body>
+    <main aria-label="Borrowed Face — interactive collage">
+      <p id="move-help" class="visually-hidden">
+        Drag a facial feature to move it. With a keyboard, focus a feature and
+        use the arrow keys.
       </p>
-      <nav aria-label="Collage pages">
-        <a href="index.html" aria-current="page"><span>01</span> Face</a
-        ><a href="nodes.html"><span>02</span> Fragments</a
-        ><a href="mismatch.html"><span>03</span> Stranger</a>
-      </nav>
-      <a class="back-link" href="../">Lab index ↗</a>
-    </header>
-    <main id="work">
-      <section class="intro" aria-labelledby="page-title">
-        <p class="eyebrow">01 / 03 — An unstable portrait</p>
-        <h1 id="page-title">Borrowed<br /><em>face.</em></h1>
-        <p class="poem">A face is a place<br />where strangers meet.</p>
-        <p class="instruction" id="move-help">
-          Move an eye. Borrow a mouth. See when a familiar face becomes someone
-          else. Drag a fragment, or focus it and use the arrow keys.
-        </p>
-        <div class="tools">
-          <button id="reset" type="button">Reset ↺</button
-          ><button id="scatter" type="button">Rearrange ↗</button
-          ><button id="connections" type="button" aria-pressed="true">
-            Lines on
-          </button>
-        </div>
-        <p class="status" role="status" aria-live="polite">
-          Seven fragments. One possible face.
-        </p>
-      </section>
-      <section class="stage" aria-label="Interactive facial collage">
-        <div class="stage-label" aria-hidden="true">
-          FIG. 01 <span>Identity is a moving target.</span>
-        </div>
+      <div class="stage" aria-label="Movable facial features">
         <figure class="portrait main-portrait" id="portrait-main">
           <img
             src="assets/herschel.jpg"
             alt="John Herschel, photographed by Julia Margaret Cameron, 1867."
             draggable="false"
           />
-          <figcaption>
-            John Herschel, photographed by Julia Margaret Cameron, 1867.
-          </figcaption>
         </figure>
         <figure class="portrait echo-portrait" id="portrait-echo">
           <img
@@ -68,9 +32,6 @@
             alt="Sarah Bernhardt, photographed by Nadar, around 1864."
             draggable="false"
           />
-          <figcaption>
-            Sarah Bernhardt, photographed by Nadar, around 1864.
-          </figcaption>
         </figure>
         <figure class="portrait witness-portrait" id="portrait-witness">
           <img
@@ -78,11 +39,7 @@
             alt="Florence Owens Thompson in Dorothea Lange’s Migrant Mother, 1936."
             draggable="false"
           />
-          <figcaption>
-            Florence Owens Thompson in Dorothea Lange’s Migrant Mother, 1936.
-          </figcaption>
         </figure>
-        <svg class="connections" aria-hidden="true"></svg>
         <figure
           class="fragment eye-left green"
           data-node="eye-left"
@@ -101,9 +58,6 @@
                 draggable="false"
             /></span>
           </button>
-          <figcaption>
-            <span>01</span> Left eye <span aria-hidden="true">↗</span>
-          </figcaption>
         </figure>
         <figure
           class="fragment eye-right pink"
@@ -123,9 +77,6 @@
                 draggable="false"
             /></span>
           </button>
-          <figcaption>
-            <span>02</span> Right eye <span aria-hidden="true">↗</span>
-          </figcaption>
         </figure>
         <figure
           class="fragment nose plain"
@@ -145,9 +96,6 @@
                 draggable="false"
             /></span>
           </button>
-          <figcaption>
-            <span>03</span> Nose <span aria-hidden="true">↗</span>
-          </figcaption>
         </figure>
         <figure
           class="fragment mouth pink"
@@ -167,9 +115,6 @@
                 draggable="false"
             /></span>
           </button>
-          <figcaption>
-            <span>04</span> Mouth <span aria-hidden="true">↗</span>
-          </figcaption>
         </figure>
         <figure
           class="fragment eye-spare blue"
@@ -189,9 +134,6 @@
                 draggable="false"
             /></span>
           </button>
-          <figcaption>
-            <span>05</span> Borrowed eye <span aria-hidden="true">↗</span>
-          </figcaption>
         </figure>
         <figure
           class="fragment mouth-spare green"
@@ -211,9 +153,6 @@
                 draggable="false"
             /></span>
           </button>
-          <figcaption>
-            <span>06</span> Borrowed mouth <span aria-hidden="true">↗</span>
-          </figcaption>
         </figure>
         <figure
           class="fragment ear plain"
@@ -233,78 +172,10 @@
                 draggable="false"
             /></span>
           </button>
-          <figcaption>
-            <span>07</span> Ear and cheek <span aria-hidden="true">↗</span>
-          </figcaption>
         </figure>
-        <p class="margin-note">
-          The parts stay the same.<br />The person does not.
-        </p>
-        <span class="registration reg-one" aria-hidden="true">+</span
-        ><span class="registration reg-two" aria-hidden="true">+</span
-        ><span class="stage-number" aria-hidden="true">01</span>
-      </section>
-      <section class="afterword" aria-label="About this collage">
-        <p>One face.<br />Many possible people.</p>
-        <p>
-          The eyes, nose, and mouths are the nodes. Move them and the
-          connections follow. The map changes with your hands.
-        </p>
-        <a class="next" href="nodes.html"
-          >Pull it apart <span aria-hidden="true">↗</span></a
-        >
-      </section>
-    </main>
-    <footer>
-      <details>
-        <summary>Image credits &amp; reference <span>+</span></summary>
-        <div class="credits">
-          <p>
-            Inspired by
-            <a
-              href="https://www.lissongallery.com/artists/tony-oursler/artworks/template-varient-friend-stranger?image_id=8835"
-              >Tony Oursler, <cite>template/variant/friend/stranger</cite>,
-              2015</a
-            >. The node map is an artistic composition, not a facial recognition
-            system.
-          </p>
-          <p>
-            <a
-              href="https://commons.wikimedia.org/wiki/File:Sir_John_Herschel,_by_Julia_Margaret_Cameron.jpg"
-              >Julia Margaret Cameron, <cite>Sir John Herschel</cite>, 1867</a
-            >
-            ·
-            <a
-              href="https://commons.wikimedia.org/wiki/File:Sarah_Bernhardt,_par_Nadar,_1864.jpg"
-              >Nadar, <cite>Sarah Bernhardt</cite>, c. 1864</a
-            >
-            ·
-            <a
-              href="https://commons.wikimedia.org/wiki/File:Lange-MigrantMother.jpg"
-              >Dorothea Lange, <cite>Migrant Mother</cite>, 1936</a
-            >. Public-domain source photographs via Wikimedia Commons; excerpts
-            are cropped and tinted in this collage.
-          </p>
-          <p>
-            Digital arrangement, node drawings, and code developed with OpenAI
-            Codex. Photographs are found materials; no AI-generated portraits
-            are used.
-          </p>
-        </div>
-      </details>
-      <div class="footer-line">
-        <span>Borrowed Face © 2026</span
-        ><span>A portrait is never finished.</span
-        ><a href="https://github.com/ixthecreator/fall-2026-lab"
-          >Repository ↗</a
-        >
+        <svg class="connections" aria-hidden="true"></svg>
       </div>
-    </footer>
-    <noscript
-      ><p class="no-script">
-        The collage and page links work without JavaScript. Enable JavaScript to
-        move the facial features.
-      </p></noscript
-    >
+      <p class="status visually-hidden" role="status" aria-live="polite"></p>
+    </main>
   </body>
 </html>

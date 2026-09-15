@@ -72,7 +72,7 @@ function move(index, x, y) {
   const rect = fragment.getBoundingClientRect();
   const baseX = rect.left - area.left - positions[index].x * area.width;
   const baseY = rect.top - area.top - positions[index].y * area.height;
-  // Keep the entire rotated fragment within its stage, including its caption.
+  // Keep the entire rotated fragment within its stage, including its border.
   const px = Math.min(
     Math.max(x * area.width, -baseX),
     area.width - baseX - rect.width,
@@ -143,29 +143,6 @@ fragments.forEach((fragment, index) => {
   });
 });
 
-document.querySelector("#reset").addEventListener("click", () => {
-  active = null;
-  fragments.forEach((fragment, index) => {
-    positions[index] = { x: 0, y: 0 };
-    fragment.style.removeProperty("--dx");
-    fragment.style.removeProperty("--dy");
-    fragment.style.removeProperty("z-index");
-  });
-  topLayer = 4;
-  drawConnections();
-  status.textContent = "Back to the first arrangement.";
-});
-document.querySelector("#scatter").addEventListener("click", () => {
-  fragments.forEach((fragment, index) =>
-    move(index, (Math.random() - 0.5) * 0.45, (Math.random() - 0.5) * 0.4),
-  );
-  status.textContent = "Same fragments. Someone else.";
-});
-document.querySelector("#connections").addEventListener("click", (event) => {
-  const hidden = stage.classList.toggle("lines-hidden");
-  event.currentTarget.setAttribute("aria-pressed", String(!hidden));
-  event.currentTarget.textContent = hidden ? "Lines off" : "Lines on";
-});
 new ResizeObserver(() => {
   fragments.forEach((fragment, index) => {
     fragment.style.setProperty(

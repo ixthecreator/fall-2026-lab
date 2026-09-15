@@ -8,7 +8,7 @@ My personal design website. A collection of projects, experiments, and notes fro
 
 ### September 15, 2026
 
-Built [Borrowed Face](https://ixthecreator.github.io/fall-2026-lab/collage/), a three-page collage with draggable facial features, inspired by Tony Oursler.
+Built [Borrowed Face](https://ixthecreator.github.io/fall-2026-lab/collage/), a full-screen collage with draggable facial features, inspired by Tony Oursler.
 
 ### September 14, 2026
 
