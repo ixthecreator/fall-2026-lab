@@ -1,9 +1,7 @@
+/* The photograph sets the original composition. No added page furniture. */
 :root {
-  --paper: #efeee9;
-  --ink: #272922;
-  --line: #cf5a2a;
-  background: var(--paper);
-  color: var(--ink);
+  background: #eeefed;
+  color: #252525;
 }
 * {
   box-sizing: border-box;
@@ -18,205 +16,38 @@ main {
   display: grid;
   place-items: center;
 }
-/* The grid only positions the artwork; no columns or panels are shown. */
-.stage {
-  width: min(100vw, 135svh);
-  height: 100svh;
-  position: relative;
-  display: grid;
-  grid-template-columns: repeat(12, minmax(0, 1fr));
-  grid-template-rows: repeat(16, minmax(0, 1fr));
-  isolation: isolate;
-  overflow: clip;
-}
-figure {
-  margin: 0;
-  min-width: 0;
-  min-height: 0;
-}
-.portrait {
+.artwork {
+  display: block;
+  width: min(100vw, 74.9svh);
+  height: auto;
+  max-height: 100svh;
   overflow: hidden;
 }
-.portrait img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  filter: grayscale(1) contrast(1.15);
-}
-.main-portrait {
-  grid-area: 2 / 4 / 16 / 11;
-  clip-path: polygon(
-    28% 1%,
-    63% 0,
-    82% 10%,
-    94% 26%,
-    90% 49%,
-    98% 51%,
-    93% 68%,
-    79% 74%,
-    76% 88%,
-    88% 100%,
-    15% 100%,
-    23% 87%,
-    18% 74%,
-    5% 63%,
-    1% 45%,
-    9% 25%,
-    12% 12%
-  );
-  transform: rotate(-3deg);
-}
-.main-portrait img {
-  object-position: 61% 48%;
-  transform: scale(1.13);
-}
-.echo-portrait {
-  grid-area: 6 / 1 / 12 / 5;
-  opacity: 0.66;
-  transform: rotate(5deg);
-  clip-path: ellipse(43% 50% at 50% 50%);
-}
-.echo-portrait img {
-  width: 210%;
-  height: 210%;
-  max-width: none;
-  transform: translate(-25%, -12%);
-}
-.witness-portrait {
-  grid-area: 11 / 10 / 15 / 13;
-  transform: rotate(6deg);
-  border: 7px solid var(--paper);
-}
-.witness-portrait img {
-  object-position: 48% 25%;
-}
-.fragment {
-  position: relative;
-  z-index: 4;
-  transform: translate(var(--dx, 0px), var(--dy, 0px))
-    rotate(var(--angle, -2deg));
-}
-.handle {
-  display: block;
-  width: 100%;
-  height: 100%;
-  padding: 0;
-  border: 1px solid var(--ink);
-  background: #d9dbcf;
-  position: relative;
+.feature {
   cursor: grab;
   touch-action: none;
   user-select: none;
-  -webkit-tap-highlight-color: transparent;
-}
-.handle:active {
-  cursor: grabbing;
-}
-.handle:focus-visible {
-  outline: 2px solid #df4d87;
-  outline-offset: 5px;
-}
-.handle::before,
-.handle::after {
-  position: absolute;
-  content: "";
-  width: 7px;
-  height: 7px;
-  border: 1px solid var(--ink);
-  background: var(--paper);
-  border-radius: 50%;
-  z-index: 1;
-  top: -4px;
-}
-.handle::before {
-  left: -4px;
-}
-.handle::after {
-  right: -4px;
-}
-.crop {
-  display: block;
-  position: relative;
-  width: 100%;
-  height: 100%;
   overflow: hidden;
 }
-.crop img {
-  position: absolute;
-  width: calc(var(--zoom) * 100%);
-  max-width: none;
-  height: auto;
-  left: var(--crop-x);
-  top: var(--crop-y);
-  transform: translate(calc(-1 * var(--crop-x)), calc(-1 * var(--crop-y)));
-  filter: grayscale(1) contrast(1.2);
-  pointer-events: none;
-  user-select: none;
+.feature:active {
+  cursor: grabbing;
 }
-.green .crop {
-  background: #b9ff64;
+.feature:focus {
+  outline: none;
 }
-.pink .crop {
-  background: #ec84b7;
+.feature:focus-visible {
+  outline: 2px solid #fa9600;
+  outline-offset: 3px;
 }
-.blue .crop {
-  background: #879deb;
-}
-.green img,
-.pink img,
-.blue img {
-  mix-blend-mode: multiply;
-}
-.eye-left {
-  grid-area: 6 / 5 / 8 / 8;
-  --angle: -4deg;
-}
-.eye-right {
-  grid-area: 6 / 8 / 8 / 11;
-  --angle: 3deg;
-}
-.nose {
-  grid-area: 8 / 7 / 11 / 9;
-  --angle: 2deg;
-}
-.mouth {
-  grid-area: 11 / 6 / 13 / 10;
-  --angle: -3deg;
-}
-.eye-spare {
-  grid-area: 3 / 1 / 5 / 4;
-  --angle: -8deg;
-}
-.mouth-spare {
-  grid-area: 14 / 2 / 16 / 5;
-  --angle: 5deg;
-}
-.ear {
-  grid-area: 3 / 10 / 5 / 13;
-  --angle: 6deg;
+.feature image {
+  pointer-events: auto;
 }
 .connections {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  inset: 0;
-  z-index: 3;
   pointer-events: none;
-  color: var(--line);
 }
 .connections line {
-  stroke: currentColor;
-  stroke-width: 1;
-  opacity: 0.8;
-}
-.connections circle {
-  stroke: currentColor;
+  stroke: #ef961a;
   stroke-width: 1.5;
-  fill: var(--paper);
-}
-.connections .anchor {
-  fill: transparent;
 }
 .visually-hidden {
   position: absolute;
@@ -228,9 +59,4 @@ figure {
   clip-path: inset(50%);
   white-space: nowrap;
   border: 0;
-}
-@media (max-aspect-ratio: 3/4) {
-  .stage {
-    height: min(100svh, 145vw);
-  }
 }
