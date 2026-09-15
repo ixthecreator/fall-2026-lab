@@ -9,14 +9,14 @@
     />
     <title>VIE — Interactive study after Tony Oursler</title>
     <link rel="icon" href="assets/node.svg" type="image/svg+xml" />
-    <link rel="stylesheet" href="styles.css?v=4" />
-    <script src="interaction.js?v=4" defer></script>
+    <link rel="stylesheet" href="styles.css?v=5" />
+    <script src="interaction.js?v=5" defer></script>
   </head>
   <body>
     <main aria-label="Interactive study of Tony Oursler’s VIE, 2014">
       <p class="visually-hidden" id="move-help">
-        Drag an eye window, nose, or mouth to move it. Use arrow keys when a
-        feature is focused. Press Escape to restore the original arrangement.
+        Drag any circular node or facial feature. Arrow keys move the focused
+        element. Press Escape to restore all original positions.
       </p>
       <svg
         class="artwork"
@@ -29,15 +29,403 @@
           A large freestanding photographic face in a white gallery. Orange and
           dark facial mapping lines link circular nodes. A vivid green eye fills
           the right rectangular window; the left window shows the room behind
-          it. Original artwork © Tony Oursler, courtesy Lisson Gallery. The
-          four facial regions can be moved in this web study.
+          it. Original artwork © Tony Oursler, courtesy Lisson Gallery. The 22
+          visible circular nodes and four facial regions can be moved in this
+          web study. The network is reconstructed as individual vector elements.
         </desc>
-        <image
-          href="assets/oursler-vie.jpg"
-          width="749"
-          height="1000"
-          preserveAspectRatio="none"
-        />
+        <defs>
+          <filter id="repair-feather">
+            <feGaussianBlur stdDeviation="1.2" />
+          </filter>
+          <mask
+            id="window-occlusion"
+            maskUnits="userSpaceOnUse"
+            x="0"
+            y="0"
+            width="749"
+            height="1000"
+          >
+            <rect width="749" height="1000" fill="white" />
+            <rect
+              data-occlude="left-eye"
+              x="233"
+              y="408"
+              width="100"
+              height="66"
+              fill="black"
+            />
+            <rect
+              data-occlude="right-eye"
+              x="392"
+              y="399"
+              width="122"
+              height="78"
+              fill="black"
+            />
+          </mask>
+          <mask
+            id="erase-network"
+            maskUnits="userSpaceOnUse"
+            x="0"
+            y="0"
+            width="749"
+            height="1000"
+          >
+            <rect width="749" height="1000" fill="black" />
+            <g filter="url(#repair-feather)">
+              <line
+                x1="243"
+                y1="354"
+                x2="323"
+                y2="366"
+                stroke="white"
+                stroke-width="11"
+              />
+              <line
+                x1="243"
+                y1="354"
+                x2="213"
+                y2="420"
+                stroke="white"
+                stroke-width="11"
+              />
+              <line
+                x1="243"
+                y1="354"
+                x2="337"
+                y2="395"
+                stroke="white"
+                stroke-width="11"
+              />
+              <line
+                x1="323"
+                y1="366"
+                x2="374"
+                y2="370"
+                stroke="white"
+                stroke-width="11"
+              />
+              <line
+                x1="323"
+                y1="366"
+                x2="337"
+                y2="395"
+                stroke="white"
+                stroke-width="11"
+              />
+              <line
+                x1="374"
+                y1="370"
+                x2="417"
+                y2="375"
+                stroke="white"
+                stroke-width="11"
+              />
+              <line
+                x1="374"
+                y1="370"
+                x2="337"
+                y2="395"
+                stroke="white"
+                stroke-width="11"
+              />
+              <line
+                x1="374"
+                y1="370"
+                x2="373"
+                y2="419"
+                stroke="white"
+                stroke-width="11"
+              />
+              <line
+                x1="417"
+                y1="375"
+                x2="484"
+                y2="360"
+                stroke="white"
+                stroke-width="11"
+              />
+              <line
+                x1="417"
+                y1="375"
+                x2="373"
+                y2="419"
+                stroke="white"
+                stroke-width="11"
+              />
+              <line
+                x1="417"
+                y1="375"
+                x2="515"
+                y2="433"
+                stroke="white"
+                stroke-width="11"
+              />
+              <line
+                x1="484"
+                y1="360"
+                x2="543"
+                y2="345"
+                stroke="white"
+                stroke-width="11"
+              />
+              <line
+                x1="484"
+                y1="360"
+                x2="515"
+                y2="433"
+                stroke="white"
+                stroke-width="11"
+              />
+              <line
+                x1="543"
+                y1="345"
+                x2="515"
+                y2="433"
+                stroke="white"
+                stroke-width="11"
+              />
+              <line
+                x1="213"
+                y1="420"
+                x2="337"
+                y2="395"
+                stroke="white"
+                stroke-width="11"
+              />
+              <line
+                x1="213"
+                y1="420"
+                x2="229"
+                y2="504"
+                stroke="white"
+                stroke-width="11"
+              />
+              <line
+                x1="337"
+                y1="395"
+                x2="373"
+                y2="419"
+                stroke="white"
+                stroke-width="11"
+              />
+              <line
+                x1="337"
+                y1="395"
+                x2="347"
+                y2="464"
+                stroke="white"
+                stroke-width="11"
+              />
+              <line
+                x1="373"
+                y1="419"
+                x2="347"
+                y2="464"
+                stroke="white"
+                stroke-width="11"
+              />
+              <line
+                x1="373"
+                y1="419"
+                x2="407"
+                y2="507"
+                stroke="white"
+                stroke-width="11"
+              />
+              <line
+                x1="515"
+                y1="433"
+                x2="530"
+                y2="477"
+                stroke="white"
+                stroke-width="11"
+              />
+              <line
+                x1="515"
+                y1="433"
+                x2="407"
+                y2="507"
+                stroke="white"
+                stroke-width="11"
+              />
+              <line
+                x1="229"
+                y1="504"
+                x2="347"
+                y2="464"
+                stroke="white"
+                stroke-width="11"
+              />
+              <line
+                x1="229"
+                y1="504"
+                x2="330"
+                y2="505"
+                stroke="white"
+                stroke-width="11"
+              />
+              <line
+                x1="229"
+                y1="504"
+                x2="276"
+                y2="548"
+                stroke="white"
+                stroke-width="11"
+              />
+              <line
+                x1="347"
+                y1="464"
+                x2="330"
+                y2="505"
+                stroke="white"
+                stroke-width="11"
+              />
+              <line
+                x1="530"
+                y1="477"
+                x2="484"
+                y2="551"
+                stroke="white"
+                stroke-width="11"
+              />
+              <line
+                x1="330"
+                y1="505"
+                x2="276"
+                y2="548"
+                stroke="white"
+                stroke-width="11"
+              />
+              <line
+                x1="330"
+                y1="505"
+                x2="368"
+                y2="553"
+                stroke="white"
+                stroke-width="11"
+              />
+              <line
+                x1="407"
+                y1="507"
+                x2="368"
+                y2="553"
+                stroke="white"
+                stroke-width="11"
+              />
+              <line
+                x1="407"
+                y1="507"
+                x2="484"
+                y2="551"
+                stroke="white"
+                stroke-width="11"
+              />
+              <line
+                x1="276"
+                y1="548"
+                x2="291"
+                y2="657"
+                stroke="white"
+                stroke-width="11"
+              />
+              <line
+                x1="276"
+                y1="548"
+                x2="345"
+                y2="623"
+                stroke="white"
+                stroke-width="11"
+              />
+              <line
+                x1="368"
+                y1="553"
+                x2="345"
+                y2="623"
+                stroke="white"
+                stroke-width="11"
+              />
+              <line
+                x1="368"
+                y1="553"
+                x2="387"
+                y2="627"
+                stroke="white"
+                stroke-width="11"
+              />
+              <line
+                x1="484"
+                y1="551"
+                x2="387"
+                y2="627"
+                stroke="white"
+                stroke-width="11"
+              />
+              <line
+                x1="484"
+                y1="551"
+                x2="459"
+                y2="670"
+                stroke="white"
+                stroke-width="11"
+              />
+              <line
+                x1="345"
+                y1="623"
+                x2="291"
+                y2="657"
+                stroke="white"
+                stroke-width="11"
+              />
+              <line
+                x1="387"
+                y1="627"
+                x2="459"
+                y2="670"
+                stroke="white"
+                stroke-width="11"
+              />
+              <ellipse cx="243" cy="354" rx="14" ry="17" fill="white" />
+              <ellipse cx="323" cy="366" rx="14" ry="17" fill="white" />
+              <ellipse cx="374" cy="370" rx="14" ry="17" fill="white" />
+              <ellipse cx="417" cy="375" rx="14" ry="17" fill="white" />
+              <ellipse cx="484" cy="360" rx="14" ry="17" fill="white" />
+              <ellipse cx="543" cy="345" rx="14" ry="17" fill="white" />
+              <ellipse cx="213" cy="420" rx="14" ry="17" fill="white" />
+              <ellipse cx="337" cy="395" rx="14" ry="17" fill="white" />
+              <ellipse cx="373" cy="419" rx="14" ry="17" fill="white" />
+              <ellipse cx="515" cy="433" rx="14" ry="17" fill="white" />
+              <ellipse cx="229" cy="504" rx="14" ry="17" fill="white" />
+              <ellipse cx="347" cy="464" rx="14" ry="17" fill="white" />
+              <ellipse cx="530" cy="477" rx="14" ry="17" fill="white" />
+              <ellipse cx="330" cy="505" rx="14" ry="17" fill="white" />
+              <ellipse cx="407" cy="507" rx="14" ry="17" fill="white" />
+              <ellipse cx="276" cy="548" rx="14" ry="17" fill="white" />
+              <ellipse cx="368" cy="553" rx="14" ry="17" fill="white" />
+              <ellipse cx="484" cy="551" rx="14" ry="17" fill="white" />
+              <ellipse cx="345" cy="623" rx="14" ry="17" fill="white" />
+              <ellipse cx="387" cy="627" rx="14" ry="17" fill="white" />
+              <ellipse cx="291" cy="657" rx="14" ry="17" fill="white" />
+              <ellipse cx="459" cy="670" rx="14" ry="17" fill="white" />
+            </g>
+          </mask>
+          <g id="clean-artwork">
+            <image
+              href="assets/oursler-vie.jpg"
+              width="749"
+              height="1000"
+              preserveAspectRatio="none"
+            />
+            <image
+              href="assets/vie-clean-plate.png"
+              width="749"
+              height="1000"
+              preserveAspectRatio="none"
+              mask="url(#erase-network)"
+            />
+          </g>
+        </defs>
+        <use href="#clean-artwork" />
         <g aria-hidden="true">
           <rect
             data-hole="left-eye"
@@ -76,8 +464,36 @@
             opacity="0"
           />
         </g>
-        <g class="connections" aria-hidden="true"></g>
+
         <svg
+          class="feature"
+          data-feature="nose"
+          x="328"
+          y="507"
+          width="72"
+          height="80"
+          viewBox="328 507 72 80"
+          role="button"
+          tabindex="0"
+          aria-label="Move nose"
+          aria-describedby="move-help"
+        >
+          <use href="#clean-artwork" /></svg
+        ><svg
+          class="feature"
+          data-feature="mouth"
+          x="290"
+          y="636"
+          width="128"
+          height="53"
+          viewBox="290 636 128 53"
+          role="button"
+          tabindex="0"
+          aria-label="Move mouth"
+          aria-describedby="move-help"
+        >
+          <use href="#clean-artwork" /></svg
+        ><svg
           class="feature"
           data-feature="left-eye"
           x="233"
@@ -114,46 +530,323 @@
             width="749"
             height="1000"
             preserveAspectRatio="none"
-          /></svg
-        ><svg
-          class="feature"
-          data-feature="nose"
-          x="328"
-          y="507"
-          width="72"
-          height="80"
-          viewBox="328 507 72 80"
-          role="button"
-          tabindex="0"
-          aria-label="Move nose"
-          aria-describedby="move-help"
-        >
-          <image
-            href="assets/oursler-vie.jpg"
-            width="749"
-            height="1000"
-            preserveAspectRatio="none"
-          /></svg
-        ><svg
-          class="feature"
-          data-feature="mouth"
-          x="290"
-          y="636"
-          width="128"
-          height="53"
-          viewBox="290 636 128 53"
-          role="button"
-          tabindex="0"
-          aria-label="Move mouth"
-          aria-describedby="move-help"
-        >
-          <image
-            href="assets/oursler-vie.jpg"
-            width="749"
-            height="1000"
-            preserveAspectRatio="none"
           />
         </svg>
+        <g
+          class="connections"
+          aria-hidden="true"
+          mask="url(#window-occlusion)"
+        ></g>
+        <g class="nodes">
+          <g
+            class="node"
+            data-node="n01"
+            transform="translate(243 354)"
+            style="--node-color: #29252b"
+            role="button"
+            tabindex="0"
+            aria-label="Move node 01, left forehead"
+            aria-describedby="move-help"
+          >
+            <ellipse class="node-hit" rx="15" ry="18" />
+            <ellipse class="node-ring outer" rx="9" ry="12" />
+            <ellipse class="node-ring inner" rx="6" ry="9" />
+          </g>
+          <g
+            class="node"
+            data-node="n02"
+            transform="translate(323 366)"
+            style="--node-color: #91476d"
+            role="button"
+            tabindex="0"
+            aria-label="Move node 02, inner left brow"
+            aria-describedby="move-help"
+          >
+            <ellipse class="node-hit" rx="15" ry="18" />
+            <ellipse class="node-ring outer" rx="9" ry="12" />
+            <ellipse class="node-ring inner" rx="6" ry="9" />
+          </g>
+          <g
+            class="node"
+            data-node="n03"
+            transform="translate(374 370)"
+            style="--node-color: #ff940a"
+            role="button"
+            tabindex="0"
+            aria-label="Move node 03, upper nose bridge"
+            aria-describedby="move-help"
+          >
+            <ellipse class="node-hit" rx="15" ry="18" />
+            <ellipse class="node-ring outer" rx="9" ry="12" />
+            <ellipse class="node-ring inner" rx="6" ry="9" />
+          </g>
+          <g
+            class="node"
+            data-node="n04"
+            transform="translate(417 375)"
+            style="--node-color: #ff940a"
+            role="button"
+            tabindex="0"
+            aria-label="Move node 04, inner right brow"
+            aria-describedby="move-help"
+          >
+            <ellipse class="node-hit" rx="15" ry="18" />
+            <ellipse class="node-ring outer" rx="9" ry="12" />
+            <ellipse class="node-ring inner" rx="6" ry="9" />
+          </g>
+          <g
+            class="node"
+            data-node="n05"
+            transform="translate(484 360)"
+            style="--node-color: #ff940a"
+            role="button"
+            tabindex="0"
+            aria-label="Move node 05, right brow"
+            aria-describedby="move-help"
+          >
+            <ellipse class="node-hit" rx="15" ry="18" />
+            <ellipse class="node-ring outer" rx="9" ry="12" />
+            <ellipse class="node-ring inner" rx="6" ry="9" />
+          </g>
+          <g
+            class="node"
+            data-node="n06"
+            transform="translate(543 345)"
+            style="--node-color: #ff940a"
+            role="button"
+            tabindex="0"
+            aria-label="Move node 06, right temple"
+            aria-describedby="move-help"
+          >
+            <ellipse class="node-hit" rx="15" ry="18" />
+            <ellipse class="node-ring outer" rx="9" ry="12" />
+            <ellipse class="node-ring inner" rx="6" ry="9" />
+          </g>
+          <g
+            class="node"
+            data-node="n07"
+            transform="translate(213 420)"
+            style="--node-color: #29252b"
+            role="button"
+            tabindex="0"
+            aria-label="Move node 07, outer left eye"
+            aria-describedby="move-help"
+          >
+            <ellipse class="node-hit" rx="15" ry="18" />
+            <ellipse class="node-ring outer" rx="9" ry="12" />
+            <ellipse class="node-ring inner" rx="6" ry="9" />
+          </g>
+          <g
+            class="node"
+            data-node="n08"
+            transform="translate(337 395)"
+            style="--node-color: #91476d"
+            role="button"
+            tabindex="0"
+            aria-label="Move node 08, upper left eye corner"
+            aria-describedby="move-help"
+          >
+            <ellipse class="node-hit" rx="15" ry="18" />
+            <ellipse class="node-ring outer" rx="9" ry="12" />
+            <ellipse class="node-ring inner" rx="6" ry="9" />
+          </g>
+          <g
+            class="node"
+            data-node="n09"
+            transform="translate(373 419)"
+            style="--node-color: #ff940a"
+            role="button"
+            tabindex="0"
+            aria-label="Move node 09, lower nose bridge"
+            aria-describedby="move-help"
+          >
+            <ellipse class="node-hit" rx="15" ry="18" />
+            <ellipse class="node-ring outer" rx="9" ry="12" />
+            <ellipse class="node-ring inner" rx="6" ry="9" />
+          </g>
+          <g
+            class="node"
+            data-node="n10"
+            transform="translate(515 433)"
+            style="--node-color: #ff940a"
+            role="button"
+            tabindex="0"
+            aria-label="Move node 10, outer right eye"
+            aria-describedby="move-help"
+          >
+            <ellipse class="node-hit" rx="15" ry="18" />
+            <ellipse class="node-ring outer" rx="9" ry="12" />
+            <ellipse class="node-ring inner" rx="6" ry="9" />
+          </g>
+          <g
+            class="node"
+            data-node="n11"
+            transform="translate(229 504)"
+            style="--node-color: #29252b"
+            role="button"
+            tabindex="0"
+            aria-label="Move node 11, upper left cheek"
+            aria-describedby="move-help"
+          >
+            <ellipse class="node-hit" rx="15" ry="18" />
+            <ellipse class="node-ring outer" rx="9" ry="12" />
+            <ellipse class="node-ring inner" rx="6" ry="9" />
+          </g>
+          <g
+            class="node"
+            data-node="n12"
+            transform="translate(347 464)"
+            style="--node-color: #29252b"
+            role="button"
+            tabindex="0"
+            aria-label="Move node 12, inner left eye"
+            aria-describedby="move-help"
+          >
+            <ellipse class="node-hit" rx="15" ry="18" />
+            <ellipse class="node-ring outer" rx="9" ry="12" />
+            <ellipse class="node-ring inner" rx="6" ry="9" />
+          </g>
+          <g
+            class="node"
+            data-node="n13"
+            transform="translate(530 477)"
+            style="--node-color: #ff940a"
+            role="button"
+            tabindex="0"
+            aria-label="Move node 13, upper right cheek"
+            aria-describedby="move-help"
+          >
+            <ellipse class="node-hit" rx="15" ry="18" />
+            <ellipse class="node-ring outer" rx="9" ry="12" />
+            <ellipse class="node-ring inner" rx="6" ry="9" />
+          </g>
+          <g
+            class="node"
+            data-node="n14"
+            transform="translate(330 505)"
+            style="--node-color: #29252b"
+            role="button"
+            tabindex="0"
+            aria-label="Move node 14, left nose"
+            aria-describedby="move-help"
+          >
+            <ellipse class="node-hit" rx="15" ry="18" />
+            <ellipse class="node-ring outer" rx="9" ry="12" />
+            <ellipse class="node-ring inner" rx="6" ry="9" />
+          </g>
+          <g
+            class="node"
+            data-node="n15"
+            transform="translate(407 507)"
+            style="--node-color: #ff940a"
+            role="button"
+            tabindex="0"
+            aria-label="Move node 15, right nose"
+            aria-describedby="move-help"
+          >
+            <ellipse class="node-hit" rx="15" ry="18" />
+            <ellipse class="node-ring outer" rx="9" ry="12" />
+            <ellipse class="node-ring inner" rx="6" ry="9" />
+          </g>
+          <g
+            class="node"
+            data-node="n16"
+            transform="translate(276 548)"
+            style="--node-color: #29252b"
+            role="button"
+            tabindex="0"
+            aria-label="Move node 16, left cheek"
+            aria-describedby="move-help"
+          >
+            <ellipse class="node-hit" rx="15" ry="18" />
+            <ellipse class="node-ring outer" rx="9" ry="12" />
+            <ellipse class="node-ring inner" rx="6" ry="9" />
+          </g>
+          <g
+            class="node"
+            data-node="n17"
+            transform="translate(368 553)"
+            style="--node-color: #ff940a"
+            role="button"
+            tabindex="0"
+            aria-label="Move node 17, nose tip"
+            aria-describedby="move-help"
+          >
+            <ellipse class="node-hit" rx="15" ry="18" />
+            <ellipse class="node-ring outer" rx="9" ry="12" />
+            <ellipse class="node-ring inner" rx="6" ry="9" />
+          </g>
+          <g
+            class="node"
+            data-node="n18"
+            transform="translate(484 551)"
+            style="--node-color: #ff940a"
+            role="button"
+            tabindex="0"
+            aria-label="Move node 18, right cheek"
+            aria-describedby="move-help"
+          >
+            <ellipse class="node-hit" rx="15" ry="18" />
+            <ellipse class="node-ring outer" rx="9" ry="12" />
+            <ellipse class="node-ring inner" rx="6" ry="9" />
+          </g>
+          <g
+            class="node"
+            data-node="n19"
+            transform="translate(345 623)"
+            style="--node-color: #29252b"
+            role="button"
+            tabindex="0"
+            aria-label="Move node 19, left upper lip"
+            aria-describedby="move-help"
+          >
+            <ellipse class="node-hit" rx="15" ry="18" />
+            <ellipse class="node-ring outer" rx="9" ry="12" />
+            <ellipse class="node-ring inner" rx="6" ry="9" />
+          </g>
+          <g
+            class="node"
+            data-node="n20"
+            transform="translate(387 627)"
+            style="--node-color: #ff940a"
+            role="button"
+            tabindex="0"
+            aria-label="Move node 20, right upper lip"
+            aria-describedby="move-help"
+          >
+            <ellipse class="node-hit" rx="15" ry="18" />
+            <ellipse class="node-ring outer" rx="9" ry="12" />
+            <ellipse class="node-ring inner" rx="6" ry="9" />
+          </g>
+          <g
+            class="node"
+            data-node="n21"
+            transform="translate(291 657)"
+            style="--node-color: #91476d"
+            role="button"
+            tabindex="0"
+            aria-label="Move node 21, left mouth corner"
+            aria-describedby="move-help"
+          >
+            <ellipse class="node-hit" rx="15" ry="18" />
+            <ellipse class="node-ring outer" rx="9" ry="12" />
+            <ellipse class="node-ring inner" rx="6" ry="9" />
+          </g>
+          <g
+            class="node"
+            data-node="n22"
+            transform="translate(459 670)"
+            style="--node-color: #ff940a"
+            role="button"
+            tabindex="0"
+            aria-label="Move node 22, right mouth corner"
+            aria-describedby="move-help"
+          >
+            <ellipse class="node-hit" rx="15" ry="18" />
+            <ellipse class="node-ring outer" rx="9" ry="12" />
+            <ellipse class="node-ring inner" rx="6" ry="9" />
+          </g>
+        </g>
       </svg>
       <p class="status visually-hidden" role="status" aria-live="polite"></p>
     </main>

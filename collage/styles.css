@@ -60,3 +60,35 @@ main {
   white-space: nowrap;
   border: 0;
 }
+.node {
+  cursor: grab;
+  touch-action: none;
+  outline: none;
+}
+.node:active {
+  cursor: grabbing;
+}
+.node-hit {
+  fill: transparent;
+  stroke: none;
+  pointer-events: all;
+}
+.node-ring {
+  fill: none;
+  stroke: var(--node-color);
+  stroke-width: 1.8;
+  pointer-events: none;
+}
+.node .inner {
+  stroke-width: 1.3;
+}
+.node:focus-visible .outer {
+  stroke-width: 3;
+  stroke: #fff;
+}
+.feature use {
+  pointer-events: auto;
+}
+.connections line {
+  stroke-width: 1.8;
+}
