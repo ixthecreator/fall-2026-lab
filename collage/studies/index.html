@@ -1,0 +1,326 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Face / Structure studies</title>
+    <link rel="stylesheet" href="study.css" />
+  </head>
+  <body>
+    <header>
+      <a href="../">← Return to collage</a>
+      <p class="eyebrow">Research notebook / 01</p>
+      <h1>From a face<br />to a structure.</h1>
+      <p class="intro">
+        Three node layouts after Tony Oursler, flattened and reworked into
+        bilateral symmetry. The existing collage stays intact.
+      </p>
+      <nav aria-label="Study sections">
+        <a href="#layouts">Layouts</a><a href="#regions">Regions</a
+        ><a href="#systems">Systems</a
+        ><a href="exports/node-comparison.svg" download>Download board · SVG</a
+        ><a href="RESEARCH.md">中文研究笔记</a>
+      </nav>
+    </header>
+    <main>
+      <section id="layouts" aria-labelledby="layouts-title">
+        <div class="section-heading">
+          <h2 id="layouts-title">01 / Layouts</h2>
+          <p>Observed → isolated → symmetrical</p>
+        </div>
+        <p class="note">
+          Manual traces from photographs, with approximate coordinates. Grey
+          dashed lines mark uncertain connections; orange marks additions for
+          symmetry. Flattening removes the photograph—it does not recover a
+          front-facing 3D scan.
+        </p>
+        <article class="study-row">
+          <h3>VIE <span>Existing layout preserved · 22 → 23 nodes</span></h3>
+          <div class="triptych">
+            <figure>
+              <img
+                src="exports/vie-photo.svg"
+                alt="The existing 22-node VIE layout overlaid on a cropped photograph of the artwork."
+              />
+              <figcaption>01 / Photo + trace</figcaption>
+            </figure>
+            <figure>
+              <img
+                src="exports/vie-flat.svg"
+                alt="VIE's asymmetric node network isolated on a plain background."
+              />
+              <figcaption>02 / Flat layout</figcaption>
+            </figure>
+            <figure>
+              <img
+                src="exports/vie-symmetric.svg"
+                alt="A bilateral redesign of VIE, with one added mirror node and added connections marked orange."
+              />
+              <figcaption>03 / Symmetry + 1 mirror node</figcaption>
+            </figure>
+          </div>
+          <p class="row-links">
+            <a href="exports/vie-numbered.svg">Numbered map</a
+            ><a href="layouts/vie-preserved.json">Preserved original data</a
+            ><a href="layouts/vie-symmetric.json">Symmetric data</a>
+          </p>
+        </article>
+        <article class="study-row">
+          <h3>Red portrait <span>Radial graph · 15 → 17 nodes</span></h3>
+          <div class="triptych">
+            <figure>
+              <img
+                src="exports/red-photo.svg"
+                alt="Fifteen visible markers traced on the central red portrait in the artist's installation photograph."
+              />
+              <figcaption>01 / Photo + trace</figcaption>
+            </figure>
+            <figure>
+              <img
+                src="exports/red-flat.svg"
+                alt="Horizontal bars and converging spokes extracted from the red portrait, with uncertain hidden segments dashed."
+              />
+              <figcaption>02 / Flat layout</figcaption>
+            </figure>
+            <figure>
+              <img
+                src="exports/red-symmetric.svg"
+                alt="The radial graph centered and mirrored, with two extra nodes corresponding to the occluded eye area."
+              />
+              <figcaption>03 / Symmetry + 2 mirror nodes</figcaption>
+            </figure>
+          </div>
+          <p class="row-links">
+            <a href="exports/red-numbered.svg">Numbered map</a
+            ><a href="layouts/red-source.json">Trace data</a
+            ><a href="layouts/red-symmetric.json">Symmetric data</a>
+          </p>
+        </article>
+        <article class="study-row">
+          <h3>Blue mask <span>Incised lattice · 30 → 31 nodes</span></h3>
+          <div class="triptych">
+            <figure>
+              <img
+                src="exports/blue-photo.svg"
+                alt="Thirty visible circular markers traced on a blue metal mask from the parallel panel series in the same exhibition."
+              />
+              <figcaption>01 / Photo + trace</figcaption>
+            </figure>
+            <figure>
+              <img
+                src="exports/blue-flat.svg"
+                alt="A dense triangular lattice extracted from the blue mask, without its silhouette or eye and mouth imagery."
+              />
+              <figcaption>02 / Flat layout</figcaption>
+            </figure>
+            <figure>
+              <img
+                src="exports/blue-symmetric.svg"
+                alt="A symmetric version of the lattice with one added counterpart to the visible inner eye marker."
+              />
+              <figcaption>03 / Symmetry + 1 mirror node</figcaption>
+            </figure>
+          </div>
+          <p class="row-links">
+            <a href="exports/blue-numbered.svg">Numbered map</a
+            ><a href="layouts/blue-source.json">Trace data</a
+            ><a href="layouts/blue-symmetric.json">Symmetric data</a>
+          </p>
+        </article>
+        <details>
+          <summary>How the symmetrical versions were made</summary>
+          <p>
+            Choose a vertical axis and corresponding left/right nodes. Average
+            each pair’s height and distance from the axis, then place them at
+            equal distances on opposite sides. Align central nodes with the
+            axis. Mirror unpaired points and missing connections. Pairing is a
+            design decision; it does not establish anatomical equivalence.
+          </p>
+          <p>
+            The preserved VIE file contains the exact existing 22 nodes and 39
+            edges. Its earlier reconstruction includes inferred hidden lines.
+            New traces record visible markers and flag uncertain lines; they do
+            not claim to recover every obscured marker.
+          </p>
+          <p>
+            “Red portrait” and “Blue mask” are descriptive study labels, not
+            verified artwork titles. The blue mask belongs to the parallel panel
+            series in the same 2015 exhibition.
+          </p>
+        </details>
+        <p class="credit">
+          Reference artworks © Tony Oursler. Photographs:
+          <a href="https://tonyoursler.com/templatevariantfriendstranger-london"
+            >artist’s exhibition archive</a
+          >
+          and
+          <a
+            href="https://www.lissongallery.com/artists/tony-oursler/artworks/vie?image_id=8831"
+            >Lisson Gallery / VIE</a
+          >. Traces and symmetrical derivatives are made for this course study;
+          no AI-generated images are used on this study page.
+        </p>
+      </section>
+      <section id="regions" aria-labelledby="regions-title">
+        <div class="section-heading">
+          <h2 id="regions-title">02 / Regions</h2>
+          <p>A plan for movable facial fragments</p>
+        </div>
+        <img
+          class="region-map"
+          src="exports/face-regions.svg"
+          alt="An original schematic with ten collage regions: forehead, two brows, two eyes, nose, two cheeks, mouth and chin. These are design groups, not model predictions."
+        />
+        <p class="note">
+          For this collage, a small node network can control a larger image
+          fragment. Dragging an eye moves its attached nodes; the connections
+          stretch. A landmark locates a feature, while a mask defines which
+          pixels belong to it.
+        </p>
+        <a href="exports/face-regions.svg" download
+          >Download region diagram · SVG</a
+        >
+      </section>
+      <section id="systems" aria-labelledby="systems-title">
+        <div class="section-heading">
+          <h2 id="systems-title">03 / Systems</h2>
+          <p>Three different jobs—not one system</p>
+        </div>
+        <div class="systems">
+          <article>
+            <p class="eyebrow">Locate / points</p>
+            <h3>MediaPipe Face Landmarker</h3>
+            <p>
+              Estimates 478 3D landmarks. Defined connection groups include
+              eyes, brows, lips, irises and the face oval. Suitable for
+              browser-based tracking; it does not identify a person.
+            </p>
+            <p>
+              <a
+                href="https://developers.google.com/edge/mediapipe/solutions/vision/face_landmarker"
+                >Google documentation</a
+              >
+              ·
+              <a
+                href="https://github.com/google-ai-edge/mediapipe/blob/master/mediapipe/tasks/web/vision/face_landmarker/face_landmarks_connections.ts"
+                >Region connections</a
+              >
+            </p>
+          </article>
+          <article>
+            <p class="eyebrow">Locate / sparse points</p>
+            <h3>dlib / 68 landmarks</h3>
+            <p>
+              A smaller outline for the jaw, brows, nose, eyes and lips. Useful
+              for understanding feature groups. It has no dedicated forehead or
+              hair region.
+            </p>
+            <p>
+              <a
+                href="https://github.com/davisking/dlib/blob/master/python_examples/face_landmark_detection.py"
+                >Official example</a
+              >
+              ·
+              <a
+                href="https://github.com/davisking/dlib/blob/master/dlib/image_processing/render_face_detections.h"
+                >Index grouping</a
+              >
+            </p>
+          </article>
+          <article>
+            <p class="eyebrow">Separate / pixel masks</p>
+            <h3>Face parsing / CelebAMask-HQ</h3>
+            <p>
+              A 19-class annotation scheme including background, skin, eyes,
+              brows, nose, mouth, separate lips, ears and hair. A model trained
+              for this scheme can produce cutout masks. It does not split skin
+              into forehead, cheeks and chin.
+            </p>
+            <p>
+              <a
+                href="https://mmlab.ie.cuhk.edu.hk/projects/CelebA/CelebAMask_HQ.html"
+                >Dataset</a
+              >
+              ·
+              <a
+                href="https://github.com/switchablenorms/CelebAMask-HQ/blob/master/face_parsing/README.md"
+                >Class definitions</a
+              >
+              ·
+              <a href="https://github.com/zllrunning/face-parsing.PyTorch"
+                >BiSeNet implementation</a
+              >
+            </p>
+          </article>
+          <article>
+            <p class="eyebrow">Recognize / identity</p>
+            <h3>InsightFace / ArcFace</h3>
+            <p>
+              A recognition pipeline detects and aligns a face, then compares
+              numerical identity representations. Alignment points help
+              normalize the image; they are not a complete set of cutout
+              regions.
+            </p>
+            <p>
+              <a href="https://github.com/deepinsight/insightface"
+                >InsightFace</a
+              >
+              · <a href="https://arxiv.org/abs/1801.07698">ArcFace paper</a>
+            </p>
+          </article>
+        </div>
+        <details>
+          <summary>dlib’s 68-point region index (zero-based)</summary>
+          <div class="table-scroll">
+            <table>
+              <thead>
+                <tr>
+                  <th>Region</th>
+                  <th>Indices</th>
+                  <th>Count</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Jaw outline</td>
+                  <td>0–16</td>
+                  <td>17</td>
+                </tr>
+                <tr>
+                  <td>Two brows</td>
+                  <td>17–21 / 22–26</td>
+                  <td>5 + 5</td>
+                </tr>
+                <tr>
+                  <td>Nose bridge / base</td>
+                  <td>27–30 / 31–35</td>
+                  <td>4 + 5</td>
+                </tr>
+                <tr>
+                  <td>Two eyes</td>
+                  <td>36–41 / 42–47</td>
+                  <td>6 + 6</td>
+                </tr>
+                <tr>
+                  <td>Outer / inner lip</td>
+                  <td>48–59 / 60–67</td>
+                  <td>12 + 8</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </details>
+        <p class="recommendation">
+          For this project: use a small, editable node graph now. Add MediaPipe
+          if the face should move with a camera; use parsing masks if the
+          fragments need accurate image boundaries. Identity recognition is a
+          separate feature.
+        </p>
+      </section>
+    </main>
+    <footer>
+      <p>Fall 2026 / personal design notebook</p>
+      <a href="../">Return to the artwork ↗</a>
+    </footer>
+  </body>
+</html>

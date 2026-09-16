@@ -1,0 +1,29 @@
+[
+  {
+    "key": "vie",
+    "title": "VIE / preserved layout",
+    "nodes": 22,
+    "edges": 39,
+    "symNodes": 23,
+    "symEdges": 49,
+    "added": 1
+  },
+  {
+    "key": "red",
+    "title": "Red portrait / radial graph",
+    "nodes": 15,
+    "edges": 19,
+    "symNodes": 17,
+    "symEdges": 29,
+    "added": 2
+  },
+  {
+    "key": "blue",
+    "title": "Blue mask / incised lattice",
+    "nodes": 30,
+    "edges": 53,
+    "symNodes": 31,
+    "symEdges": 60,
+    "added": 1
+  }
+]

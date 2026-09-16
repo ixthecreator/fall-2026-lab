@@ -1,0 +1,453 @@
+{
+  "nodes": [
+    {
+      "id": "n01",
+      "x": 243,
+      "y": 354,
+      "label": "Left forehead",
+      "color": "#29252b"
+    },
+    {
+      "id": "n02",
+      "x": 323,
+      "y": 366,
+      "label": "Inner left brow",
+      "color": "#91476d"
+    },
+    {
+      "id": "n03",
+      "x": 374,
+      "y": 370,
+      "label": "Upper nose bridge",
+      "color": "#ff940a"
+    },
+    {
+      "id": "n04",
+      "x": 417,
+      "y": 375,
+      "label": "Inner right brow",
+      "color": "#ff940a"
+    },
+    {
+      "id": "n05",
+      "x": 484,
+      "y": 360,
+      "label": "Right brow",
+      "color": "#ff940a"
+    },
+    {
+      "id": "n06",
+      "x": 543,
+      "y": 345,
+      "label": "Right temple",
+      "color": "#ff940a"
+    },
+    {
+      "id": "n07",
+      "x": 213,
+      "y": 420,
+      "label": "Outer left eye",
+      "color": "#29252b"
+    },
+    {
+      "id": "n08",
+      "x": 337,
+      "y": 395,
+      "label": "Upper left eye corner",
+      "color": "#91476d"
+    },
+    {
+      "id": "n09",
+      "x": 373,
+      "y": 419,
+      "label": "Lower nose bridge",
+      "color": "#ff940a"
+    },
+    {
+      "id": "n10",
+      "x": 515,
+      "y": 433,
+      "label": "Outer right eye",
+      "color": "#ff940a"
+    },
+    {
+      "id": "n11",
+      "x": 229,
+      "y": 504,
+      "label": "Upper left cheek",
+      "color": "#29252b"
+    },
+    {
+      "id": "n12",
+      "x": 347,
+      "y": 464,
+      "label": "Inner left eye",
+      "color": "#29252b"
+    },
+    {
+      "id": "n13",
+      "x": 530,
+      "y": 477,
+      "label": "Upper right cheek",
+      "color": "#ff940a"
+    },
+    {
+      "id": "n14",
+      "x": 330,
+      "y": 505,
+      "label": "Left nose",
+      "color": "#29252b"
+    },
+    {
+      "id": "n15",
+      "x": 407,
+      "y": 507,
+      "label": "Right nose",
+      "color": "#ff940a"
+    },
+    {
+      "id": "n16",
+      "x": 276,
+      "y": 548,
+      "label": "Left cheek",
+      "color": "#29252b"
+    },
+    {
+      "id": "n17",
+      "x": 368,
+      "y": 553,
+      "label": "Nose tip",
+      "color": "#ff940a"
+    },
+    {
+      "id": "n18",
+      "x": 484,
+      "y": 551,
+      "label": "Right cheek",
+      "color": "#ff940a"
+    },
+    {
+      "id": "n19",
+      "x": 345,
+      "y": 623,
+      "label": "Left upper lip",
+      "color": "#29252b"
+    },
+    {
+      "id": "n20",
+      "x": 387,
+      "y": 627,
+      "label": "Right upper lip",
+      "color": "#ff940a"
+    },
+    {
+      "id": "n21",
+      "x": 291,
+      "y": 657,
+      "label": "Left mouth corner",
+      "color": "#91476d"
+    },
+    {
+      "id": "n22",
+      "x": 459,
+      "y": 670,
+      "label": "Right mouth corner",
+      "color": "#ff940a"
+    }
+  ],
+  "edges": [
+    {
+      "a": "n01",
+      "b": "n02",
+      "color": "#29252b",
+      "uncertain": false
+    },
+    {
+      "a": "n01",
+      "b": "n07",
+      "color": "#29252b",
+      "uncertain": false
+    },
+    {
+      "a": "n01",
+      "b": "n08",
+      "color": "#29252b",
+      "uncertain": false
+    },
+    {
+      "a": "n02",
+      "b": "n03",
+      "color": "#ff940a",
+      "uncertain": false
+    },
+    {
+      "a": "n02",
+      "b": "n08",
+      "color": "#91476d",
+      "uncertain": false
+    },
+    {
+      "a": "n03",
+      "b": "n04",
+      "color": "#ff940a",
+      "uncertain": false
+    },
+    {
+      "a": "n03",
+      "b": "n08",
+      "color": "#ff940a",
+      "uncertain": false
+    },
+    {
+      "a": "n03",
+      "b": "n09",
+      "color": "#ff940a",
+      "uncertain": false
+    },
+    {
+      "a": "n04",
+      "b": "n05",
+      "color": "#ff940a",
+      "uncertain": false
+    },
+    {
+      "a": "n04",
+      "b": "n09",
+      "color": "#ff940a",
+      "uncertain": false
+    },
+    {
+      "a": "n04",
+      "b": "n10",
+      "color": "#ff940a",
+      "uncertain": true
+    },
+    {
+      "a": "n05",
+      "b": "n06",
+      "color": "#ff940a",
+      "uncertain": false
+    },
+    {
+      "a": "n05",
+      "b": "n10",
+      "color": "#ff940a",
+      "uncertain": true
+    },
+    {
+      "a": "n06",
+      "b": "n10",
+      "color": "#ff940a",
+      "uncertain": true
+    },
+    {
+      "a": "n07",
+      "b": "n08",
+      "color": "#29252b",
+      "uncertain": true
+    },
+    {
+      "a": "n07",
+      "b": "n11",
+      "color": "#29252b",
+      "uncertain": true
+    },
+    {
+      "a": "n08",
+      "b": "n09",
+      "color": "#ff940a",
+      "uncertain": false
+    },
+    {
+      "a": "n08",
+      "b": "n12",
+      "color": "#29252b",
+      "uncertain": true
+    },
+    {
+      "a": "n09",
+      "b": "n12",
+      "color": "#29252b",
+      "uncertain": false
+    },
+    {
+      "a": "n09",
+      "b": "n15",
+      "color": "#ff940a",
+      "uncertain": false
+    },
+    {
+      "a": "n10",
+      "b": "n13",
+      "color": "#ff940a",
+      "uncertain": false
+    },
+    {
+      "a": "n10",
+      "b": "n15",
+      "color": "#ff940a",
+      "uncertain": true
+    },
+    {
+      "a": "n11",
+      "b": "n12",
+      "color": "#29252b",
+      "uncertain": false
+    },
+    {
+      "a": "n11",
+      "b": "n14",
+      "color": "#29252b",
+      "uncertain": false
+    },
+    {
+      "a": "n11",
+      "b": "n16",
+      "color": "#29252b",
+      "uncertain": false
+    },
+    {
+      "a": "n12",
+      "b": "n14",
+      "color": "#29252b",
+      "uncertain": false
+    },
+    {
+      "a": "n13",
+      "b": "n18",
+      "color": "#ff940a",
+      "uncertain": false
+    },
+    {
+      "a": "n14",
+      "b": "n16",
+      "color": "#29252b",
+      "uncertain": false
+    },
+    {
+      "a": "n14",
+      "b": "n17",
+      "color": "#29252b",
+      "uncertain": false
+    },
+    {
+      "a": "n15",
+      "b": "n17",
+      "color": "#ff940a",
+      "uncertain": false
+    },
+    {
+      "a": "n15",
+      "b": "n18",
+      "color": "#ff940a",
+      "uncertain": false
+    },
+    {
+      "a": "n16",
+      "b": "n21",
+      "color": "#29252b",
+      "uncertain": false
+    },
+    {
+      "a": "n16",
+      "b": "n19",
+      "color": "#29252b",
+      "uncertain": false
+    },
+    {
+      "a": "n17",
+      "b": "n19",
+      "color": "#29252b",
+      "uncertain": false
+    },
+    {
+      "a": "n17",
+      "b": "n20",
+      "color": "#ff940a",
+      "uncertain": false
+    },
+    {
+      "a": "n18",
+      "b": "n20",
+      "color": "#ff940a",
+      "uncertain": false
+    },
+    {
+      "a": "n18",
+      "b": "n22",
+      "color": "#ff940a",
+      "uncertain": false
+    },
+    {
+      "a": "n19",
+      "b": "n21",
+      "color": "#29252b",
+      "uncertain": false
+    },
+    {
+      "a": "n20",
+      "b": "n22",
+      "color": "#ff940a",
+      "uncertain": false
+    }
+  ],
+  "key": "vie",
+  "title": "VIE / preserved layout",
+  "image": "../../assets/oursler-vie.jpg",
+  "imageSize": [
+    749,
+    1000
+  ],
+  "crop": [
+    150,
+    300,
+    445,
+    420
+  ],
+  "axis": 374,
+  "pairs": [
+    [
+      "n01",
+      "n06"
+    ],
+    [
+      "n02",
+      "n05"
+    ],
+    [
+      "n08",
+      "n04"
+    ],
+    [
+      "n07",
+      "n10"
+    ],
+    [
+      "n11",
+      "n13"
+    ],
+    [
+      "n14",
+      "n15"
+    ],
+    [
+      "n16",
+      "n18"
+    ],
+    [
+      "n19",
+      "n20"
+    ],
+    [
+      "n21",
+      "n22"
+    ]
+  ],
+  "centers": [
+    "n03",
+    "n09",
+    "n17"
+  ],
+  "source": "https://www.lissongallery.com/artists/tony-oursler/artworks/vie?image_id=8831",
+  "note": "Exact copy of the existing 22-node / 39-edge site layout. Earlier reconstruction includes inferred occluded connections; not a fresh measurement."
+}

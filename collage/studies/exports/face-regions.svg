@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1040 660" width="1040" height="660" role="img" aria-labelledby="title desc">
+<title id="title">A ten-region plan for the collage</title><desc id="desc">An original schematic face divided into forehead, two brows, two eyes, nose, two cheeks, mouth and chin. These are design regions, not the output of a face recognition system.</desc>
+<rect width="1040" height="660" fill="#f6f4ed"/>
+<g font-family="Arial,sans-serif" fill="#202321"><text x="42" y="50" font-size="17" letter-spacing="2">FACE / REGION STUDY — 02</text><text x="42" y="90" font-size="30">Points locate. Masks separate.</text></g>
+<g stroke="#f6f4ed" stroke-width="6" stroke-linejoin="round">
+<path d="M265 126 Q104 122 106 335 Q113 495 265 557 Q417 495 424 335 Q426 122 265 126Z" fill="#d8d6ce"/>
+<path d="M265 139 Q125 135 120 263 L245 253 L265 287 L285 253 L410 263 Q405 135 265 139Z" fill="#ded49d"/>
+<path d="M123 269 L237 263 L237 287 L123 293Z" fill="#958faf"/>
+<path d="M407 269 L293 263 L293 287 L407 293Z" fill="#958faf"/>
+<ellipse cx="182" cy="320" rx="60" ry="29" fill="#86acb4"/>
+<ellipse cx="348" cy="320" rx="60" ry="29" fill="#86acb4"/>
+<path d="M254 279 L276 279 L302 412 L265 429 L228 412Z" fill="#ddaa70"/>
+<path d="M124 355 L228 355 L216 417 L238 432 L168 458 L132 413Z" fill="#b3bc9a"/>
+<path d="M406 355 L302 355 L314 417 L292 432 L362 458 L398 413Z" fill="#b3bc9a"/>
+<ellipse cx="265" cy="459" rx="65" ry="24" fill="#c78784"/>
+<path d="M179 486 Q265 503 351 486 Q306 535 265 544 Q224 535 179 486Z" fill="#b6aca1"/>
+</g>
+<g font-family="monospace" font-size="17" text-anchor="middle" fill="#202321"><text x="265" y="212">01</text><text x="180" y="283">02</text><text x="350" y="283">03</text><text x="182" y="326">04</text><text x="348" y="326">05</text><text x="265" y="382">06</text><text x="178" y="401">07</text><text x="352" y="401">08</text><text x="265" y="465">09</text><text x="265" y="525">10</text></g>
+<g font-family="Arial,sans-serif" fill="#202321" font-size="21"><text x="514" y="163">01 / Forehead</text><text x="514" y="207">02–03 / Brows</text><text x="514" y="251">04–05 / Eyes</text><text x="514" y="295">06 / Nose</text><text x="514" y="339">07–08 / Cheeks</text><text x="514" y="383">09 / Mouth + lips</text><text x="514" y="427">10 / Chin</text></g>
+<g font-family="Arial,sans-serif" fill="#65685f" font-size="17"><text x="514" y="483">Collage groups, defined by the designer.</text><text x="514" y="512">Forehead, cheeks and chin need custom masks.</text><text x="514" y="541">Skin labels alone do not separate these areas.</text><text x="42" y="608">Original schematic. Illustrative boundaries; not a measured face, anatomical atlas or model prediction.</text></g></svg>

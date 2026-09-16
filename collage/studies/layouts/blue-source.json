@@ -1,0 +1,639 @@
+{
+  "key": "blue",
+  "title": "Blue mask / incised lattice",
+  "nodes": [
+    {
+      "id": "n01",
+      "x": 294,
+      "y": 356,
+      "color": "#2755b4",
+      "label": "Left upper stem",
+      "provenance": "manual visible-marker trace"
+    },
+    {
+      "id": "n02",
+      "x": 650,
+      "y": 358,
+      "color": "#2755b4",
+      "label": "Right upper stem",
+      "provenance": "manual visible-marker trace"
+    },
+    {
+      "id": "n03",
+      "x": 300,
+      "y": 464,
+      "color": "#2755b4",
+      "label": "Left outer brow",
+      "provenance": "manual visible-marker trace"
+    },
+    {
+      "id": "n04",
+      "x": 377,
+      "y": 457,
+      "color": "#2755b4",
+      "label": "Left inner brow",
+      "provenance": "manual visible-marker trace"
+    },
+    {
+      "id": "n05",
+      "x": 467,
+      "y": 472,
+      "color": "#2755b4",
+      "label": "Centre brow",
+      "provenance": "manual visible-marker trace"
+    },
+    {
+      "id": "n06",
+      "x": 558,
+      "y": 466,
+      "color": "#2755b4",
+      "label": "Right inner brow",
+      "provenance": "manual visible-marker trace"
+    },
+    {
+      "id": "n07",
+      "x": 646,
+      "y": 473,
+      "color": "#2755b4",
+      "label": "Right outer brow",
+      "provenance": "manual visible-marker trace"
+    },
+    {
+      "id": "n08",
+      "x": 212,
+      "y": 520,
+      "color": "#2755b4",
+      "label": "Left temple",
+      "provenance": "manual visible-marker trace"
+    },
+    {
+      "id": "n09",
+      "x": 723,
+      "y": 526,
+      "color": "#2755b4",
+      "label": "Right temple",
+      "provenance": "manual visible-marker trace"
+    },
+    {
+      "id": "n10",
+      "x": 390,
+      "y": 505,
+      "color": "#2755b4",
+      "label": "Left upper eye",
+      "provenance": "manual visible-marker trace"
+    },
+    {
+      "id": "n11",
+      "x": 538,
+      "y": 512,
+      "color": "#2755b4",
+      "label": "Right upper eye",
+      "provenance": "manual visible-marker trace"
+    },
+    {
+      "id": "n12",
+      "x": 467,
+      "y": 535,
+      "color": "#2755b4",
+      "label": "Bridge",
+      "provenance": "manual visible-marker trace"
+    },
+    {
+      "id": "n13",
+      "x": 258,
+      "y": 570,
+      "color": "#2755b4",
+      "label": "Left outer eye",
+      "provenance": "manual visible-marker trace"
+    },
+    {
+      "id": "n14",
+      "x": 684,
+      "y": 568,
+      "color": "#2755b4",
+      "label": "Right outer eye",
+      "provenance": "manual visible-marker trace"
+    },
+    {
+      "id": "n15",
+      "x": 427,
+      "y": 589,
+      "color": "#2755b4",
+      "label": "Left nose bridge",
+      "provenance": "manual visible-marker trace"
+    },
+    {
+      "id": "n16",
+      "x": 519,
+      "y": 591,
+      "color": "#2755b4",
+      "label": "Right nose bridge",
+      "provenance": "manual visible-marker trace"
+    },
+    {
+      "id": "n17",
+      "x": 236,
+      "y": 642,
+      "color": "#2755b4",
+      "label": "Left outer cheek",
+      "provenance": "manual visible-marker trace"
+    },
+    {
+      "id": "n18",
+      "x": 698,
+      "y": 654,
+      "color": "#2755b4",
+      "label": "Right outer cheek",
+      "provenance": "manual visible-marker trace"
+    },
+    {
+      "id": "n19",
+      "x": 397,
+      "y": 645,
+      "color": "#2755b4",
+      "label": "Left inner cheek",
+      "provenance": "manual visible-marker trace"
+    },
+    {
+      "id": "n20",
+      "x": 518,
+      "y": 655,
+      "color": "#2755b4",
+      "label": "Right inner cheek",
+      "provenance": "manual visible-marker trace"
+    },
+    {
+      "id": "n21",
+      "x": 297,
+      "y": 689,
+      "color": "#2755b4",
+      "label": "Left lower cheek",
+      "provenance": "manual visible-marker trace"
+    },
+    {
+      "id": "n22",
+      "x": 643,
+      "y": 702,
+      "color": "#2755b4",
+      "label": "Right lower cheek",
+      "provenance": "manual visible-marker trace"
+    },
+    {
+      "id": "n23",
+      "x": 463,
+      "y": 738,
+      "color": "#2755b4",
+      "label": "Nose base",
+      "provenance": "manual visible-marker trace"
+    },
+    {
+      "id": "n24",
+      "x": 272,
+      "y": 768,
+      "color": "#2755b4",
+      "label": "Left outer jaw",
+      "provenance": "manual visible-marker trace"
+    },
+    {
+      "id": "n25",
+      "x": 652,
+      "y": 788,
+      "color": "#2755b4",
+      "label": "Right outer jaw",
+      "provenance": "manual visible-marker trace"
+    },
+    {
+      "id": "n26",
+      "x": 350,
+      "y": 796,
+      "color": "#2755b4",
+      "label": "Left middle jaw",
+      "provenance": "manual visible-marker trace"
+    },
+    {
+      "id": "n27",
+      "x": 554,
+      "y": 807,
+      "color": "#2755b4",
+      "label": "Right middle jaw",
+      "provenance": "manual visible-marker trace"
+    },
+    {
+      "id": "n28",
+      "x": 401,
+      "y": 790,
+      "color": "#2755b4",
+      "label": "Left inner jaw",
+      "provenance": "manual visible-marker trace"
+    },
+    {
+      "id": "n29",
+      "x": 505,
+      "y": 763,
+      "color": "#2755b4",
+      "label": "Right inner jaw",
+      "provenance": "manual visible-marker trace"
+    },
+    {
+      "id": "n30",
+      "x": 616,
+      "y": 540,
+      "color": "#2755b4",
+      "label": "Right inner eye",
+      "provenance": "manual visible-marker trace"
+    }
+  ],
+  "edges": [
+    {
+      "a": "n01",
+      "b": "n03",
+      "color": "#2755b4",
+      "uncertain": false
+    },
+    {
+      "a": "n02",
+      "b": "n07",
+      "color": "#2755b4",
+      "uncertain": false
+    },
+    {
+      "a": "n03",
+      "b": "n04",
+      "color": "#2755b4",
+      "uncertain": false
+    },
+    {
+      "a": "n04",
+      "b": "n05",
+      "color": "#2755b4",
+      "uncertain": false
+    },
+    {
+      "a": "n05",
+      "b": "n06",
+      "color": "#2755b4",
+      "uncertain": false
+    },
+    {
+      "a": "n06",
+      "b": "n07",
+      "color": "#2755b4",
+      "uncertain": false
+    },
+    {
+      "a": "n03",
+      "b": "n08",
+      "color": "#2755b4",
+      "uncertain": false
+    },
+    {
+      "a": "n07",
+      "b": "n09",
+      "color": "#2755b4",
+      "uncertain": false
+    },
+    {
+      "a": "n08",
+      "b": "n13",
+      "color": "#2755b4",
+      "uncertain": false
+    },
+    {
+      "a": "n08",
+      "b": "n17",
+      "color": "#2755b4",
+      "uncertain": false
+    },
+    {
+      "a": "n09",
+      "b": "n14",
+      "color": "#2755b4",
+      "uncertain": false
+    },
+    {
+      "a": "n09",
+      "b": "n18",
+      "color": "#2755b4",
+      "uncertain": false
+    },
+    {
+      "a": "n03",
+      "b": "n13",
+      "color": "#2755b4",
+      "uncertain": false
+    },
+    {
+      "a": "n03",
+      "b": "n10",
+      "color": "#2755b4",
+      "uncertain": true
+    },
+    {
+      "a": "n04",
+      "b": "n10",
+      "color": "#2755b4",
+      "uncertain": false
+    },
+    {
+      "a": "n05",
+      "b": "n10",
+      "color": "#2755b4",
+      "uncertain": false
+    },
+    {
+      "a": "n05",
+      "b": "n11",
+      "color": "#2755b4",
+      "uncertain": false
+    },
+    {
+      "a": "n06",
+      "b": "n11",
+      "color": "#2755b4",
+      "uncertain": false
+    },
+    {
+      "a": "n06",
+      "b": "n30",
+      "color": "#2755b4",
+      "uncertain": false
+    },
+    {
+      "a": "n07",
+      "b": "n30",
+      "color": "#2755b4",
+      "uncertain": false
+    },
+    {
+      "a": "n07",
+      "b": "n14",
+      "color": "#2755b4",
+      "uncertain": false
+    },
+    {
+      "a": "n10",
+      "b": "n12",
+      "color": "#2755b4",
+      "uncertain": false
+    },
+    {
+      "a": "n11",
+      "b": "n12",
+      "color": "#2755b4",
+      "uncertain": false
+    },
+    {
+      "a": "n11",
+      "b": "n30",
+      "color": "#2755b4",
+      "uncertain": false
+    },
+    {
+      "a": "n12",
+      "b": "n15",
+      "color": "#2755b4",
+      "uncertain": false
+    },
+    {
+      "a": "n12",
+      "b": "n16",
+      "color": "#2755b4",
+      "uncertain": false
+    },
+    {
+      "a": "n13",
+      "b": "n17",
+      "color": "#2755b4",
+      "uncertain": false
+    },
+    {
+      "a": "n14",
+      "b": "n18",
+      "color": "#2755b4",
+      "uncertain": false
+    },
+    {
+      "a": "n14",
+      "b": "n30",
+      "color": "#2755b4",
+      "uncertain": false
+    },
+    {
+      "a": "n15",
+      "b": "n19",
+      "color": "#2755b4",
+      "uncertain": false
+    },
+    {
+      "a": "n16",
+      "b": "n20",
+      "color": "#2755b4",
+      "uncertain": false
+    },
+    {
+      "a": "n16",
+      "b": "n30",
+      "color": "#2755b4",
+      "uncertain": false
+    },
+    {
+      "a": "n17",
+      "b": "n19",
+      "color": "#2755b4",
+      "uncertain": false
+    },
+    {
+      "a": "n17",
+      "b": "n21",
+      "color": "#2755b4",
+      "uncertain": false
+    },
+    {
+      "a": "n18",
+      "b": "n20",
+      "color": "#2755b4",
+      "uncertain": false
+    },
+    {
+      "a": "n18",
+      "b": "n22",
+      "color": "#2755b4",
+      "uncertain": false
+    },
+    {
+      "a": "n19",
+      "b": "n21",
+      "color": "#2755b4",
+      "uncertain": false
+    },
+    {
+      "a": "n19",
+      "b": "n23",
+      "color": "#2755b4",
+      "uncertain": false
+    },
+    {
+      "a": "n20",
+      "b": "n22",
+      "color": "#2755b4",
+      "uncertain": false
+    },
+    {
+      "a": "n20",
+      "b": "n23",
+      "color": "#2755b4",
+      "uncertain": false
+    },
+    {
+      "a": "n21",
+      "b": "n24",
+      "color": "#2755b4",
+      "uncertain": false
+    },
+    {
+      "a": "n21",
+      "b": "n26",
+      "color": "#2755b4",
+      "uncertain": false
+    },
+    {
+      "a": "n21",
+      "b": "n28",
+      "color": "#2755b4",
+      "uncertain": false
+    },
+    {
+      "a": "n22",
+      "b": "n25",
+      "color": "#2755b4",
+      "uncertain": false
+    },
+    {
+      "a": "n22",
+      "b": "n27",
+      "color": "#2755b4",
+      "uncertain": false
+    },
+    {
+      "a": "n22",
+      "b": "n29",
+      "color": "#2755b4",
+      "uncertain": false
+    },
+    {
+      "a": "n23",
+      "b": "n28",
+      "color": "#2755b4",
+      "uncertain": false
+    },
+    {
+      "a": "n23",
+      "b": "n29",
+      "color": "#2755b4",
+      "uncertain": false
+    },
+    {
+      "a": "n24",
+      "b": "n26",
+      "color": "#2755b4",
+      "uncertain": false
+    },
+    {
+      "a": "n26",
+      "b": "n28",
+      "color": "#2755b4",
+      "uncertain": false
+    },
+    {
+      "a": "n25",
+      "b": "n27",
+      "color": "#2755b4",
+      "uncertain": false
+    },
+    {
+      "a": "n27",
+      "b": "n29",
+      "color": "#2755b4",
+      "uncertain": false
+    },
+    {
+      "a": "n15",
+      "b": "n17",
+      "color": "#2755b4",
+      "uncertain": true
+    }
+  ],
+  "pairs": [
+    [
+      "n01",
+      "n02"
+    ],
+    [
+      "n03",
+      "n07"
+    ],
+    [
+      "n04",
+      "n06"
+    ],
+    [
+      "n08",
+      "n09"
+    ],
+    [
+      "n10",
+      "n11"
+    ],
+    [
+      "n13",
+      "n14"
+    ],
+    [
+      "n15",
+      "n16"
+    ],
+    [
+      "n17",
+      "n18"
+    ],
+    [
+      "n19",
+      "n20"
+    ],
+    [
+      "n21",
+      "n22"
+    ],
+    [
+      "n24",
+      "n25"
+    ],
+    [
+      "n26",
+      "n27"
+    ],
+    [
+      "n28",
+      "n29"
+    ]
+  ],
+  "centers": [
+    "n05",
+    "n12",
+    "n23"
+  ],
+  "axis": 467,
+  "image": "../references/lisson-04.jpg",
+  "imageSize": [
+    960,
+    1222
+  ],
+  "crop": [
+    180,
+    320,
+    570,
+    530
+  ],
+  "source": "https://tonyoursler.com/templatevariantfriendstranger-london",
+  "note": "Manual visual study; approximate coordinates. Uncaptioned artwork uses a descriptive study label, not an authenticated title. Dashed source edges are uncertain across occlusions."
+}

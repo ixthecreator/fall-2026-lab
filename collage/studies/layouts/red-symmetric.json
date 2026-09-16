@@ -1,0 +1,422 @@
+{
+  "key": "red",
+  "title": "Red portrait / radial graph",
+  "nodes": [
+    {
+      "id": "n01",
+      "x": 403.5,
+      "y": 304.0,
+      "color": "#b57414",
+      "label": "Left upper stem",
+      "provenance": "manual visible-marker trace",
+      "synthetic": false
+    },
+    {
+      "id": "n02",
+      "x": 486.5,
+      "y": 304.0,
+      "color": "#b57414",
+      "label": "Right upper stem",
+      "provenance": "manual visible-marker trace",
+      "synthetic": false
+    },
+    {
+      "id": "n03",
+      "x": 336.0,
+      "y": 335.5,
+      "color": "#b57414",
+      "label": "Left outer brow",
+      "provenance": "manual visible-marker trace",
+      "synthetic": false
+    },
+    {
+      "id": "n07",
+      "x": 554.0,
+      "y": 335.5,
+      "color": "#b57414",
+      "label": "Right outer brow",
+      "provenance": "manual visible-marker trace",
+      "synthetic": false
+    },
+    {
+      "id": "n10",
+      "x": 325.0,
+      "y": 386.0,
+      "color": "#b57414",
+      "label": "Left middle extension",
+      "provenance": "manual visible-marker trace",
+      "synthetic": false
+    },
+    {
+      "id": "n11",
+      "x": 565.0,
+      "y": 386.0,
+      "color": "#b57414",
+      "label": "Right middle extension",
+      "provenance": "manual visible-marker trace",
+      "synthetic": false
+    },
+    {
+      "id": "n12",
+      "x": 334.0,
+      "y": 425.5,
+      "color": "#b57414",
+      "label": "Left lower extension",
+      "provenance": "manual visible-marker trace",
+      "synthetic": false
+    },
+    {
+      "id": "n13",
+      "x": 556.0,
+      "y": 425.5,
+      "color": "#b57414",
+      "label": "Right lower extension",
+      "provenance": "manual visible-marker trace",
+      "synthetic": false
+    },
+    {
+      "id": "n06",
+      "x": 445,
+      "y": 342,
+      "color": "#b57414",
+      "label": "Centre brow",
+      "provenance": "manual visible-marker trace",
+      "synthetic": false
+    },
+    {
+      "id": "n08",
+      "x": 445,
+      "y": 374,
+      "color": "#b57414",
+      "label": "Upper bridge",
+      "provenance": "manual visible-marker trace",
+      "synthetic": false
+    },
+    {
+      "id": "n09",
+      "x": 445,
+      "y": 386,
+      "color": "#b57414",
+      "label": "Lower bridge",
+      "provenance": "manual visible-marker trace",
+      "synthetic": false
+    },
+    {
+      "id": "n14",
+      "x": 445,
+      "y": 463,
+      "color": "#b57414",
+      "label": "Chin convergence",
+      "provenance": "manual visible-marker trace",
+      "synthetic": false
+    },
+    {
+      "id": "n15",
+      "x": 445,
+      "y": 536,
+      "color": "#b57414",
+      "label": "Lower axis",
+      "provenance": "manual visible-marker trace",
+      "synthetic": false
+    },
+    {
+      "id": "n04",
+      "x": 401,
+      "y": 335,
+      "color": "#b57414",
+      "label": "Left brow",
+      "provenance": "manual visible-marker trace",
+      "synthetic": false
+    },
+    {
+      "id": "n04m",
+      "x": 489,
+      "y": 335,
+      "color": "#b57414",
+      "label": "Added mirror of n04",
+      "provenance": "manual visible-marker trace",
+      "synthetic": true
+    },
+    {
+      "id": "n05",
+      "x": 417,
+      "y": 341,
+      "color": "#b57414",
+      "label": "Left inner brow",
+      "provenance": "manual visible-marker trace",
+      "synthetic": false
+    },
+    {
+      "id": "n05m",
+      "x": 473,
+      "y": 341,
+      "color": "#b57414",
+      "label": "Added mirror of n05",
+      "provenance": "manual visible-marker trace",
+      "synthetic": true
+    }
+  ],
+  "edges": [
+    {
+      "a": "n01",
+      "b": "n04",
+      "color": "#b57414",
+      "uncertain": false,
+      "synthetic": false
+    },
+    {
+      "a": "n01",
+      "b": "n06",
+      "color": "#b57414",
+      "uncertain": false,
+      "synthetic": false
+    },
+    {
+      "a": "n02",
+      "b": "n06",
+      "color": "#b57414",
+      "uncertain": true,
+      "synthetic": false
+    },
+    {
+      "a": "n03",
+      "b": "n04",
+      "color": "#b57414",
+      "uncertain": false,
+      "synthetic": false
+    },
+    {
+      "a": "n04",
+      "b": "n05",
+      "color": "#b57414",
+      "uncertain": false,
+      "synthetic": false
+    },
+    {
+      "a": "n05",
+      "b": "n06",
+      "color": "#b57414",
+      "uncertain": false,
+      "synthetic": false
+    },
+    {
+      "a": "n06",
+      "b": "n07",
+      "color": "#b57414",
+      "uncertain": true,
+      "synthetic": false
+    },
+    {
+      "a": "n06",
+      "b": "n08",
+      "color": "#b57414",
+      "uncertain": false,
+      "synthetic": false
+    },
+    {
+      "a": "n04",
+      "b": "n08",
+      "color": "#b57414",
+      "uncertain": false,
+      "synthetic": false
+    },
+    {
+      "a": "n08",
+      "b": "n02",
+      "color": "#b57414",
+      "uncertain": true,
+      "synthetic": false
+    },
+    {
+      "a": "n08",
+      "b": "n09",
+      "color": "#b57414",
+      "uncertain": false,
+      "synthetic": false
+    },
+    {
+      "a": "n10",
+      "b": "n09",
+      "color": "#b57414",
+      "uncertain": false,
+      "synthetic": false
+    },
+    {
+      "a": "n09",
+      "b": "n11",
+      "color": "#b57414",
+      "uncertain": false,
+      "synthetic": false
+    },
+    {
+      "a": "n12",
+      "b": "n13",
+      "color": "#b57414",
+      "uncertain": true,
+      "synthetic": false
+    },
+    {
+      "a": "n04",
+      "b": "n14",
+      "color": "#b57414",
+      "uncertain": true,
+      "synthetic": false
+    },
+    {
+      "a": "n05",
+      "b": "n14",
+      "color": "#b57414",
+      "uncertain": true,
+      "synthetic": false
+    },
+    {
+      "a": "n02",
+      "b": "n14",
+      "color": "#b57414",
+      "uncertain": true,
+      "synthetic": false
+    },
+    {
+      "a": "n09",
+      "b": "n14",
+      "color": "#b57414",
+      "uncertain": true,
+      "synthetic": false
+    },
+    {
+      "a": "n14",
+      "b": "n15",
+      "color": "#b57414",
+      "uncertain": false,
+      "synthetic": false
+    },
+    {
+      "a": "n02",
+      "b": "n04m",
+      "color": "#b57414",
+      "uncertain": false,
+      "synthetic": true
+    },
+    {
+      "a": "n07",
+      "b": "n04m",
+      "color": "#b57414",
+      "uncertain": false,
+      "synthetic": true
+    },
+    {
+      "a": "n04m",
+      "b": "n05m",
+      "color": "#b57414",
+      "uncertain": false,
+      "synthetic": true
+    },
+    {
+      "a": "n05m",
+      "b": "n06",
+      "color": "#b57414",
+      "uncertain": false,
+      "synthetic": true
+    },
+    {
+      "a": "n06",
+      "b": "n03",
+      "color": "#b57414",
+      "uncertain": true,
+      "synthetic": true
+    },
+    {
+      "a": "n04m",
+      "b": "n08",
+      "color": "#b57414",
+      "uncertain": false,
+      "synthetic": true
+    },
+    {
+      "a": "n08",
+      "b": "n01",
+      "color": "#b57414",
+      "uncertain": true,
+      "synthetic": true
+    },
+    {
+      "a": "n04m",
+      "b": "n14",
+      "color": "#b57414",
+      "uncertain": true,
+      "synthetic": true
+    },
+    {
+      "a": "n05m",
+      "b": "n14",
+      "color": "#b57414",
+      "uncertain": true,
+      "synthetic": true
+    },
+    {
+      "a": "n01",
+      "b": "n14",
+      "color": "#b57414",
+      "uncertain": true,
+      "synthetic": true
+    }
+  ],
+  "pairs": [
+    [
+      "n01",
+      "n02"
+    ],
+    [
+      "n03",
+      "n07"
+    ],
+    [
+      "n10",
+      "n11"
+    ],
+    [
+      "n12",
+      "n13"
+    ]
+  ],
+  "centers": [
+    "n06",
+    "n08",
+    "n09",
+    "n14",
+    "n15"
+  ],
+  "axis": 445,
+  "image": "../references/lisson-03.jpg",
+  "imageSize": [
+    960,
+    720
+  ],
+  "crop": [
+    310,
+    280,
+    280,
+    285
+  ],
+  "source": "https://tonyoursler.com/templatevariantfriendstranger-london",
+  "note": "Bilateral design derivative: paired positions averaged, centre nodes aligned, unpaired nodes mirrored, and missing reflected edges added. This is not a recovered original or a detector template.",
+  "mirror": {
+    "n01": "n02",
+    "n02": "n01",
+    "n03": "n07",
+    "n07": "n03",
+    "n10": "n11",
+    "n11": "n10",
+    "n12": "n13",
+    "n13": "n12",
+    "n06": "n06",
+    "n08": "n08",
+    "n09": "n09",
+    "n14": "n14",
+    "n15": "n15",
+    "n04": "n04m",
+    "n04m": "n04",
+    "n05": "n05m",
+    "n05m": "n05"
+  }
+}

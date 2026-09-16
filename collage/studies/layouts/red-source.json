@@ -1,0 +1,281 @@
+{
+  "key": "red",
+  "title": "Red portrait / radial graph",
+  "nodes": [
+    {
+      "id": "n01",
+      "x": 401,
+      "y": 305,
+      "color": "#b57414",
+      "label": "Left upper stem",
+      "provenance": "manual visible-marker trace"
+    },
+    {
+      "id": "n02",
+      "x": 484,
+      "y": 303,
+      "color": "#b57414",
+      "label": "Right upper stem",
+      "provenance": "manual visible-marker trace"
+    },
+    {
+      "id": "n03",
+      "x": 336,
+      "y": 335,
+      "color": "#b57414",
+      "label": "Left outer brow",
+      "provenance": "manual visible-marker trace"
+    },
+    {
+      "id": "n04",
+      "x": 401,
+      "y": 335,
+      "color": "#b57414",
+      "label": "Left brow",
+      "provenance": "manual visible-marker trace"
+    },
+    {
+      "id": "n05",
+      "x": 417,
+      "y": 341,
+      "color": "#b57414",
+      "label": "Left inner brow",
+      "provenance": "manual visible-marker trace"
+    },
+    {
+      "id": "n06",
+      "x": 444,
+      "y": 342,
+      "color": "#b57414",
+      "label": "Centre brow",
+      "provenance": "manual visible-marker trace"
+    },
+    {
+      "id": "n07",
+      "x": 554,
+      "y": 336,
+      "color": "#b57414",
+      "label": "Right outer brow",
+      "provenance": "manual visible-marker trace"
+    },
+    {
+      "id": "n08",
+      "x": 445,
+      "y": 374,
+      "color": "#b57414",
+      "label": "Upper bridge",
+      "provenance": "manual visible-marker trace"
+    },
+    {
+      "id": "n09",
+      "x": 445,
+      "y": 386,
+      "color": "#b57414",
+      "label": "Lower bridge",
+      "provenance": "manual visible-marker trace"
+    },
+    {
+      "id": "n10",
+      "x": 331,
+      "y": 384,
+      "color": "#b57414",
+      "label": "Left middle extension",
+      "provenance": "manual visible-marker trace"
+    },
+    {
+      "id": "n11",
+      "x": 571,
+      "y": 388,
+      "color": "#b57414",
+      "label": "Right middle extension",
+      "provenance": "manual visible-marker trace"
+    },
+    {
+      "id": "n12",
+      "x": 341,
+      "y": 423,
+      "color": "#b57414",
+      "label": "Left lower extension",
+      "provenance": "manual visible-marker trace"
+    },
+    {
+      "id": "n13",
+      "x": 563,
+      "y": 428,
+      "color": "#b57414",
+      "label": "Right lower extension",
+      "provenance": "manual visible-marker trace"
+    },
+    {
+      "id": "n14",
+      "x": 445,
+      "y": 463,
+      "color": "#b57414",
+      "label": "Chin convergence",
+      "provenance": "manual visible-marker trace"
+    },
+    {
+      "id": "n15",
+      "x": 446,
+      "y": 536,
+      "color": "#b57414",
+      "label": "Lower axis",
+      "provenance": "manual visible-marker trace"
+    }
+  ],
+  "edges": [
+    {
+      "a": "n01",
+      "b": "n04",
+      "color": "#b57414",
+      "uncertain": false
+    },
+    {
+      "a": "n01",
+      "b": "n06",
+      "color": "#b57414",
+      "uncertain": false
+    },
+    {
+      "a": "n02",
+      "b": "n06",
+      "color": "#b57414",
+      "uncertain": true
+    },
+    {
+      "a": "n03",
+      "b": "n04",
+      "color": "#b57414",
+      "uncertain": false
+    },
+    {
+      "a": "n04",
+      "b": "n05",
+      "color": "#b57414",
+      "uncertain": false
+    },
+    {
+      "a": "n05",
+      "b": "n06",
+      "color": "#b57414",
+      "uncertain": false
+    },
+    {
+      "a": "n06",
+      "b": "n07",
+      "color": "#b57414",
+      "uncertain": true
+    },
+    {
+      "a": "n06",
+      "b": "n08",
+      "color": "#b57414",
+      "uncertain": false
+    },
+    {
+      "a": "n04",
+      "b": "n08",
+      "color": "#b57414",
+      "uncertain": false
+    },
+    {
+      "a": "n08",
+      "b": "n02",
+      "color": "#b57414",
+      "uncertain": true
+    },
+    {
+      "a": "n08",
+      "b": "n09",
+      "color": "#b57414",
+      "uncertain": false
+    },
+    {
+      "a": "n10",
+      "b": "n09",
+      "color": "#b57414",
+      "uncertain": false
+    },
+    {
+      "a": "n09",
+      "b": "n11",
+      "color": "#b57414",
+      "uncertain": false
+    },
+    {
+      "a": "n12",
+      "b": "n13",
+      "color": "#b57414",
+      "uncertain": true
+    },
+    {
+      "a": "n04",
+      "b": "n14",
+      "color": "#b57414",
+      "uncertain": true
+    },
+    {
+      "a": "n05",
+      "b": "n14",
+      "color": "#b57414",
+      "uncertain": true
+    },
+    {
+      "a": "n02",
+      "b": "n14",
+      "color": "#b57414",
+      "uncertain": true
+    },
+    {
+      "a": "n09",
+      "b": "n14",
+      "color": "#b57414",
+      "uncertain": true
+    },
+    {
+      "a": "n14",
+      "b": "n15",
+      "color": "#b57414",
+      "uncertain": false
+    }
+  ],
+  "pairs": [
+    [
+      "n01",
+      "n02"
+    ],
+    [
+      "n03",
+      "n07"
+    ],
+    [
+      "n10",
+      "n11"
+    ],
+    [
+      "n12",
+      "n13"
+    ]
+  ],
+  "centers": [
+    "n06",
+    "n08",
+    "n09",
+    "n14",
+    "n15"
+  ],
+  "axis": 445,
+  "image": "../references/lisson-03.jpg",
+  "imageSize": [
+    960,
+    720
+  ],
+  "crop": [
+    310,
+    280,
+    280,
+    285
+  ],
+  "source": "https://tonyoursler.com/templatevariantfriendstranger-london",
+  "note": "Manual visual study; approximate coordinates. Uncaptioned artwork uses a descriptive study label, not an authenticated title. Dashed source edges are uncertain across occlusions."
+}
