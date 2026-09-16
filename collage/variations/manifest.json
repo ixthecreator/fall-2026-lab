@@ -1,0 +1,44 @@
+[
+  {
+    "key": "01-alignment",
+    "title": "01 / A face in five places",
+    "model": "alignment-5",
+    "nodes": 5,
+    "features": 5
+  },
+  {
+    "key": "02-contours",
+    "title": "02 / Borrowed contours",
+    "model": "landmarks-68",
+    "nodes": 68,
+    "features": 6
+  },
+  {
+    "key": "03-scatter",
+    "title": "03 / No single person",
+    "model": "landmarks-106",
+    "nodes": 106,
+    "features": 10
+  },
+  {
+    "key": "04-surface",
+    "title": "04 / A measured stranger",
+    "model": "mesh-468",
+    "nodes": 468,
+    "features": 4
+  },
+  {
+    "key": "05-gaze",
+    "title": "05 / The face looks back",
+    "model": "mesh-478-study",
+    "nodes": 478,
+    "features": 4
+  },
+  {
+    "key": "06-segments",
+    "title": "06 / The face comes apart",
+    "model": "parsing-19",
+    "nodes": 0,
+    "features": 14
+  }
+]

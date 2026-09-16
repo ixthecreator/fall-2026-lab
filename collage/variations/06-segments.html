@@ -1,0 +1,654 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>06 / The face comes apart / Six borrowed faces</title>
+    <meta
+      name="description"
+      content="A draggable photographic face collage influenced by Tony Oursler and computational facial structures."
+    />
+    <link rel="stylesheet" href="art.css" />
+    <script src="drag.js" defer></script>
+  </head>
+  <body style="--canvas: #eee9dd">
+    <main aria-label="06 / The face comes apart">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        class="artwork"
+        viewBox="0 0 1000 1100"
+        role="group"
+        aria-labelledby="art-title art-desc"
+      >
+        <title id="art-title">06 / The face comes apart</title>
+        <desc id="art-desc">
+          Original collage layout influenced by Tony Oursler’s projected facial
+          fragments and by parsing-19. Found photographs by Julia Margaret
+          Cameron, Nadar and Dorothea Lange. Drag facial fragments; arrow keys
+          move the focused fragment; Escape restores the composition. This
+          artwork does not run face recognition.
+        </desc>
+        <defs>
+          <filter id="green" color-interpolation-filters="sRGB">
+            <feColorMatrix
+              type="matrix"
+              values="0.13256 0.44595 0.04502 0 0.03137 0.18092 0.60862 0.06144 0 0.13725 0.01251 0.04207 0.00425 0 0.09020 0 0 0 1 0"
+            />
+          </filter>
+          <filter id="blue" color-interpolation-filters="sRGB">
+            <feColorMatrix
+              type="matrix"
+              values="0.12923 0.43473 0.04389 0 0.03529 0.15174 0.51046 0.05153 0 0.14510 0.10838 0.36461 0.03681 0 0.49020 0 0 0 1 0"
+            />
+          </filter>
+          <filter id="red" color-interpolation-filters="sRGB">
+            <feColorMatrix
+              type="matrix"
+              values="0.12339 0.41510 0.04190 0 0.41961 0.09004 0.30291 0.03058 0 0.02745 0.05002 0.16828 0.01699 0 0.10196 0 0 0 1 0"
+            />
+          </filter>
+          <filter id="pink" color-interpolation-filters="sRGB">
+            <feColorMatrix
+              type="matrix"
+              values="0.12006 0.40388 0.04077 0 0.43529 0.14590 0.49082 0.04955 0 0.07059 0.13756 0.46278 0.04672 0 0.29412 0 0 0 1 0"
+            />
+          </filter>
+          <filter id="silver" color-interpolation-filters="sRGB">
+            <feColorMatrix
+              type="matrix"
+              values="0.18008 0.60582 0.06116 0 0.12549 0.17341 0.58338 0.05889 0 0.13333 0.15507 0.52168 0.05266 0 0.14510 0 0 0 1 0"
+            />
+          </filter>
+          <filter id="amber" color-interpolation-filters="sRGB">
+            <feColorMatrix
+              type="matrix"
+              values="0.15507 0.52168 0.05266 0 0.24314 0.14924 0.50204 0.05068 0 0.12941 0.06670 0.22438 0.02265 0 0.09804 0 0 0 1 0"
+            />
+          </filter>
+          <image
+            id="photo-bernhardt"
+            href="../assets/bernhardt.jpg"
+            width="960"
+            height="1272"
+          />
+          <image
+            id="photo-herschel"
+            href="../assets/herschel.jpg"
+            width="960"
+            height="1375"
+          />
+          <image
+            id="photo-thompson"
+            href="../assets/thompson.jpg"
+            width="960"
+            height="1248"
+          />
+          <pattern id="scan" width="5" height="5" patternUnits="userSpaceOnUse">
+            <path
+              d="M0 1H5"
+              stroke="#10100e"
+              stroke-opacity=".18"
+              stroke-width="1"
+            />
+          </pattern>
+          <clipPath id="head">
+            <path
+              d="M490 121 C330 84 214 175 211 343 L177 465 Q164 522 214 553 L229 725 Q245 855 379 925 L392 996 L649 996 L627 903 Q764 812 778 660 L803 463 Q810 414 774 379 C798 198 670 91 490 121Z"
+            />
+          </clipPath>
+        </defs>
+        <rect width="1000" height="1100" fill="#eee9dd" />
+        <g class="features">
+          <g
+            data-feature="skin"
+            tabindex="0"
+            role="button"
+            aria-label="Move skin. Use arrow keys; Escape resets."
+            transform="translate(0 0)"
+          >
+            <title>skin: draggable photograph fragment</title>
+            <g transform="translate(241 277) rotate(0 269.5 271.0)">
+              <defs>
+                <clipPath id="06-segments-skin">
+                  <path
+                    d="M257 0Q36 -18 0 127L37 333Q112 497 267 542Q437 485 510 333L539 127Q483 -18 257 0Z"
+                  />
+                </clipPath>
+              </defs>
+              <g clip-path="url(#06-segments-skin)">
+                <svg
+                  x="0"
+                  y="0"
+                  width="539"
+                  height="542"
+                  viewBox="304 311 570 838"
+                  preserveAspectRatio="none"
+                  overflow="hidden"
+                  opacity="1"
+                >
+                  <use href="#photo-herschel" filter="url(#silver)" />
+                </svg>
+                <rect
+                  width="539"
+                  height="542"
+                  fill="url(#scan)"
+                  pointer-events="none"
+                />
+              </g>
+            </g>
+          </g>
+          <g
+            data-feature="hair"
+            tabindex="0"
+            role="button"
+            aria-label="Move hair. Use arrow keys; Escape resets."
+            transform="translate(0 0)"
+          >
+            <title>hair: draggable photograph fragment</title>
+            <g transform="translate(220 116) rotate(-5 272.5 117.0)">
+              <defs>
+                <clipPath id="06-segments-hair">
+                  <path
+                    d="M0 219Q-17 18 248 0Q512 -11 545 173L463 234L361 127L191 134L45 227Z"
+                  />
+                </clipPath>
+              </defs>
+              <g clip-path="url(#06-segments-hair)">
+                <svg
+                  x="0"
+                  y="0"
+                  width="545"
+                  height="234"
+                  viewBox="280 130 520 390"
+                  preserveAspectRatio="none"
+                  overflow="hidden"
+                  opacity="1"
+                >
+                  <use href="#photo-bernhardt" filter="url(#blue)" />
+                </svg>
+                <rect
+                  width="545"
+                  height="234"
+                  fill="url(#scan)"
+                  pointer-events="none"
+                />
+              </g>
+            </g>
+          </g>
+          <g
+            data-feature="left-ear"
+            tabindex="0"
+            role="button"
+            aria-label="Move left ear. Use arrow keys; Escape resets."
+            transform="translate(0 0)"
+          >
+            <title>left ear: draggable photograph fragment</title>
+            <g transform="translate(156 424) rotate(-13 34.5 75.0)">
+              <defs>
+                <clipPath id="06-segments-left-ear">
+                  <ellipse cx="34.5" cy="75.0" rx="34.5" ry="75.0" />
+                </clipPath>
+              </defs>
+              <g clip-path="url(#06-segments-left-ear)">
+                <svg
+                  x="0"
+                  y="0"
+                  width="69"
+                  height="150"
+                  viewBox="531 322 74 111"
+                  preserveAspectRatio="none"
+                  overflow="hidden"
+                  opacity="1"
+                >
+                  <use href="#photo-bernhardt" filter="url(#amber)" />
+                </svg>
+                <rect
+                  width="69"
+                  height="150"
+                  fill="url(#scan)"
+                  pointer-events="none"
+                />
+              </g>
+            </g>
+          </g>
+          <g
+            data-feature="right-ear"
+            tabindex="0"
+            role="button"
+            aria-label="Move right ear. Use arrow keys; Escape resets."
+            transform="translate(0 0)"
+          >
+            <title>right ear: draggable photograph fragment</title>
+            <g transform="translate(792 436) rotate(12 36.5 71.5)">
+              <defs>
+                <clipPath id="06-segments-right-ear">
+                  <ellipse cx="36.5" cy="71.5" rx="36.5" ry="71.5" />
+                </clipPath>
+              </defs>
+              <g clip-path="url(#06-segments-right-ear)">
+                <svg
+                  x="0"
+                  y="0"
+                  width="73"
+                  height="143"
+                  viewBox="531 322 74 111"
+                  preserveAspectRatio="none"
+                  overflow="hidden"
+                  opacity="1"
+                >
+                  <use href="#photo-bernhardt" filter="url(#pink)" />
+                </svg>
+                <rect
+                  width="73"
+                  height="143"
+                  fill="url(#scan)"
+                  pointer-events="none"
+                />
+              </g>
+            </g>
+          </g>
+          <g
+            data-feature="left-brow"
+            tabindex="0"
+            role="button"
+            aria-label="Move left brow. Use arrow keys; Escape resets."
+            transform="translate(0 0)"
+          >
+            <title>left brow: draggable photograph fragment</title>
+            <g transform="translate(300 331) rotate(-7 84.5 21.0)">
+              <defs>
+                <clipPath id="06-segments-left-brow">
+                  <path
+                    d="M18.59 0 L169 3.78 L155.48000000000002 42 L0 37.800000000000004Z"
+                  />
+                </clipPath>
+              </defs>
+              <g clip-path="url(#06-segments-left-brow)">
+                <svg
+                  x="0"
+                  y="0"
+                  width="169"
+                  height="42"
+                  viewBox="326 282 216 65"
+                  preserveAspectRatio="none"
+                  overflow="hidden"
+                  opacity="1"
+                >
+                  <use href="#photo-thompson" filter="url(#pink)" />
+                </svg>
+                <rect
+                  width="169"
+                  height="42"
+                  fill="url(#scan)"
+                  pointer-events="none"
+                />
+              </g>
+            </g>
+          </g>
+          <g
+            data-feature="right-brow"
+            tabindex="0"
+            role="button"
+            aria-label="Move right brow. Use arrow keys; Escape resets."
+            transform="translate(0 0)"
+          >
+            <title>right brow: draggable photograph fragment</title>
+            <g transform="translate(567 320) rotate(8 79.0 23.0)">
+              <defs>
+                <clipPath id="06-segments-right-brow">
+                  <path d="M17.38 0 L158 4.14 L145.36 46 L0 41.4Z" />
+                </clipPath>
+              </defs>
+              <g clip-path="url(#06-segments-right-brow)">
+                <svg
+                  x="0"
+                  y="0"
+                  width="158"
+                  height="46"
+                  viewBox="326 282 216 65"
+                  preserveAspectRatio="none"
+                  overflow="hidden"
+                  opacity="1"
+                >
+                  <use href="#photo-thompson" filter="url(#silver)" />
+                </svg>
+                <rect
+                  width="158"
+                  height="46"
+                  fill="url(#scan)"
+                  pointer-events="none"
+                />
+              </g>
+            </g>
+          </g>
+          <g
+            data-feature="left-eye"
+            tabindex="0"
+            role="button"
+            aria-label="Move left eye. Use arrow keys; Escape resets."
+            transform="translate(0 0)"
+          >
+            <title>left eye: draggable photograph fragment</title>
+            <g transform="translate(288 394) rotate(-5 84.0 62.5)">
+              <defs>
+                <clipPath id="06-segments-left-eye">
+                  <ellipse cx="84.0" cy="62.5" rx="84.0" ry="62.5" />
+                </clipPath>
+              </defs>
+              <g clip-path="url(#06-segments-left-eye)">
+                <svg
+                  x="0"
+                  y="0"
+                  width="168"
+                  height="125"
+                  viewBox="596 653 151 132"
+                  preserveAspectRatio="none"
+                  overflow="hidden"
+                  opacity="1"
+                >
+                  <use href="#photo-herschel" filter="url(#blue)" />
+                </svg>
+                <rect
+                  width="168"
+                  height="125"
+                  fill="url(#scan)"
+                  pointer-events="none"
+                />
+              </g>
+            </g>
+          </g>
+          <g
+            data-feature="right-eye"
+            tabindex="0"
+            role="button"
+            aria-label="Move right eye. Use arrow keys; Escape resets."
+            transform="translate(0 0)"
+          >
+            <title>right eye: draggable photograph fragment</title>
+            <g transform="translate(584 389) rotate(7 87.5 58.0)">
+              <defs>
+                <clipPath id="06-segments-right-eye">
+                  <ellipse cx="87.5" cy="58.0" rx="87.5" ry="58.0" />
+                </clipPath>
+              </defs>
+              <g clip-path="url(#06-segments-right-eye)">
+                <svg
+                  x="0"
+                  y="0"
+                  width="175"
+                  height="116"
+                  viewBox="400 275 94 66"
+                  preserveAspectRatio="none"
+                  overflow="hidden"
+                  opacity="1"
+                >
+                  <use href="#photo-bernhardt" filter="url(#green)" />
+                </svg>
+                <rect
+                  width="175"
+                  height="116"
+                  fill="url(#scan)"
+                  pointer-events="none"
+                />
+              </g>
+            </g>
+          </g>
+          <g
+            data-feature="nose"
+            tabindex="0"
+            role="button"
+            aria-label="Move nose. Use arrow keys; Escape resets."
+            transform="translate(0 0)"
+          >
+            <title>nose: draggable photograph fragment</title>
+            <g transform="translate(464 451) rotate(5 50.5 96.5)">
+              <defs>
+                <clipPath id="06-segments-nose">
+                  <path d="M39 0L71 0L101 168L51 193L0 168Z" />
+                </clipPath>
+              </defs>
+              <g clip-path="url(#06-segments-nose)">
+                <svg
+                  x="0"
+                  y="0"
+                  width="101"
+                  height="193"
+                  viewBox="369 347 103 116"
+                  preserveAspectRatio="none"
+                  overflow="hidden"
+                  opacity="1"
+                >
+                  <use href="#photo-thompson" filter="url(#amber)" />
+                </svg>
+                <rect
+                  width="101"
+                  height="193"
+                  fill="url(#scan)"
+                  pointer-events="none"
+                />
+              </g>
+            </g>
+          </g>
+          <g
+            data-feature="upper-lip"
+            tabindex="0"
+            role="button"
+            aria-label="Move upper lip. Use arrow keys; Escape resets."
+            transform="translate(0 0)"
+          >
+            <title>upper lip: draggable photograph fragment</title>
+            <g transform="translate(394 678) rotate(-4 111.0 33.0)">
+              <defs>
+                <clipPath id="06-segments-upper-lip">
+                  <path d="M0 54L65 4L108 16L152 0L222 48L165 66L60 64Z" />
+                </clipPath>
+              </defs>
+              <g clip-path="url(#06-segments-upper-lip)">
+                <svg
+                  x="0"
+                  y="0"
+                  width="222"
+                  height="66"
+                  viewBox="370 444 151 82"
+                  preserveAspectRatio="none"
+                  overflow="hidden"
+                  opacity="1"
+                >
+                  <use href="#photo-thompson" filter="url(#pink)" />
+                </svg>
+                <rect
+                  width="222"
+                  height="66"
+                  fill="url(#scan)"
+                  pointer-events="none"
+                />
+              </g>
+            </g>
+          </g>
+          <g
+            data-feature="mouth"
+            tabindex="0"
+            role="button"
+            aria-label="Move mouth. Use arrow keys; Escape resets."
+            transform="translate(0 0)"
+          >
+            <title>mouth: draggable photograph fragment</title>
+            <g transform="translate(420 745) rotate(2 89.0 30.0)">
+              <defs>
+                <clipPath id="06-segments-mouth">
+                  <ellipse cx="89.0" cy="30.0" rx="89.0" ry="30.0" />
+                </clipPath>
+              </defs>
+              <g clip-path="url(#06-segments-mouth)">
+                <svg
+                  x="0"
+                  y="0"
+                  width="178"
+                  height="60"
+                  viewBox="379 390 90 57"
+                  preserveAspectRatio="none"
+                  overflow="hidden"
+                  opacity="1"
+                >
+                  <use href="#photo-bernhardt" filter="url(#silver)" />
+                </svg>
+                <rect
+                  width="178"
+                  height="60"
+                  fill="url(#scan)"
+                  pointer-events="none"
+                />
+              </g>
+            </g>
+          </g>
+          <g
+            data-feature="lower-lip"
+            tabindex="0"
+            role="button"
+            aria-label="Move lower lip. Use arrow keys; Escape resets."
+            transform="translate(0 0)"
+          >
+            <title>lower lip: draggable photograph fragment</title>
+            <g transform="translate(417 813) rotate(4 102.0 32.0)">
+              <defs>
+                <clipPath id="06-segments-lower-lip">
+                  <path d="M0 0L100 13L204 0L169 48L102 64L37 45Z" />
+                </clipPath>
+              </defs>
+              <g clip-path="url(#06-segments-lower-lip)">
+                <svg
+                  x="0"
+                  y="0"
+                  width="204"
+                  height="64"
+                  viewBox="478 890 224 133"
+                  preserveAspectRatio="none"
+                  overflow="hidden"
+                  opacity="1"
+                >
+                  <use href="#photo-herschel" filter="url(#red)" />
+                </svg>
+                <rect
+                  width="204"
+                  height="64"
+                  fill="url(#scan)"
+                  pointer-events="none"
+                />
+              </g>
+            </g>
+          </g>
+          <g
+            data-feature="neck"
+            tabindex="0"
+            role="button"
+            aria-label="Move neck. Use arrow keys; Escape resets."
+            transform="translate(0 0)"
+          >
+            <title>neck: draggable photograph fragment</title>
+            <g transform="translate(415 916) rotate(-4 94.0 52.5)">
+              <defs>
+                <clipPath id="06-segments-neck">
+                  <path d="M20.68 0 L188 9.45 L172.96 105 L0 94.5Z" />
+                </clipPath>
+              </defs>
+              <g clip-path="url(#06-segments-neck)">
+                <svg
+                  x="0"
+                  y="0"
+                  width="188"
+                  height="105"
+                  viewBox="724 499 141 188"
+                  preserveAspectRatio="none"
+                  overflow="hidden"
+                  opacity="1"
+                >
+                  <use href="#photo-herschel" filter="url(#silver)" />
+                </svg>
+                <rect
+                  width="188"
+                  height="105"
+                  fill="url(#scan)"
+                  pointer-events="none"
+                />
+              </g>
+            </g>
+          </g>
+          <g
+            data-feature="cloth"
+            tabindex="0"
+            role="button"
+            aria-label="Move cloth. Use arrow keys; Escape resets."
+            transform="translate(0 0)"
+          >
+            <title>cloth: draggable photograph fragment</title>
+            <g transform="translate(277 1028) rotate(0 226.0 30.0)">
+              <defs>
+                <clipPath id="06-segments-cloth">
+                  <path d="M0 60L52 3L387 0L452 60Z" />
+                </clipPath>
+              </defs>
+              <g clip-path="url(#06-segments-cloth)">
+                <svg
+                  x="0"
+                  y="0"
+                  width="452"
+                  height="60"
+                  viewBox="280 710 550 340"
+                  preserveAspectRatio="none"
+                  overflow="hidden"
+                  opacity="1"
+                >
+                  <use href="#photo-bernhardt" filter="url(#blue)" />
+                </svg>
+                <rect
+                  width="452"
+                  height="60"
+                  fill="url(#scan)"
+                  pointer-events="none"
+                />
+              </g>
+            </g>
+          </g>
+        </g>
+      </svg>
+    </main>
+    <p class="sr-only" role="status" aria-live="polite"></p>
+    <script type="application/json" id="composition">
+      {
+        "nodes": [],
+        "attachments": {
+          "skin": [],
+          "hair": [],
+          "left-ear": [],
+          "right-ear": [],
+          "left-brow": [],
+          "right-brow": [],
+          "left-eye": [],
+          "right-eye": [],
+          "nose": [],
+          "upper-lip": [],
+          "mouth": [],
+          "lower-lip": [],
+          "neck": [],
+          "cloth": []
+        },
+        "bounds": {
+          "skin": { "x": 241, "y": 277, "w": 539, "h": 542 },
+          "hair": { "x": 220, "y": 116, "w": 545, "h": 234 },
+          "left-ear": { "x": 156, "y": 424, "w": 69, "h": 150 },
+          "right-ear": { "x": 792, "y": 436, "w": 73, "h": 143 },
+          "left-brow": { "x": 300, "y": 331, "w": 169, "h": 42 },
+          "right-brow": { "x": 567, "y": 320, "w": 158, "h": 46 },
+          "left-eye": { "x": 288, "y": 394, "w": 168, "h": 125 },
+          "right-eye": { "x": 584, "y": 389, "w": 175, "h": 116 },
+          "nose": { "x": 464, "y": 451, "w": 101, "h": 193 },
+          "upper-lip": { "x": 394, "y": 678, "w": 222, "h": 66 },
+          "mouth": { "x": 420, "y": 745, "w": 178, "h": 60 },
+          "lower-lip": { "x": 417, "y": 813, "w": 204, "h": 64 },
+          "neck": { "x": 415, "y": 916, "w": 188, "h": 105 },
+          "cloth": { "x": 277, "y": 1028, "w": 452, "h": 60 }
+        }
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,1626 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>03 / No single person / Six borrowed faces</title>
+    <meta
+      name="description"
+      content="A draggable photographic face collage influenced by Tony Oursler and computational facial structures."
+    />
+    <link rel="stylesheet" href="art.css" />
+    <script src="drag.js" defer></script>
+  </head>
+  <body style="--canvas: #111914">
+    <main aria-label="03 / No single person">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        class="artwork"
+        viewBox="0 0 1000 1100"
+        role="group"
+        aria-labelledby="art-title art-desc"
+      >
+        <title id="art-title">03 / No single person</title>
+        <desc id="art-desc">
+          Original collage layout influenced by Tony Oursler’s projected facial
+          fragments and by landmarks-106. Found photographs by Julia Margaret
+          Cameron, Nadar and Dorothea Lange. Drag facial fragments; arrow keys
+          move the focused fragment; Escape restores the composition. This
+          artwork does not run face recognition.
+        </desc>
+        <defs>
+          <filter id="green" color-interpolation-filters="sRGB">
+            <feColorMatrix
+              type="matrix"
+              values="0.13256 0.44595 0.04502 0 0.03137 0.18092 0.60862 0.06144 0 0.13725 0.01251 0.04207 0.00425 0 0.09020 0 0 0 1 0"
+            />
+          </filter>
+          <filter id="blue" color-interpolation-filters="sRGB">
+            <feColorMatrix
+              type="matrix"
+              values="0.12923 0.43473 0.04389 0 0.03529 0.15174 0.51046 0.05153 0 0.14510 0.10838 0.36461 0.03681 0 0.49020 0 0 0 1 0"
+            />
+          </filter>
+          <filter id="red" color-interpolation-filters="sRGB">
+            <feColorMatrix
+              type="matrix"
+              values="0.12339 0.41510 0.04190 0 0.41961 0.09004 0.30291 0.03058 0 0.02745 0.05002 0.16828 0.01699 0 0.10196 0 0 0 1 0"
+            />
+          </filter>
+          <filter id="pink" color-interpolation-filters="sRGB">
+            <feColorMatrix
+              type="matrix"
+              values="0.12006 0.40388 0.04077 0 0.43529 0.14590 0.49082 0.04955 0 0.07059 0.13756 0.46278 0.04672 0 0.29412 0 0 0 1 0"
+            />
+          </filter>
+          <filter id="silver" color-interpolation-filters="sRGB">
+            <feColorMatrix
+              type="matrix"
+              values="0.18008 0.60582 0.06116 0 0.12549 0.17341 0.58338 0.05889 0 0.13333 0.15507 0.52168 0.05266 0 0.14510 0 0 0 1 0"
+            />
+          </filter>
+          <filter id="amber" color-interpolation-filters="sRGB">
+            <feColorMatrix
+              type="matrix"
+              values="0.15507 0.52168 0.05266 0 0.24314 0.14924 0.50204 0.05068 0 0.12941 0.06670 0.22438 0.02265 0 0.09804 0 0 0 1 0"
+            />
+          </filter>
+          <image
+            id="photo-bernhardt"
+            href="../assets/bernhardt.jpg"
+            width="960"
+            height="1272"
+          />
+          <image
+            id="photo-herschel"
+            href="../assets/herschel.jpg"
+            width="960"
+            height="1375"
+          />
+          <image
+            id="photo-thompson"
+            href="../assets/thompson.jpg"
+            width="960"
+            height="1248"
+          />
+          <pattern id="scan" width="5" height="5" patternUnits="userSpaceOnUse">
+            <path
+              d="M0 1H5"
+              stroke="#10100e"
+              stroke-opacity=".18"
+              stroke-width="1"
+            />
+          </pattern>
+          <clipPath id="head">
+            <path
+              d="M490 121 C330 84 214 175 211 343 L177 465 Q164 522 214 553 L229 725 Q245 855 379 925 L392 996 L649 996 L627 903 Q764 812 778 660 L803 463 Q810 414 774 379 C798 198 670 91 490 121Z"
+            />
+          </clipPath>
+        </defs>
+        <rect width="1000" height="1100" fill="#111914" />
+        <g class="features">
+          <g
+            data-feature="left-eye"
+            tabindex="0"
+            role="button"
+            aria-label="Move left eye. Use arrow keys; Escape resets."
+            transform="translate(0 0)"
+          >
+            <title>left eye: draggable photograph fragment</title>
+            <g
+              transform="translate(216.25439999999998 274.9432) rotate(-10 116.5 68.5)"
+            >
+              <defs>
+                <clipPath id="03-scatter-left-eye">
+                  <path d="M25.63 0 L233 12.33 L214.36 137 L0 123.3Z" />
+                </clipPath>
+              </defs>
+              <g clip-path="url(#03-scatter-left-eye)">
+                <svg
+                  x="0"
+                  y="0"
+                  width="233"
+                  height="137"
+                  viewBox="316 308 103 80"
+                  preserveAspectRatio="none"
+                  overflow="hidden"
+                  opacity="1"
+                >
+                  <use href="#photo-thompson" filter="url(#green)" />
+                </svg>
+                <rect
+                  width="233"
+                  height="137"
+                  fill="url(#scan)"
+                  pointer-events="none"
+                />
+              </g>
+            </g>
+          </g>
+          <g
+            data-feature="right-eye"
+            tabindex="0"
+            role="button"
+            aria-label="Move right eye. Use arrow keys; Escape resets."
+            transform="translate(0 0)"
+          >
+            <title>right eye: draggable photograph fragment</title>
+            <g
+              transform="translate(526.9014 297.38009999999997) rotate(8 134.5 47.5)"
+            >
+              <defs>
+                <clipPath id="03-scatter-right-eye">
+                  <rect width="269" height="95" />
+                </clipPath>
+              </defs>
+              <g clip-path="url(#03-scatter-right-eye)">
+                <svg
+                  x="0"
+                  y="0"
+                  width="269"
+                  height="95"
+                  viewBox="400 275 94 66"
+                  preserveAspectRatio="none"
+                  overflow="hidden"
+                  opacity="1"
+                >
+                  <use href="#photo-bernhardt" filter="url(#silver)" />
+                </svg>
+                <rect
+                  width="269"
+                  height="95"
+                  fill="url(#scan)"
+                  pointer-events="none"
+                />
+              </g>
+            </g>
+          </g>
+          <g
+            data-feature="nose"
+            tabindex="0"
+            role="button"
+            aria-label="Move nose. Use arrow keys; Escape resets."
+            transform="translate(0 0)"
+          >
+            <title>nose: draggable photograph fragment</title>
+            <g
+              transform="translate(453.24213333333336 394.56253333333336) rotate(9 49.0 106.5)"
+            >
+              <defs>
+                <clipPath id="03-scatter-nose">
+                  <path
+                    d="M10.78 0 L98 19.169999999999998 L90.16000000000001 213 L0 191.70000000000002Z"
+                  />
+                </clipPath>
+              </defs>
+              <g clip-path="url(#03-scatter-nose)">
+                <svg
+                  x="0"
+                  y="0"
+                  width="98"
+                  height="213"
+                  viewBox="532 718 142 212"
+                  preserveAspectRatio="none"
+                  overflow="hidden"
+                  opacity="1"
+                >
+                  <use href="#photo-herschel" filter="url(#silver)" />
+                </svg>
+                <rect
+                  width="98"
+                  height="213"
+                  fill="url(#scan)"
+                  pointer-events="none"
+                />
+              </g>
+            </g>
+          </g>
+          <g
+            data-feature="upper-mouth"
+            tabindex="0"
+            role="button"
+            aria-label="Move upper mouth. Use arrow keys; Escape resets."
+            transform="translate(0 0)"
+          >
+            <title>upper mouth: draggable photograph fragment</title>
+            <g
+              transform="translate(373.49760000000003 653.3415) rotate(-8 127.5 42.5)"
+            >
+              <defs>
+                <clipPath id="03-scatter-upper-mouth">
+                  <rect width="255" height="85" />
+                </clipPath>
+              </defs>
+              <g clip-path="url(#03-scatter-upper-mouth)">
+                <svg
+                  x="0"
+                  y="0"
+                  width="255"
+                  height="85"
+                  viewBox="379 390 90 57"
+                  preserveAspectRatio="none"
+                  overflow="hidden"
+                  opacity="1"
+                >
+                  <use href="#photo-bernhardt" filter="url(#pink)" />
+                </svg>
+                <rect
+                  width="255"
+                  height="85"
+                  fill="url(#scan)"
+                  pointer-events="none"
+                />
+              </g>
+            </g>
+          </g>
+          <g
+            data-feature="lower-mouth"
+            tabindex="0"
+            role="button"
+            aria-label="Move lower mouth. Use arrow keys; Escape resets."
+            transform="translate(0 0)"
+          >
+            <title>lower mouth: draggable photograph fragment</title>
+            <g
+              transform="translate(402.24440000000004 737.4026) rotate(12 99.5 59.5)"
+            >
+              <defs>
+                <clipPath id="03-scatter-lower-mouth">
+                  <path
+                    d="M21.89 0 L199 10.709999999999999 L183.08 119 L0 107.10000000000001Z"
+                  />
+                </clipPath>
+              </defs>
+              <g clip-path="url(#03-scatter-lower-mouth)">
+                <svg
+                  x="0"
+                  y="0"
+                  width="199"
+                  height="119"
+                  viewBox="370 444 151 82"
+                  preserveAspectRatio="none"
+                  overflow="hidden"
+                  opacity="1"
+                >
+                  <use href="#photo-thompson" filter="url(#silver)" />
+                </svg>
+                <rect
+                  width="199"
+                  height="119"
+                  fill="url(#scan)"
+                  pointer-events="none"
+                />
+              </g>
+            </g>
+          </g>
+          <g
+            data-feature="left-brow"
+            tabindex="0"
+            role="button"
+            aria-label="Move left brow. Use arrow keys; Escape resets."
+            transform="translate(0 0)"
+          >
+            <title>left brow: draggable photograph fragment</title>
+            <g
+              transform="translate(248.87855555555558 210.99099999999999) rotate(-8 81.0 21.0)"
+            >
+              <defs>
+                <clipPath id="03-scatter-left-brow">
+                  <path
+                    d="M17.82 0 L162 3.78 L149.04000000000002 42 L0 37.800000000000004Z"
+                  />
+                </clipPath>
+              </defs>
+              <g clip-path="url(#03-scatter-left-brow)">
+                <svg
+                  x="0"
+                  y="0"
+                  width="162"
+                  height="42"
+                  viewBox="326 282 216 65"
+                  preserveAspectRatio="none"
+                  overflow="hidden"
+                  opacity="1"
+                >
+                  <use href="#photo-thompson" filter="url(#silver)" />
+                </svg>
+                <rect
+                  width="162"
+                  height="42"
+                  fill="url(#scan)"
+                  pointer-events="none"
+                />
+              </g>
+            </g>
+          </g>
+          <g
+            data-feature="right-brow"
+            tabindex="0"
+            role="button"
+            aria-label="Move right brow. Use arrow keys; Escape resets."
+            transform="translate(0 0)"
+          >
+            <title>right brow: draggable photograph fragment</title>
+            <g
+              transform="translate(614.866 209.17533333333333) rotate(5 57.5 30.0)"
+            >
+              <defs>
+                <clipPath id="03-scatter-right-brow">
+                  <path
+                    d="M12.65 0 L115 5.3999999999999995 L105.80000000000001 60 L0 54.0Z"
+                  />
+                </clipPath>
+              </defs>
+              <g clip-path="url(#03-scatter-right-brow)">
+                <svg
+                  x="0"
+                  y="0"
+                  width="115"
+                  height="60"
+                  viewBox="326 282 216 65"
+                  preserveAspectRatio="none"
+                  overflow="hidden"
+                  opacity="1"
+                >
+                  <use href="#photo-thompson" filter="url(#green)" />
+                </svg>
+                <rect
+                  width="115"
+                  height="60"
+                  fill="url(#scan)"
+                  pointer-events="none"
+                />
+              </g>
+            </g>
+          </g>
+          <g
+            data-feature="left-cheek"
+            tabindex="0"
+            role="button"
+            aria-label="Move left cheek. Use arrow keys; Escape resets."
+            transform="translate(0 0)"
+          >
+            <title>left cheek: draggable photograph fragment</title>
+            <g transform="translate(174 517) rotate(-9 54.0 71.5)">
+              <defs>
+                <clipPath id="03-scatter-left-cheek">
+                  <path
+                    d="M11.88 0 L108 12.87 L99.36 143 L0 128.70000000000002Z"
+                  />
+                </clipPath>
+              </defs>
+              <g clip-path="url(#03-scatter-left-cheek)">
+                <svg
+                  x="0"
+                  y="0"
+                  width="108"
+                  height="143"
+                  viewBox="724 499 141 188"
+                  preserveAspectRatio="none"
+                  overflow="hidden"
+                  opacity="1"
+                >
+                  <use href="#photo-herschel" filter="url(#blue)" />
+                </svg>
+                <rect
+                  width="108"
+                  height="143"
+                  fill="url(#scan)"
+                  pointer-events="none"
+                />
+              </g>
+            </g>
+          </g>
+          <g
+            data-feature="right-cheek"
+            tabindex="0"
+            role="button"
+            aria-label="Move right cheek. Use arrow keys; Escape resets."
+            transform="translate(0 0)"
+          >
+            <title>right cheek: draggable photograph fragment</title>
+            <g transform="translate(701 579) rotate(14 49.5 76.5)">
+              <defs>
+                <clipPath id="03-scatter-right-cheek">
+                  <path
+                    d="M10.89 0 L99 13.77 L91.08 153 L0 137.70000000000002Z"
+                  />
+                </clipPath>
+              </defs>
+              <g clip-path="url(#03-scatter-right-cheek)">
+                <svg
+                  x="0"
+                  y="0"
+                  width="99"
+                  height="153"
+                  viewBox="328 191 335 340"
+                  preserveAspectRatio="none"
+                  overflow="hidden"
+                  opacity="1"
+                >
+                  <use href="#photo-bernhardt" filter="url(#silver)" />
+                </svg>
+                <rect
+                  width="99"
+                  height="153"
+                  fill="url(#scan)"
+                  pointer-events="none"
+                />
+              </g>
+            </g>
+          </g>
+          <g
+            data-feature="chin"
+            tabindex="0"
+            role="button"
+            aria-label="Move chin. Use arrow keys; Escape resets."
+            transform="translate(0 0)"
+          >
+            <title>chin: draggable photograph fragment</title>
+            <g transform="translate(408 902) rotate(-3 80.5 24.0)">
+              <defs>
+                <clipPath id="03-scatter-chin">
+                  <path d="M17.71 0 L161 4.32 L148.12 48 L0 43.2Z" />
+                </clipPath>
+              </defs>
+              <g clip-path="url(#03-scatter-chin)">
+                <svg
+                  x="0"
+                  y="0"
+                  width="161"
+                  height="48"
+                  viewBox="478 890 224 133"
+                  preserveAspectRatio="none"
+                  overflow="hidden"
+                  opacity="1"
+                >
+                  <use href="#photo-herschel" filter="url(#green)" />
+                </svg>
+                <rect
+                  width="161"
+                  height="48"
+                  fill="url(#scan)"
+                  pointer-events="none"
+                />
+              </g>
+            </g>
+          </g>
+        </g>
+        <g
+          class="network"
+          fill="none"
+          stroke="#b5d483"
+          opacity="1"
+          aria-hidden="true"
+        >
+          <circle
+            data-node="0"
+            cx="502.989"
+            cy="937.0"
+            r="2.8"
+            stroke="#b5d483"
+            stroke-width="0.8"
+            fill="#b5d483"
+          />
+          <circle
+            data-node="1"
+            cx="169.489"
+            cy="303.57"
+            r="2.8"
+            stroke="#b5d483"
+            stroke-width="0.8"
+            fill="#b5d483"
+          />
+          <circle
+            data-node="2"
+            cx="265.308"
+            cy="705.9"
+            r="2.8"
+            stroke="#b5d483"
+            stroke-width="0.8"
+            fill="#b5d483"
+          />
+          <circle
+            data-node="3"
+            cx="288.951"
+            cy="747.809"
+            r="2.8"
+            stroke="#b5d483"
+            stroke-width="0.8"
+            fill="#b5d483"
+          />
+          <circle
+            data-node="4"
+            cx="315.084"
+            cy="788.521"
+            r="2.8"
+            stroke="#b5d483"
+            stroke-width="0.8"
+            fill="#b5d483"
+          />
+          <circle
+            data-node="5"
+            cx="338.728"
+            cy="828.036"
+            r="2.8"
+            stroke="#b5d483"
+            stroke-width="0.8"
+            fill="#b5d483"
+          />
+          <circle
+            data-node="6"
+            cx="368.593"
+            cy="867.55"
+            r="2.8"
+            stroke="#b5d483"
+            stroke-width="0.8"
+            fill="#b5d483"
+          />
+          <circle
+            data-node="7"
+            cx="403.437"
+            cy="902.275"
+            r="2.8"
+            stroke="#b5d483"
+            stroke-width="0.8"
+            fill="#b5d483"
+          />
+          <circle
+            data-node="8"
+            cx="446.991"
+            cy="928.618"
+            r="2.8"
+            stroke="#b5d483"
+            stroke-width="0.8"
+            fill="#b5d483"
+          />
+          <circle
+            data-node="9"
+            cx="167.0"
+            cy="350.269"
+            r="2.8"
+            stroke="#b5d483"
+            stroke-width="0.8"
+            fill="#b5d483"
+          />
+          <circle
+            data-node="10"
+            cx="168.244"
+            cy="396.968"
+            r="2.8"
+            stroke="#b5d483"
+            stroke-width="0.8"
+            fill="#b5d483"
+          />
+          <circle
+            data-node="11"
+            cx="171.978"
+            cy="443.667"
+            r="2.8"
+            stroke="#b5d483"
+            stroke-width="0.8"
+            fill="#b5d483"
+          />
+          <circle
+            data-node="12"
+            cx="180.688"
+            cy="489.168"
+            r="2.8"
+            stroke="#b5d483"
+            stroke-width="0.8"
+            fill="#b5d483"
+          />
+          <circle
+            data-node="13"
+            cx="190.644"
+            cy="534.67"
+            r="2.8"
+            stroke="#b5d483"
+            stroke-width="0.8"
+            fill="#b5d483"
+          />
+          <circle
+            data-node="14"
+            cx="205.576"
+            cy="581.369"
+            r="2.8"
+            stroke="#b5d483"
+            stroke-width="0.8"
+            fill="#b5d483"
+          />
+          <circle
+            data-node="15"
+            cx="222.998"
+            cy="622.081"
+            r="2.8"
+            stroke="#b5d483"
+            stroke-width="0.8"
+            fill="#b5d483"
+          />
+          <circle
+            data-node="16"
+            cx="244.153"
+            cy="666.385"
+            r="2.8"
+            stroke="#b5d483"
+            stroke-width="0.8"
+            fill="#b5d483"
+          />
+          <circle
+            data-node="17"
+            cx="829.022"
+            cy="299.977"
+            r="2.8"
+            stroke="#b5d483"
+            stroke-width="0.8"
+            fill="#b5d483"
+          />
+          <circle
+            data-node="18"
+            cx="743.159"
+            cy="708.294"
+            r="2.8"
+            stroke="#b5d483"
+            stroke-width="0.8"
+            fill="#b5d483"
+          />
+          <circle
+            data-node="19"
+            cx="719.515"
+            cy="750.204"
+            r="2.8"
+            stroke="#b5d483"
+            stroke-width="0.8"
+            fill="#b5d483"
+          />
+          <circle
+            data-node="20"
+            cx="695.871"
+            cy="790.916"
+            r="2.8"
+            stroke="#b5d483"
+            stroke-width="0.8"
+            fill="#b5d483"
+          />
+          <circle
+            data-node="21"
+            cx="668.494"
+            cy="829.233"
+            r="2.8"
+            stroke="#b5d483"
+            stroke-width="0.8"
+            fill="#b5d483"
+          />
+          <circle
+            data-node="22"
+            cx="637.384"
+            cy="867.55"
+            r="2.8"
+            stroke="#b5d483"
+            stroke-width="0.8"
+            fill="#b5d483"
+          />
+          <circle
+            data-node="23"
+            cx="602.541"
+            cy="903.472"
+            r="2.8"
+            stroke="#b5d483"
+            stroke-width="0.8"
+            fill="#b5d483"
+          />
+          <circle
+            data-node="24"
+            cx="557.743"
+            cy="927.421"
+            r="2.8"
+            stroke="#b5d483"
+            stroke-width="0.8"
+            fill="#b5d483"
+          />
+          <circle
+            data-node="25"
+            cx="834.0"
+            cy="346.676"
+            r="2.8"
+            stroke="#b5d483"
+            stroke-width="0.8"
+            fill="#b5d483"
+          />
+          <circle
+            data-node="26"
+            cx="834.0"
+            cy="395.77"
+            r="2.8"
+            stroke="#b5d483"
+            stroke-width="0.8"
+            fill="#b5d483"
+          />
+          <circle
+            data-node="27"
+            cx="831.511"
+            cy="441.272"
+            r="2.8"
+            stroke="#b5d483"
+            stroke-width="0.8"
+            fill="#b5d483"
+          />
+          <circle
+            data-node="28"
+            cx="825.289"
+            cy="485.576"
+            r="2.8"
+            stroke="#b5d483"
+            stroke-width="0.8"
+            fill="#b5d483"
+          />
+          <circle
+            data-node="29"
+            cx="816.578"
+            cy="532.275"
+            r="2.8"
+            stroke="#b5d483"
+            stroke-width="0.8"
+            fill="#b5d483"
+          />
+          <circle
+            data-node="30"
+            cx="801.646"
+            cy="580.172"
+            r="2.8"
+            stroke="#b5d483"
+            stroke-width="0.8"
+            fill="#b5d483"
+          />
+          <circle
+            data-node="31"
+            cx="785.468"
+            cy="623.278"
+            r="2.8"
+            stroke="#b5d483"
+            stroke-width="0.8"
+            fill="#b5d483"
+          />
+          <circle
+            data-node="32"
+            cx="766.802"
+            cy="666.385"
+            r="2.8"
+            stroke="#b5d483"
+            stroke-width="0.8"
+            fill="#b5d483"
+          />
+          <circle
+            data-node="33"
+            cx="331.261"
+            cy="358.65"
+            r="2.8"
+            stroke="#b5d483"
+            stroke-width="0.8"
+            fill="#b5d483"
+          />
+          <circle
+            data-node="34"
+            cx="333.75"
+            cy="347.874"
+            r="2.8"
+            stroke="#b5d483"
+            stroke-width="0.8"
+            fill="#b5d483"
+          />
+          <circle
+            data-node="35"
+            cx="269.041"
+            cy="340.689"
+            r="2.8"
+            stroke="#b5d483"
+            stroke-width="0.8"
+            fill="#b5d483"
+          />
+          <circle
+            data-node="36"
+            cx="297.662"
+            cy="351.466"
+            r="2.8"
+            stroke="#b5d483"
+            stroke-width="0.8"
+            fill="#b5d483"
+          />
+          <circle
+            data-node="37"
+            cx="364.86"
+            cy="358.65"
+            r="2.8"
+            stroke="#b5d483"
+            stroke-width="0.8"
+            fill="#b5d483"
+          />
+          <circle
+            data-node="38"
+            cx="331.261"
+            cy="338.294"
+            r="2.8"
+            stroke="#b5d483"
+            stroke-width="0.8"
+            fill="#b5d483"
+          />
+          <circle
+            data-node="39"
+            cx="398.459"
+            cy="355.058"
+            r="2.8"
+            stroke="#b5d483"
+            stroke-width="0.8"
+            fill="#b5d483"
+          />
+          <circle
+            data-node="40"
+            cx="332.506"
+            cy="322.728"
+            r="2.8"
+            stroke="#b5d483"
+            stroke-width="0.8"
+            fill="#b5d483"
+          />
+          <circle
+            data-node="41"
+            cx="300.151"
+            cy="327.518"
+            r="2.8"
+            stroke="#b5d483"
+            stroke-width="0.8"
+            fill="#b5d483"
+          />
+          <circle
+            data-node="42"
+            cx="368.593"
+            cy="333.505"
+            r="2.8"
+            stroke="#b5d483"
+            stroke-width="0.8"
+            fill="#b5d483"
+          />
+          <circle
+            data-node="43"
+            cx="219.265"
+            cy="246.094"
+            r="2.8"
+            stroke="#b5d483"
+            stroke-width="0.8"
+            fill="#b5d483"
+          />
+          <circle
+            data-node="44"
+            cx="265.308"
+            cy="243.699"
+            r="2.8"
+            stroke="#b5d483"
+            stroke-width="0.8"
+            fill="#b5d483"
+          />
+          <circle
+            data-node="45"
+            cx="316.328"
+            cy="242.502"
+            r="2.8"
+            stroke="#b5d483"
+            stroke-width="0.8"
+            fill="#b5d483"
+          />
+          <circle
+            data-node="46"
+            cx="419.614"
+            cy="264.055"
+            r="2.8"
+            stroke="#b5d483"
+            stroke-width="0.8"
+            fill="#b5d483"
+          />
+          <circle
+            data-node="47"
+            cx="369.838"
+            cy="248.489"
+            r="2.8"
+            stroke="#b5d483"
+            stroke-width="0.8"
+            fill="#b5d483"
+          />
+          <circle
+            data-node="48"
+            cx="259.086"
+            cy="204.184"
+            r="2.8"
+            stroke="#b5d483"
+            stroke-width="0.8"
+            fill="#b5d483"
+          />
+          <circle
+            data-node="49"
+            cx="316.328"
+            cy="197.0"
+            r="2.8"
+            stroke="#b5d483"
+            stroke-width="0.8"
+            fill="#b5d483"
+          />
+          <circle
+            data-node="50"
+            cx="425.836"
+            cy="232.922"
+            r="2.8"
+            stroke="#b5d483"
+            stroke-width="0.8"
+            fill="#b5d483"
+          />
+          <circle
+            data-node="51"
+            cx="377.304"
+            cy="208.974"
+            r="2.8"
+            stroke="#b5d483"
+            stroke-width="0.8"
+            fill="#b5d483"
+          />
+          <circle
+            data-node="52"
+            cx="397.215"
+            cy="739.427"
+            r="2.8"
+            stroke="#b5d483"
+            stroke-width="0.8"
+            fill="#b5d483"
+          />
+          <circle
+            data-node="53"
+            cx="502.989"
+            cy="856.773"
+            r="2.8"
+            stroke="#b5d483"
+            stroke-width="0.8"
+            fill="#b5d483"
+          />
+          <circle
+            data-node="54"
+            cx="439.524"
+            cy="783.731"
+            r="2.8"
+            stroke="#b5d483"
+            stroke-width="0.8"
+            fill="#b5d483"
+          />
+          <circle
+            data-node="55"
+            cx="410.903"
+            cy="794.508"
+            r="2.8"
+            stroke="#b5d483"
+            stroke-width="0.8"
+            fill="#b5d483"
+          />
+          <circle
+            data-node="56"
+            cx="444.502"
+            cy="838.812"
+            r="2.8"
+            stroke="#b5d483"
+            stroke-width="0.8"
+            fill="#b5d483"
+          />
+          <circle
+            data-node="57"
+            cx="561.476"
+            cy="783.731"
+            r="2.8"
+            stroke="#b5d483"
+            stroke-width="0.8"
+            fill="#b5d483"
+          />
+          <circle
+            data-node="58"
+            cx="592.586"
+            cy="792.113"
+            r="2.8"
+            stroke="#b5d483"
+            stroke-width="0.8"
+            fill="#b5d483"
+          />
+          <circle
+            data-node="59"
+            cx="560.231"
+            cy="838.812"
+            r="2.8"
+            stroke="#b5d483"
+            stroke-width="0.8"
+            fill="#b5d483"
+          />
+          <circle
+            data-node="60"
+            cx="501.744"
+            cy="804.087"
+            r="2.8"
+            stroke="#b5d483"
+            stroke-width="0.8"
+            fill="#b5d483"
+          />
+          <circle
+            data-node="61"
+            cx="606.274"
+            cy="737.032"
+            r="2.8"
+            stroke="#b5d483"
+            stroke-width="0.8"
+            fill="#b5d483"
+          />
+          <circle
+            data-node="62"
+            cx="501.744"
+            cy="695.123"
+            r="2.8"
+            stroke="#b5d483"
+            stroke-width="0.8"
+            fill="#b5d483"
+          />
+          <circle
+            data-node="63"
+            cx="468.146"
+            cy="662.793"
+            r="2.8"
+            stroke="#b5d483"
+            stroke-width="0.8"
+            fill="#b5d483"
+          />
+          <circle
+            data-node="64"
+            cx="420.858"
+            cy="687.939"
+            r="2.8"
+            stroke="#b5d483"
+            stroke-width="0.8"
+            fill="#b5d483"
+          />
+          <circle
+            data-node="65"
+            cx="405.925"
+            cy="739.427"
+            r="2.8"
+            stroke="#b5d483"
+            stroke-width="0.8"
+            fill="#b5d483"
+          />
+          <circle
+            data-node="66"
+            cx="443.257"
+            cy="707.097"
+            r="2.8"
+            stroke="#b5d483"
+            stroke-width="0.8"
+            fill="#b5d483"
+          />
+          <circle
+            data-node="67"
+            cx="534.099"
+            cy="662.793"
+            r="2.8"
+            stroke="#b5d483"
+            stroke-width="0.8"
+            fill="#b5d483"
+          />
+          <circle
+            data-node="68"
+            cx="581.386"
+            cy="687.939"
+            r="2.8"
+            stroke="#b5d483"
+            stroke-width="0.8"
+            fill="#b5d483"
+          />
+          <circle
+            data-node="69"
+            cx="591.341"
+            cy="739.427"
+            r="2.8"
+            stroke="#b5d483"
+            stroke-width="0.8"
+            fill="#b5d483"
+          />
+          <circle
+            data-node="70"
+            cx="561.476"
+            cy="707.097"
+            r="2.8"
+            stroke="#b5d483"
+            stroke-width="0.8"
+            fill="#b5d483"
+          />
+          <circle
+            data-node="71"
+            cx="501.744"
+            cy="668.78"
+            r="2.8"
+            stroke="#b5d483"
+            stroke-width="0.8"
+            fill="#b5d483"
+          />
+          <circle
+            data-node="72"
+            cx="500.5"
+            cy="337.097"
+            r="2.8"
+            stroke="#b5d483"
+            stroke-width="0.8"
+            fill="#b5d483"
+          />
+          <circle
+            data-node="73"
+            cx="501.744"
+            cy="402.955"
+            r="2.8"
+            stroke="#b5d483"
+            stroke-width="0.8"
+            fill="#b5d483"
+          />
+          <circle
+            data-node="74"
+            cx="502.989"
+            cy="468.812"
+            r="2.8"
+            stroke="#b5d483"
+            stroke-width="0.8"
+            fill="#b5d483"
+          />
+          <circle
+            data-node="75"
+            cx="442.013"
+            cy="361.045"
+            r="2.8"
+            stroke="#b5d483"
+            stroke-width="0.8"
+            fill="#b5d483"
+          />
+          <circle
+            data-node="76"
+            cx="418.369"
+            cy="504.735"
+            r="2.8"
+            stroke="#b5d483"
+            stroke-width="0.8"
+            fill="#b5d483"
+          />
+          <circle
+            data-node="77"
+            cx="399.703"
+            cy="558.618"
+            r="2.8"
+            stroke="#b5d483"
+            stroke-width="0.8"
+            fill="#b5d483"
+          />
+          <circle
+            data-node="78"
+            cx="429.569"
+            cy="577.777"
+            r="2.8"
+            stroke="#b5d483"
+            stroke-width="0.8"
+            fill="#b5d483"
+          />
+          <circle
+            data-node="79"
+            cx="465.657"
+            cy="584.961"
+            r="2.8"
+            stroke="#b5d483"
+            stroke-width="0.8"
+            fill="#b5d483"
+          />
+          <circle
+            data-node="80"
+            cx="501.744"
+            cy="596.935"
+            r="2.8"
+            stroke="#b5d483"
+            stroke-width="0.8"
+            fill="#b5d483"
+          />
+          <circle
+            data-node="81"
+            cx="557.743"
+            cy="362.243"
+            r="2.8"
+            stroke="#b5d483"
+            stroke-width="0.8"
+            fill="#b5d483"
+          />
+          <circle
+            data-node="82"
+            cx="585.119"
+            cy="503.537"
+            r="2.8"
+            stroke="#b5d483"
+            stroke-width="0.8"
+            fill="#b5d483"
+          />
+          <circle
+            data-node="83"
+            cx="607.519"
+            cy="558.618"
+            r="2.8"
+            stroke="#b5d483"
+            stroke-width="0.8"
+            fill="#b5d483"
+          />
+          <circle
+            data-node="84"
+            cx="576.409"
+            cy="577.777"
+            r="2.8"
+            stroke="#b5d483"
+            stroke-width="0.8"
+            fill="#b5d483"
+          />
+          <circle
+            data-node="85"
+            cx="541.565"
+            cy="584.961"
+            r="2.8"
+            stroke="#b5d483"
+            stroke-width="0.8"
+            fill="#b5d483"
+          />
+          <circle
+            data-node="86"
+            cx="502.989"
+            cy="535.867"
+            r="2.8"
+            stroke="#b5d483"
+            stroke-width="0.8"
+            fill="#b5d483"
+          />
+          <circle
+            data-node="87"
+            cx="659.784"
+            cy="358.65"
+            r="2.8"
+            stroke="#b5d483"
+            stroke-width="0.8"
+            fill="#b5d483"
+          />
+          <circle
+            data-node="88"
+            cx="659.784"
+            cy="343.084"
+            r="2.8"
+            stroke="#b5d483"
+            stroke-width="0.8"
+            fill="#b5d483"
+          />
+          <circle
+            data-node="89"
+            cx="598.808"
+            cy="358.65"
+            r="2.8"
+            stroke="#b5d483"
+            stroke-width="0.8"
+            fill="#b5d483"
+          />
+          <circle
+            data-node="90"
+            cx="631.162"
+            cy="359.848"
+            r="2.8"
+            stroke="#b5d483"
+            stroke-width="0.8"
+            fill="#b5d483"
+          />
+          <circle
+            data-node="91"
+            cx="695.871"
+            cy="355.058"
+            r="2.8"
+            stroke="#b5d483"
+            stroke-width="0.8"
+            fill="#b5d483"
+          />
+          <circle
+            data-node="92"
+            cx="659.784"
+            cy="346.676"
+            r="2.8"
+            stroke="#b5d483"
+            stroke-width="0.8"
+            fill="#b5d483"
+          />
+          <circle
+            data-node="93"
+            cx="726.981"
+            cy="340.689"
+            r="2.8"
+            stroke="#b5d483"
+            stroke-width="0.8"
+            fill="#b5d483"
+          />
+          <circle
+            data-node="94"
+            cx="661.028"
+            cy="325.123"
+            r="2.8"
+            stroke="#b5d483"
+            stroke-width="0.8"
+            fill="#b5d483"
+          />
+          <circle
+            data-node="95"
+            cx="623.696"
+            cy="333.505"
+            r="2.8"
+            stroke="#b5d483"
+            stroke-width="0.8"
+            fill="#b5d483"
+          />
+          <circle
+            data-node="96"
+            cx="697.116"
+            cy="327.518"
+            r="2.8"
+            stroke="#b5d483"
+            stroke-width="0.8"
+            fill="#b5d483"
+          />
+          <circle
+            data-node="97"
+            cx="582.631"
+            cy="270.042"
+            r="2.8"
+            stroke="#b5d483"
+            stroke-width="0.8"
+            fill="#b5d483"
+          />
+          <circle
+            data-node="98"
+            cx="634.896"
+            cy="255.673"
+            r="2.8"
+            stroke="#b5d483"
+            stroke-width="0.8"
+            fill="#b5d483"
+          />
+          <circle
+            data-node="99"
+            cx="687.16"
+            cy="252.081"
+            r="2.8"
+            stroke="#b5d483"
+            stroke-width="0.8"
+            fill="#b5d483"
+          />
+          <circle
+            data-node="100"
+            cx="731.959"
+            cy="250.883"
+            r="2.8"
+            stroke="#b5d483"
+            stroke-width="0.8"
+            fill="#b5d483"
+          />
+          <circle
+            data-node="101"
+            cx="781.735"
+            cy="252.081"
+            r="2.8"
+            stroke="#b5d483"
+            stroke-width="0.8"
+            fill="#b5d483"
+          />
+          <circle
+            data-node="102"
+            cx="576.409"
+            cy="238.909"
+            r="2.8"
+            stroke="#b5d483"
+            stroke-width="0.8"
+            fill="#b5d483"
+          />
+          <circle
+            data-node="103"
+            cx="626.185"
+            cy="217.356"
+            r="2.8"
+            stroke="#b5d483"
+            stroke-width="0.8"
+            fill="#b5d483"
+          />
+          <circle
+            data-node="104"
+            cx="687.16"
+            cy="202.987"
+            r="2.8"
+            stroke="#b5d483"
+            stroke-width="0.8"
+            fill="#b5d483"
+          />
+          <circle
+            data-node="105"
+            cx="743.159"
+            cy="212.566"
+            r="2.8"
+            stroke="#b5d483"
+            stroke-width="0.8"
+            fill="#b5d483"
+          />
+        </g>
+      </svg>
+    </main>
+    <p class="sr-only" role="status" aria-live="polite"></p>
+    <script type="application/json" id="composition">
+      {
+        "nodes": [
+          { "id": 0, "x": 502.989, "y": 937.0, "group": "contour" },
+          { "id": 1, "x": 169.489, "y": 303.57, "group": "contour" },
+          { "id": 2, "x": 265.308, "y": 705.9, "group": "contour" },
+          { "id": 3, "x": 288.951, "y": 747.809, "group": "contour" },
+          { "id": 4, "x": 315.084, "y": 788.521, "group": "contour" },
+          { "id": 5, "x": 338.728, "y": 828.036, "group": "contour" },
+          { "id": 6, "x": 368.593, "y": 867.55, "group": "contour" },
+          { "id": 7, "x": 403.437, "y": 902.275, "group": "contour" },
+          { "id": 8, "x": 446.991, "y": 928.618, "group": "contour" },
+          { "id": 9, "x": 167.0, "y": 350.269, "group": "contour" },
+          { "id": 10, "x": 168.244, "y": 396.968, "group": "contour" },
+          { "id": 11, "x": 171.978, "y": 443.667, "group": "contour" },
+          { "id": 12, "x": 180.688, "y": 489.168, "group": "contour" },
+          { "id": 13, "x": 190.644, "y": 534.67, "group": "contour" },
+          { "id": 14, "x": 205.576, "y": 581.369, "group": "contour" },
+          { "id": 15, "x": 222.998, "y": 622.081, "group": "contour" },
+          { "id": 16, "x": 244.153, "y": 666.385, "group": "contour" },
+          { "id": 17, "x": 829.022, "y": 299.977, "group": "contour" },
+          { "id": 18, "x": 743.159, "y": 708.294, "group": "contour" },
+          { "id": 19, "x": 719.515, "y": 750.204, "group": "contour" },
+          { "id": 20, "x": 695.871, "y": 790.916, "group": "contour" },
+          { "id": 21, "x": 668.494, "y": 829.233, "group": "contour" },
+          { "id": 22, "x": 637.384, "y": 867.55, "group": "contour" },
+          { "id": 23, "x": 602.541, "y": 903.472, "group": "contour" },
+          { "id": 24, "x": 557.743, "y": 927.421, "group": "contour" },
+          { "id": 25, "x": 834.0, "y": 346.676, "group": "contour" },
+          { "id": 26, "x": 834.0, "y": 395.77, "group": "contour" },
+          { "id": 27, "x": 831.511, "y": 441.272, "group": "contour" },
+          { "id": 28, "x": 825.289, "y": 485.576, "group": "contour" },
+          { "id": 29, "x": 816.578, "y": 532.275, "group": "contour" },
+          { "id": 30, "x": 801.646, "y": 580.172, "group": "contour" },
+          { "id": 31, "x": 785.468, "y": 623.278, "group": "contour" },
+          { "id": 32, "x": 766.802, "y": 666.385, "group": "contour" },
+          { "id": 33, "x": 331.261, "y": 358.65, "group": "eyes" },
+          { "id": 34, "x": 333.75, "y": 347.874, "group": "eyes" },
+          { "id": 35, "x": 269.041, "y": 340.689, "group": "eyes" },
+          { "id": 36, "x": 297.662, "y": 351.466, "group": "eyes" },
+          { "id": 37, "x": 364.86, "y": 358.65, "group": "eyes" },
+          { "id": 38, "x": 331.261, "y": 338.294, "group": "eyes" },
+          { "id": 39, "x": 398.459, "y": 355.058, "group": "eyes" },
+          { "id": 40, "x": 332.506, "y": 322.728, "group": "eyes" },
+          { "id": 41, "x": 300.151, "y": 327.518, "group": "eyes" },
+          { "id": 42, "x": 368.593, "y": 333.505, "group": "eyes" },
+          { "id": 43, "x": 219.265, "y": 246.094, "group": "brows" },
+          { "id": 44, "x": 265.308, "y": 243.699, "group": "brows" },
+          { "id": 45, "x": 316.328, "y": 242.502, "group": "brows" },
+          { "id": 46, "x": 419.614, "y": 264.055, "group": "brows" },
+          { "id": 47, "x": 369.838, "y": 248.489, "group": "brows" },
+          { "id": 48, "x": 259.086, "y": 204.184, "group": "brows" },
+          { "id": 49, "x": 316.328, "y": 197.0, "group": "brows" },
+          { "id": 50, "x": 425.836, "y": 232.922, "group": "brows" },
+          { "id": 51, "x": 377.304, "y": 208.974, "group": "brows" },
+          { "id": 52, "x": 397.215, "y": 739.427, "group": "mouth" },
+          { "id": 53, "x": 502.989, "y": 856.773, "group": "mouth" },
+          { "id": 54, "x": 439.524, "y": 783.731, "group": "mouth" },
+          { "id": 55, "x": 410.903, "y": 794.508, "group": "mouth" },
+          { "id": 56, "x": 444.502, "y": 838.812, "group": "mouth" },
+          { "id": 57, "x": 561.476, "y": 783.731, "group": "mouth" },
+          { "id": 58, "x": 592.586, "y": 792.113, "group": "mouth" },
+          { "id": 59, "x": 560.231, "y": 838.812, "group": "mouth" },
+          { "id": 60, "x": 501.744, "y": 804.087, "group": "mouth" },
+          { "id": 61, "x": 606.274, "y": 737.032, "group": "mouth" },
+          { "id": 62, "x": 501.744, "y": 695.123, "group": "mouth" },
+          { "id": 63, "x": 468.146, "y": 662.793, "group": "mouth" },
+          { "id": 64, "x": 420.858, "y": 687.939, "group": "mouth" },
+          { "id": 65, "x": 405.925, "y": 739.427, "group": "mouth" },
+          { "id": 66, "x": 443.257, "y": 707.097, "group": "mouth" },
+          { "id": 67, "x": 534.099, "y": 662.793, "group": "mouth" },
+          { "id": 68, "x": 581.386, "y": 687.939, "group": "mouth" },
+          { "id": 69, "x": 591.341, "y": 739.427, "group": "mouth" },
+          { "id": 70, "x": 561.476, "y": 707.097, "group": "mouth" },
+          { "id": 71, "x": 501.744, "y": 668.78, "group": "mouth" },
+          { "id": 72, "x": 500.5, "y": 337.097, "group": "nose" },
+          { "id": 73, "x": 501.744, "y": 402.955, "group": "nose" },
+          { "id": 74, "x": 502.989, "y": 468.812, "group": "nose" },
+          { "id": 75, "x": 442.013, "y": 361.045, "group": "nose" },
+          { "id": 76, "x": 418.369, "y": 504.735, "group": "nose" },
+          { "id": 77, "x": 399.703, "y": 558.618, "group": "nose" },
+          { "id": 78, "x": 429.569, "y": 577.777, "group": "nose" },
+          { "id": 79, "x": 465.657, "y": 584.961, "group": "nose" },
+          { "id": 80, "x": 501.744, "y": 596.935, "group": "nose" },
+          { "id": 81, "x": 557.743, "y": 362.243, "group": "nose" },
+          { "id": 82, "x": 585.119, "y": 503.537, "group": "nose" },
+          { "id": 83, "x": 607.519, "y": 558.618, "group": "nose" },
+          { "id": 84, "x": 576.409, "y": 577.777, "group": "nose" },
+          { "id": 85, "x": 541.565, "y": 584.961, "group": "nose" },
+          { "id": 86, "x": 502.989, "y": 535.867, "group": "nose" },
+          { "id": 87, "x": 659.784, "y": 358.65, "group": "eyes" },
+          { "id": 88, "x": 659.784, "y": 343.084, "group": "eyes" },
+          { "id": 89, "x": 598.808, "y": 358.65, "group": "eyes" },
+          { "id": 90, "x": 631.162, "y": 359.848, "group": "eyes" },
+          { "id": 91, "x": 695.871, "y": 355.058, "group": "eyes" },
+          { "id": 92, "x": 659.784, "y": 346.676, "group": "eyes" },
+          { "id": 93, "x": 726.981, "y": 340.689, "group": "eyes" },
+          { "id": 94, "x": 661.028, "y": 325.123, "group": "eyes" },
+          { "id": 95, "x": 623.696, "y": 333.505, "group": "eyes" },
+          { "id": 96, "x": 697.116, "y": 327.518, "group": "eyes" },
+          { "id": 97, "x": 582.631, "y": 270.042, "group": "brows" },
+          { "id": 98, "x": 634.896, "y": 255.673, "group": "brows" },
+          { "id": 99, "x": 687.16, "y": 252.081, "group": "brows" },
+          { "id": 100, "x": 731.959, "y": 250.883, "group": "brows" },
+          { "id": 101, "x": 781.735, "y": 252.081, "group": "brows" },
+          { "id": 102, "x": 576.409, "y": 238.909, "group": "brows" },
+          { "id": 103, "x": 626.185, "y": 217.356, "group": "brows" },
+          { "id": 104, "x": 687.16, "y": 202.987, "group": "brows" },
+          { "id": 105, "x": 743.159, "y": 212.566, "group": "brows" }
+        ],
+        "attachments": {
+          "left-eye": [33, 34, 35, 36, 37, 38, 39, 40, 41, 42],
+          "right-eye": [87, 88, 89, 90, 91, 92, 93, 94, 95, 96],
+          "nose": [72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86],
+          "upper-mouth": [62, 63, 64, 65, 66, 67, 68, 69, 70, 71],
+          "lower-mouth": [52, 53, 54, 55, 56, 57, 58, 59, 60, 61],
+          "left-brow": [43, 44, 45, 46, 47, 48, 49, 50, 51],
+          "right-brow": [97, 98, 99, 100, 101, 102, 103, 104, 105],
+          "left-cheek": [12, 13, 14],
+          "right-cheek": [29, 30, 31],
+          "chin": [0, 7, 8, 23, 24]
+        },
+        "bounds": {
+          "left-eye": {
+            "x": 216.25439999999998,
+            "y": 274.9432,
+            "w": 233,
+            "h": 137
+          },
+          "right-eye": {
+            "x": 526.9014,
+            "y": 297.38009999999997,
+            "w": 269,
+            "h": 95
+          },
+          "nose": {
+            "x": 453.24213333333336,
+            "y": 394.56253333333336,
+            "w": 98,
+            "h": 213
+          },
+          "upper-mouth": {
+            "x": 373.49760000000003,
+            "y": 653.3415,
+            "w": 255,
+            "h": 85
+          },
+          "lower-mouth": {
+            "x": 402.24440000000004,
+            "y": 737.4026,
+            "w": 199,
+            "h": 119
+          },
+          "left-brow": {
+            "x": 248.87855555555558,
+            "y": 210.99099999999999,
+            "w": 162,
+            "h": 42
+          },
+          "right-brow": {
+            "x": 614.866,
+            "y": 209.17533333333333,
+            "w": 115,
+            "h": 60
+          },
+          "left-cheek": { "x": 174, "y": 517, "w": 108, "h": 143 },
+          "right-cheek": { "x": 701, "y": 579, "w": 99, "h": 153 },
+          "chin": { "x": 408, "y": 902, "w": 161, "h": 48 }
+        }
+      }
+    </script>
+  </body>
+</html>

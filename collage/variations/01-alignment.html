@@ -1,0 +1,431 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>01 / A face in five places / Six borrowed faces</title>
+    <meta
+      name="description"
+      content="A draggable photographic face collage influenced by Tony Oursler and computational facial structures."
+    />
+    <link rel="stylesheet" href="art.css" />
+    <script src="drag.js" defer></script>
+  </head>
+  <body style="--canvas: #e8e6df">
+    <main aria-label="01 / A face in five places">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        class="artwork"
+        viewBox="0 0 1000 1100"
+        role="group"
+        aria-labelledby="art-title art-desc"
+      >
+        <title id="art-title">01 / A face in five places</title>
+        <desc id="art-desc">
+          Original collage layout influenced by Tony Oursler’s projected facial
+          fragments and by alignment-5. Found photographs by Julia Margaret
+          Cameron, Nadar and Dorothea Lange. Drag facial fragments; arrow keys
+          move the focused fragment; Escape restores the composition. This
+          artwork does not run face recognition.
+        </desc>
+        <defs>
+          <filter id="green" color-interpolation-filters="sRGB">
+            <feColorMatrix
+              type="matrix"
+              values="0.13256 0.44595 0.04502 0 0.03137 0.18092 0.60862 0.06144 0 0.13725 0.01251 0.04207 0.00425 0 0.09020 0 0 0 1 0"
+            />
+          </filter>
+          <filter id="blue" color-interpolation-filters="sRGB">
+            <feColorMatrix
+              type="matrix"
+              values="0.12923 0.43473 0.04389 0 0.03529 0.15174 0.51046 0.05153 0 0.14510 0.10838 0.36461 0.03681 0 0.49020 0 0 0 1 0"
+            />
+          </filter>
+          <filter id="red" color-interpolation-filters="sRGB">
+            <feColorMatrix
+              type="matrix"
+              values="0.12339 0.41510 0.04190 0 0.41961 0.09004 0.30291 0.03058 0 0.02745 0.05002 0.16828 0.01699 0 0.10196 0 0 0 1 0"
+            />
+          </filter>
+          <filter id="pink" color-interpolation-filters="sRGB">
+            <feColorMatrix
+              type="matrix"
+              values="0.12006 0.40388 0.04077 0 0.43529 0.14590 0.49082 0.04955 0 0.07059 0.13756 0.46278 0.04672 0 0.29412 0 0 0 1 0"
+            />
+          </filter>
+          <filter id="silver" color-interpolation-filters="sRGB">
+            <feColorMatrix
+              type="matrix"
+              values="0.18008 0.60582 0.06116 0 0.12549 0.17341 0.58338 0.05889 0 0.13333 0.15507 0.52168 0.05266 0 0.14510 0 0 0 1 0"
+            />
+          </filter>
+          <filter id="amber" color-interpolation-filters="sRGB">
+            <feColorMatrix
+              type="matrix"
+              values="0.15507 0.52168 0.05266 0 0.24314 0.14924 0.50204 0.05068 0 0.12941 0.06670 0.22438 0.02265 0 0.09804 0 0 0 1 0"
+            />
+          </filter>
+          <image
+            id="photo-bernhardt"
+            href="../assets/bernhardt.jpg"
+            width="960"
+            height="1272"
+          />
+          <image
+            id="photo-herschel"
+            href="../assets/herschel.jpg"
+            width="960"
+            height="1375"
+          />
+          <image
+            id="photo-thompson"
+            href="../assets/thompson.jpg"
+            width="960"
+            height="1248"
+          />
+          <pattern id="scan" width="5" height="5" patternUnits="userSpaceOnUse">
+            <path
+              d="M0 1H5"
+              stroke="#10100e"
+              stroke-opacity=".18"
+              stroke-width="1"
+            />
+          </pattern>
+          <clipPath id="head">
+            <path
+              d="M490 121 C330 84 214 175 211 343 L177 465 Q164 522 214 553 L229 725 Q245 855 379 925 L392 996 L649 996 L627 903 Q764 812 778 660 L803 463 Q810 414 774 379 C798 198 670 91 490 121Z"
+            />
+          </clipPath>
+        </defs>
+        <rect width="1000" height="1100" fill="#e8e6df" />
+        <path
+          d="M351 213L681 170L802 794L574 971L254 842L180 411Z"
+          fill="#dcd9cf"
+        />
+        <path
+          d="M266 167L727 178L740 903L258 919Z"
+          stroke="#c8c5ba"
+          stroke-width="1"
+          fill="none"
+        />
+        <g class="features">
+          <g
+            data-feature="left-eye"
+            tabindex="0"
+            role="button"
+            aria-label="Move left eye. Use arrow keys; Escape resets."
+            transform="translate(0 0)"
+          >
+            <title>left eye: draggable photograph fragment</title>
+            <g transform="translate(149.0 263.556) rotate(-5 130.0 83.5)">
+              <defs>
+                <clipPath id="01-alignment-left-eye">
+                  <path
+                    d="M28.6 0 L260 15.03 L239.20000000000002 167 L0 150.3Z"
+                  />
+                </clipPath>
+              </defs>
+              <g clip-path="url(#01-alignment-left-eye)">
+                <svg
+                  x="0"
+                  y="0"
+                  width="260"
+                  height="167"
+                  viewBox="596 653 151 132"
+                  preserveAspectRatio="none"
+                  overflow="hidden"
+                  opacity="1"
+                >
+                  <use href="#photo-herschel" filter="url(#silver)" />
+                </svg>
+                <rect
+                  width="260"
+                  height="167"
+                  fill="url(#scan)"
+                  pointer-events="none"
+                />
+              </g>
+            </g>
+          </g>
+          <g
+            data-feature="right-eye"
+            tabindex="0"
+            role="button"
+            aria-label="Move right eye. Use arrow keys; Escape resets."
+            transform="translate(0 0)"
+          >
+            <title>right eye: draggable photograph fragment</title>
+            <g transform="translate(614.0 274.0) rotate(4 109.0 71.0)">
+              <defs>
+                <clipPath id="01-alignment-right-eye">
+                  <rect width="218" height="142" />
+                </clipPath>
+              </defs>
+              <g clip-path="url(#01-alignment-right-eye)">
+                <svg
+                  x="0"
+                  y="0"
+                  width="218"
+                  height="142"
+                  viewBox="400 275 94 66"
+                  preserveAspectRatio="none"
+                  overflow="hidden"
+                  opacity="1"
+                >
+                  <use href="#photo-bernhardt" filter="url(#green)" />
+                </svg>
+                <rect
+                  width="218"
+                  height="142"
+                  fill="url(#scan)"
+                  pointer-events="none"
+                />
+              </g>
+            </g>
+          </g>
+          <g
+            data-feature="nose"
+            tabindex="0"
+            role="button"
+            aria-label="Move nose. Use arrow keys; Escape resets."
+            transform="translate(0 0)"
+          >
+            <title>nose: draggable photograph fragment</title>
+            <g transform="translate(450.911 467.924) rotate(-3 51.5 90.5)">
+              <defs>
+                <clipPath id="01-alignment-nose">
+                  <path d="M11.33 0 L103 16.29 L94.76 181 L0 162.9Z" />
+                </clipPath>
+              </defs>
+              <g clip-path="url(#01-alignment-nose)">
+                <svg
+                  x="0"
+                  y="0"
+                  width="103"
+                  height="181"
+                  viewBox="369 347 103 116"
+                  preserveAspectRatio="none"
+                  overflow="hidden"
+                  opacity="1"
+                >
+                  <use href="#photo-thompson" filter="url(#silver)" />
+                </svg>
+                <rect
+                  width="103"
+                  height="181"
+                  fill="url(#scan)"
+                  pointer-events="none"
+                />
+              </g>
+            </g>
+          </g>
+          <g
+            data-feature="left-mouth"
+            tabindex="0"
+            role="button"
+            aria-label="Move left mouth. Use arrow keys; Escape resets."
+            transform="translate(0 0)"
+          >
+            <title>left mouth: draggable photograph fragment</title>
+            <g transform="translate(232.51 734.0) rotate(8 87.5 42.0)">
+              <defs>
+                <clipPath id="01-alignment-left-mouth">
+                  <rect width="175" height="84" />
+                </clipPath>
+              </defs>
+              <g clip-path="url(#01-alignment-left-mouth)">
+                <svg
+                  x="0"
+                  y="0"
+                  width="175"
+                  height="84"
+                  viewBox="370 444 151 82"
+                  preserveAspectRatio="none"
+                  overflow="hidden"
+                  opacity="1"
+                >
+                  <use href="#photo-thompson" filter="url(#pink)" />
+                </svg>
+                <rect
+                  width="175"
+                  height="84"
+                  fill="url(#scan)"
+                  pointer-events="none"
+                />
+              </g>
+            </g>
+          </g>
+          <g
+            data-feature="right-mouth"
+            tabindex="0"
+            role="button"
+            aria-label="Move right mouth. Use arrow keys; Escape resets."
+            transform="translate(0 0)"
+          >
+            <title>right mouth: draggable photograph fragment</title>
+            <g transform="translate(608.695 723.798) rotate(-7 79.0 50.5)">
+              <defs>
+                <clipPath id="01-alignment-right-mouth">
+                  <rect width="158" height="101" />
+                </clipPath>
+              </defs>
+              <g clip-path="url(#01-alignment-right-mouth)">
+                <svg
+                  x="0"
+                  y="0"
+                  width="158"
+                  height="101"
+                  viewBox="379 390 90 57"
+                  preserveAspectRatio="none"
+                  overflow="hidden"
+                  opacity="1"
+                >
+                  <use href="#photo-bernhardt" filter="url(#silver)" />
+                </svg>
+                <rect
+                  width="158"
+                  height="101"
+                  fill="url(#scan)"
+                  pointer-events="none"
+                />
+              </g>
+            </g>
+          </g>
+        </g>
+        <g
+          class="network"
+          fill="none"
+          stroke="#5c514c"
+          opacity="1"
+          aria-hidden="true"
+        >
+          <line
+            data-a="0"
+            data-b="1"
+            x1="279.0"
+            y1="347.056"
+            x2="723.0"
+            y2="345.0"
+            stroke-width="1.4"
+          />
+          <line
+            data-a="0"
+            data-b="2"
+            x1="279.0"
+            y1="347.056"
+            x2="502.411"
+            y2="558.424"
+            stroke-width="1.4"
+          />
+          <line
+            data-a="1"
+            data-b="2"
+            x1="723.0"
+            y1="345.0"
+            x2="502.411"
+            y2="558.424"
+            stroke-width="1.4"
+          />
+          <line
+            data-a="2"
+            data-b="3"
+            x1="502.411"
+            y1="558.424"
+            x2="320.01"
+            y2="776.0"
+            stroke-width="1.4"
+          />
+          <line
+            data-a="2"
+            data-b="4"
+            x1="502.411"
+            y1="558.424"
+            x2="687.695"
+            y2="774.298"
+            stroke-width="1.4"
+          />
+          <line
+            data-a="3"
+            data-b="4"
+            x1="320.01"
+            y1="776.0"
+            x2="687.695"
+            y2="774.298"
+            stroke-width="1.4"
+          />
+          <circle
+            data-node="0"
+            cx="279.0"
+            cy="347.056"
+            r="7"
+            stroke="#5c514c"
+            stroke-width="0.8"
+            fill="#e8e6df"
+          />
+          <circle
+            data-node="1"
+            cx="723.0"
+            cy="345.0"
+            r="7"
+            stroke="#5c514c"
+            stroke-width="0.8"
+            fill="#e8e6df"
+          />
+          <circle
+            data-node="2"
+            cx="502.411"
+            cy="558.424"
+            r="7"
+            stroke="#5c514c"
+            stroke-width="0.8"
+            fill="#e8e6df"
+          />
+          <circle
+            data-node="3"
+            cx="320.01"
+            cy="776.0"
+            r="7"
+            stroke="#5c514c"
+            stroke-width="0.8"
+            fill="#e8e6df"
+          />
+          <circle
+            data-node="4"
+            cx="687.695"
+            cy="774.298"
+            r="7"
+            stroke="#5c514c"
+            stroke-width="0.8"
+            fill="#e8e6df"
+          />
+        </g>
+      </svg>
+    </main>
+    <p class="sr-only" role="status" aria-live="polite"></p>
+    <script type="application/json" id="composition">
+      {
+        "nodes": [
+          { "id": 0, "x": 279.0, "y": 347.056, "group": "eyes" },
+          { "id": 1, "x": 723.0, "y": 345.0, "group": "eyes" },
+          { "id": 2, "x": 502.411, "y": 558.424, "group": "nose" },
+          { "id": 3, "x": 320.01, "y": 776.0, "group": "mouth" },
+          { "id": 4, "x": 687.695, "y": 774.298, "group": "mouth" }
+        ],
+        "attachments": {
+          "left-eye": [0],
+          "right-eye": [1],
+          "nose": [2],
+          "left-mouth": [3],
+          "right-mouth": [4]
+        },
+        "bounds": {
+          "left-eye": { "x": 149.0, "y": 263.556, "w": 260, "h": 167 },
+          "right-eye": { "x": 614.0, "y": 274.0, "w": 218, "h": 142 },
+          "nose": { "x": 450.911, "y": 467.924, "w": 103, "h": 181 },
+          "left-mouth": { "x": 232.51, "y": 734.0, "w": 175, "h": 84 },
+          "right-mouth": { "x": 608.695, "y": 723.798, "w": 158, "h": 101 }
+        }
+      }
+    </script>
+  </body>
+</html>

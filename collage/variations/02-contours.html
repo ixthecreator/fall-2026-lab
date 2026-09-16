@@ -1,0 +1,1650 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>02 / Borrowed contours / Six borrowed faces</title>
+    <meta
+      name="description"
+      content="A draggable photographic face collage influenced by Tony Oursler and computational facial structures."
+    />
+    <link rel="stylesheet" href="art.css" />
+    <script src="drag.js" defer></script>
+  </head>
+  <body style="--canvas: #eae9e4">
+    <main aria-label="02 / Borrowed contours">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        class="artwork"
+        viewBox="0 0 1000 1100"
+        role="group"
+        aria-labelledby="art-title art-desc"
+      >
+        <title id="art-title">02 / Borrowed contours</title>
+        <desc id="art-desc">
+          Original collage layout influenced by Tony Oursler’s projected facial
+          fragments and by landmarks-68. Found photographs by Julia Margaret
+          Cameron, Nadar and Dorothea Lange. Drag facial fragments; arrow keys
+          move the focused fragment; Escape restores the composition. This
+          artwork does not run face recognition.
+        </desc>
+        <defs>
+          <filter id="green" color-interpolation-filters="sRGB">
+            <feColorMatrix
+              type="matrix"
+              values="0.13256 0.44595 0.04502 0 0.03137 0.18092 0.60862 0.06144 0 0.13725 0.01251 0.04207 0.00425 0 0.09020 0 0 0 1 0"
+            />
+          </filter>
+          <filter id="blue" color-interpolation-filters="sRGB">
+            <feColorMatrix
+              type="matrix"
+              values="0.12923 0.43473 0.04389 0 0.03529 0.15174 0.51046 0.05153 0 0.14510 0.10838 0.36461 0.03681 0 0.49020 0 0 0 1 0"
+            />
+          </filter>
+          <filter id="red" color-interpolation-filters="sRGB">
+            <feColorMatrix
+              type="matrix"
+              values="0.12339 0.41510 0.04190 0 0.41961 0.09004 0.30291 0.03058 0 0.02745 0.05002 0.16828 0.01699 0 0.10196 0 0 0 1 0"
+            />
+          </filter>
+          <filter id="pink" color-interpolation-filters="sRGB">
+            <feColorMatrix
+              type="matrix"
+              values="0.12006 0.40388 0.04077 0 0.43529 0.14590 0.49082 0.04955 0 0.07059 0.13756 0.46278 0.04672 0 0.29412 0 0 0 1 0"
+            />
+          </filter>
+          <filter id="silver" color-interpolation-filters="sRGB">
+            <feColorMatrix
+              type="matrix"
+              values="0.18008 0.60582 0.06116 0 0.12549 0.17341 0.58338 0.05889 0 0.13333 0.15507 0.52168 0.05266 0 0.14510 0 0 0 1 0"
+            />
+          </filter>
+          <filter id="amber" color-interpolation-filters="sRGB">
+            <feColorMatrix
+              type="matrix"
+              values="0.15507 0.52168 0.05266 0 0.24314 0.14924 0.50204 0.05068 0 0.12941 0.06670 0.22438 0.02265 0 0.09804 0 0 0 1 0"
+            />
+          </filter>
+          <image
+            id="photo-bernhardt"
+            href="../assets/bernhardt.jpg"
+            width="960"
+            height="1272"
+          />
+          <image
+            id="photo-herschel"
+            href="../assets/herschel.jpg"
+            width="960"
+            height="1375"
+          />
+          <image
+            id="photo-thompson"
+            href="../assets/thompson.jpg"
+            width="960"
+            height="1248"
+          />
+          <pattern id="scan" width="5" height="5" patternUnits="userSpaceOnUse">
+            <path
+              d="M0 1H5"
+              stroke="#10100e"
+              stroke-opacity=".18"
+              stroke-width="1"
+            />
+          </pattern>
+          <clipPath id="head">
+            <path
+              d="M490 121 C330 84 214 175 211 343 L177 465 Q164 522 214 553 L229 725 Q245 855 379 925 L392 996 L649 996 L627 903 Q764 812 778 660 L803 463 Q810 414 774 379 C798 198 670 91 490 121Z"
+            />
+          </clipPath>
+        </defs>
+        <rect width="1000" height="1100" fill="#eae9e4" />
+        <path
+          d="M490 121 C330 84 214 175 211 343 L177 465 Q164 522 214 553 L229 725 Q245 855 379 925 L392 996 L649 996 L627 903 Q764 812 778 660 L803 463 Q810 414 774 379 C798 198 670 91 490 121Z"
+          fill="#162cac"
+        />
+        <path
+          d="M227 314Q198 176 382 126L379 948Q224 880 217 635Z"
+          fill="#243fc4"
+          opacity=".58"
+        />
+        <g class="features">
+          <g
+            data-feature="left-eye"
+            tabindex="0"
+            role="button"
+            aria-label="Move left eye. Use arrow keys; Escape resets."
+            transform="translate(0 0)"
+          >
+            <title>left eye: draggable photograph fragment</title>
+            <g
+              transform="translate(243.05749999999995 393.0913333333333) rotate(-6 110.5 58.5)"
+            >
+              <defs>
+                <clipPath id="02-contours-left-eye">
+                  <ellipse cx="110.5" cy="58.5" rx="110.5" ry="58.5" />
+                </clipPath>
+              </defs>
+              <g clip-path="url(#02-contours-left-eye)">
+                <svg
+                  x="0"
+                  y="0"
+                  width="221"
+                  height="117"
+                  viewBox="400 275 94 66"
+                  preserveAspectRatio="none"
+                  overflow="hidden"
+                  opacity="1"
+                >
+                  <use href="#photo-bernhardt" filter="url(#silver)" />
+                </svg>
+                <rect
+                  width="221"
+                  height="117"
+                  fill="url(#scan)"
+                  pointer-events="none"
+                />
+              </g>
+            </g>
+          </g>
+          <g
+            data-feature="right-eye"
+            tabindex="0"
+            role="button"
+            aria-label="Move right eye. Use arrow keys; Escape resets."
+            transform="translate(0 0)"
+          >
+            <title>right eye: draggable photograph fragment</title>
+            <g
+              transform="translate(554.9425 373.0913333333333) rotate(4 94.5 78.5)"
+            >
+              <defs>
+                <clipPath id="02-contours-right-eye">
+                  <rect width="189" height="157" />
+                </clipPath>
+              </defs>
+              <g clip-path="url(#02-contours-right-eye)">
+                <svg
+                  x="0"
+                  y="0"
+                  width="189"
+                  height="157"
+                  viewBox="596 653 151 132"
+                  preserveAspectRatio="none"
+                  overflow="hidden"
+                  opacity="1"
+                >
+                  <use href="#photo-herschel" filter="url(#green)" />
+                </svg>
+                <rect
+                  width="189"
+                  height="157"
+                  fill="url(#scan)"
+                  pointer-events="none"
+                />
+              </g>
+            </g>
+          </g>
+          <g
+            data-feature="nose"
+            tabindex="0"
+            role="button"
+            aria-label="Move nose. Use arrow keys; Escape resets."
+            transform="translate(0 0)"
+          >
+            <title>nose: draggable photograph fragment</title>
+            <g
+              transform="translate(453.0 482.1003333333333) rotate(0 48.5 103.0)"
+            >
+              <defs>
+                <clipPath id="02-contours-nose">
+                  <path
+                    d="M10.67 0 L97 18.54 L89.24000000000001 206 L0 185.4Z"
+                  />
+                </clipPath>
+              </defs>
+              <g clip-path="url(#02-contours-nose)">
+                <svg
+                  x="0"
+                  y="0"
+                  width="97"
+                  height="206"
+                  viewBox="532 718 142 212"
+                  preserveAspectRatio="none"
+                  overflow="hidden"
+                  opacity="1"
+                >
+                  <use href="#photo-herschel" filter="url(#blue)" />
+                </svg>
+                <rect
+                  width="97"
+                  height="206"
+                  fill="url(#scan)"
+                  pointer-events="none"
+                />
+              </g>
+            </g>
+          </g>
+          <g
+            data-feature="mouth"
+            tabindex="0"
+            role="button"
+            aria-label="Move mouth. Use arrow keys; Escape resets."
+            transform="translate(0 0)"
+          >
+            <title>mouth: draggable photograph fragment</title>
+            <g transform="translate(383.0 670.6457) rotate(3 118.5 66.0)">
+              <defs>
+                <clipPath id="02-contours-mouth">
+                  <ellipse cx="118.5" cy="66.0" rx="118.5" ry="66.0" />
+                </clipPath>
+              </defs>
+              <g clip-path="url(#02-contours-mouth)">
+                <svg
+                  x="0"
+                  y="0"
+                  width="237"
+                  height="132"
+                  viewBox="370 444 151 82"
+                  preserveAspectRatio="none"
+                  overflow="hidden"
+                  opacity="1"
+                >
+                  <use href="#photo-thompson" filter="url(#pink)" />
+                </svg>
+                <rect
+                  width="237"
+                  height="132"
+                  fill="url(#scan)"
+                  pointer-events="none"
+                />
+              </g>
+            </g>
+          </g>
+          <g
+            data-feature="left-brow"
+            tabindex="0"
+            role="button"
+            aria-label="Move left brow. Use arrow keys; Escape resets."
+            transform="translate(0 0)"
+          >
+            <title>left brow: draggable photograph fragment</title>
+            <g transform="translate(265.6562 328.9098) rotate(3 88.5 24.5)">
+              <defs>
+                <clipPath id="02-contours-left-brow">
+                  <path d="M19.47 0 L177 4.41 L162.84 49 L0 44.1Z" />
+                </clipPath>
+              </defs>
+              <g clip-path="url(#02-contours-left-brow)">
+                <svg
+                  x="0"
+                  y="0"
+                  width="177"
+                  height="49"
+                  viewBox="326 282 216 65"
+                  preserveAspectRatio="none"
+                  overflow="hidden"
+                  opacity="1"
+                >
+                  <use href="#photo-thompson" filter="url(#blue)" />
+                </svg>
+                <rect
+                  width="177"
+                  height="49"
+                  fill="url(#scan)"
+                  pointer-events="none"
+                />
+              </g>
+            </g>
+          </g>
+          <g
+            data-feature="right-brow"
+            tabindex="0"
+            role="button"
+            aria-label="Move right brow. Use arrow keys; Escape resets."
+            transform="translate(0 0)"
+          >
+            <title>right brow: draggable photograph fragment</title>
+            <g transform="translate(576.8438 335.9098) rotate(-4 72.0 17.5)">
+              <defs>
+                <clipPath id="02-contours-right-brow">
+                  <path
+                    d="M15.84 0 L144 3.15 L132.48000000000002 35 L0 31.5Z"
+                  />
+                </clipPath>
+              </defs>
+              <g clip-path="url(#02-contours-right-brow)">
+                <svg
+                  x="0"
+                  y="0"
+                  width="144"
+                  height="35"
+                  viewBox="326 282 216 65"
+                  preserveAspectRatio="none"
+                  overflow="hidden"
+                  opacity="1"
+                >
+                  <use href="#photo-thompson" filter="url(#silver)" />
+                </svg>
+                <rect
+                  width="144"
+                  height="35"
+                  fill="url(#scan)"
+                  pointer-events="none"
+                />
+              </g>
+            </g>
+          </g>
+        </g>
+        <g
+          class="network"
+          fill="none"
+          stroke="#f6b446"
+          opacity="1"
+          aria-hidden="true"
+        >
+          <line
+            data-a="0"
+            data-b="1"
+            x1="214.0"
+            y1="397.363"
+            x2="216.396"
+            y2="471.57"
+            stroke-width="1.7"
+          />
+          <line
+            data-a="1"
+            data-b="2"
+            x1="216.396"
+            y1="471.57"
+            x2="225.979"
+            y2="545.777"
+            stroke-width="1.7"
+          />
+          <line
+            data-a="2"
+            data-b="3"
+            x1="225.979"
+            y1="545.777"
+            x2="243.948"
+            y2="619.984"
+            stroke-width="1.7"
+          />
+          <line
+            data-a="3"
+            data-b="4"
+            x1="243.948"
+            y1="619.984"
+            x2="273.896"
+            y2="691.337"
+            stroke-width="1.7"
+          />
+          <line
+            data-a="4"
+            data-b="5"
+            x1="273.896"
+            y1="691.337"
+            x2="314.625"
+            y2="759.836"
+            stroke-width="1.7"
+          />
+          <line
+            data-a="5"
+            data-b="6"
+            x1="314.625"
+            y1="759.836"
+            x2="367.333"
+            y2="818.345"
+            stroke-width="1.7"
+          />
+          <line
+            data-a="6"
+            data-b="7"
+            x1="367.333"
+            y1="818.345"
+            x2="433.219"
+            y2="858.302"
+            stroke-width="1.7"
+          />
+          <line
+            data-a="7"
+            data-b="8"
+            x1="433.219"
+            y1="858.302"
+            x2="501.5"
+            y2="874.0"
+            stroke-width="1.7"
+          />
+          <line
+            data-a="8"
+            data-b="9"
+            x1="501.5"
+            y1="874.0"
+            x2="569.781"
+            y2="858.302"
+            stroke-width="1.7"
+          />
+          <line
+            data-a="9"
+            data-b="10"
+            x1="569.781"
+            y1="858.302"
+            x2="635.667"
+            y2="818.345"
+            stroke-width="1.7"
+          />
+          <line
+            data-a="10"
+            data-b="11"
+            x1="635.667"
+            y1="818.345"
+            x2="688.375"
+            y2="759.836"
+            stroke-width="1.7"
+          />
+          <line
+            data-a="11"
+            data-b="12"
+            x1="688.375"
+            y1="759.836"
+            x2="729.104"
+            y2="691.337"
+            stroke-width="1.7"
+          />
+          <line
+            data-a="12"
+            data-b="13"
+            x1="729.104"
+            y1="691.337"
+            x2="759.052"
+            y2="619.984"
+            stroke-width="1.7"
+          />
+          <line
+            data-a="13"
+            data-b="14"
+            x1="759.052"
+            y1="619.984"
+            x2="777.021"
+            y2="545.777"
+            stroke-width="1.7"
+          />
+          <line
+            data-a="14"
+            data-b="15"
+            x1="777.021"
+            y1="545.777"
+            x2="786.604"
+            y2="471.57"
+            stroke-width="1.7"
+          />
+          <line
+            data-a="15"
+            data-b="16"
+            x1="786.604"
+            y1="471.57"
+            x2="789.0"
+            y2="397.363"
+            stroke-width="1.7"
+          />
+          <line
+            data-a="17"
+            data-b="18"
+            x1="265.51"
+            y1="370.249"
+            x2="306.24"
+            y2="340.281"
+            stroke-width="1.7"
+          />
+          <line
+            data-a="18"
+            data-b="19"
+            x1="306.24"
+            y1="340.281"
+            x2="355.354"
+            y2="336.0"
+            stroke-width="1.7"
+          />
+          <line
+            data-a="19"
+            data-b="20"
+            x1="355.354"
+            y1="336.0"
+            x2="402.073"
+            y2="347.416"
+            stroke-width="1.7"
+          />
+          <line
+            data-a="20"
+            data-b="21"
+            x1="402.073"
+            y1="347.416"
+            x2="441.604"
+            y2="373.103"
+            stroke-width="1.7"
+          />
+          <line
+            data-a="22"
+            data-b="23"
+            x1="561.396"
+            y1="373.103"
+            x2="600.927"
+            y2="347.416"
+            stroke-width="1.7"
+          />
+          <line
+            data-a="23"
+            data-b="24"
+            x1="600.927"
+            y1="347.416"
+            x2="647.646"
+            y2="336.0"
+            stroke-width="1.7"
+          />
+          <line
+            data-a="24"
+            data-b="25"
+            x1="647.646"
+            y1="336.0"
+            x2="696.76"
+            y2="340.281"
+            stroke-width="1.7"
+          />
+          <line
+            data-a="25"
+            data-b="26"
+            x1="696.76"
+            y1="340.281"
+            x2="737.49"
+            y2="370.249"
+            stroke-width="1.7"
+          />
+          <line
+            data-a="27"
+            data-b="28"
+            x1="501.5"
+            y1="421.623"
+            x2="501.5"
+            y2="488.695"
+            stroke-width="1.7"
+          />
+          <line
+            data-a="28"
+            data-b="29"
+            x1="501.5"
+            y1="488.695"
+            x2="501.5"
+            y2="550.058"
+            stroke-width="1.7"
+          />
+          <line
+            data-a="29"
+            data-b="30"
+            x1="501.5"
+            y1="550.058"
+            x2="501.5"
+            y2="602.859"
+            stroke-width="1.7"
+          />
+          <line
+            data-a="30"
+            data-b="31"
+            x1="501.5"
+            y1="602.859"
+            x2="439.208"
+            y2="627.119"
+            stroke-width="1.7"
+          />
+          <line
+            data-a="31"
+            data-b="32"
+            x1="439.208"
+            y1="627.119"
+            x2="467.958"
+            y2="645.671"
+            stroke-width="1.7"
+          />
+          <line
+            data-a="32"
+            data-b="33"
+            x1="467.958"
+            y1="645.671"
+            x2="501.5"
+            y2="657.088"
+            stroke-width="1.7"
+          />
+          <line
+            data-a="33"
+            data-b="34"
+            x1="501.5"
+            y1="657.088"
+            x2="535.042"
+            y2="645.671"
+            stroke-width="1.7"
+          />
+          <line
+            data-a="34"
+            data-b="35"
+            x1="535.042"
+            y1="645.671"
+            x2="563.792"
+            y2="627.119"
+            stroke-width="1.7"
+          />
+          <line
+            data-a="30"
+            data-b="35"
+            x1="501.5"
+            y1="602.859"
+            x2="563.792"
+            y2="627.119"
+            stroke-width="1.7"
+          />
+          <line
+            data-a="36"
+            data-b="37"
+            x1="291.865"
+            y1="450.164"
+            x2="330.198"
+            y2="424.477"
+            stroke-width="1.7"
+          />
+          <line
+            data-a="37"
+            data-b="38"
+            x1="330.198"
+            y1="424.477"
+            x2="376.917"
+            y2="425.905"
+            stroke-width="1.7"
+          />
+          <line
+            data-a="38"
+            data-b="39"
+            x1="376.917"
+            y1="425.905"
+            x2="417.646"
+            y2="460.154"
+            stroke-width="1.7"
+          />
+          <line
+            data-a="39"
+            data-b="40"
+            x1="417.646"
+            y1="460.154"
+            x2="374.521"
+            y2="474.424"
+            stroke-width="1.7"
+          />
+          <line
+            data-a="40"
+            data-b="41"
+            x1="374.521"
+            y1="474.424"
+            x2="330.198"
+            y2="474.424"
+            stroke-width="1.7"
+          />
+          <line
+            data-a="41"
+            data-b="36"
+            x1="330.198"
+            y1="474.424"
+            x2="291.865"
+            y2="450.164"
+            stroke-width="1.7"
+          />
+          <line
+            data-a="42"
+            data-b="43"
+            x1="585.354"
+            y1="460.154"
+            x2="626.083"
+            y2="425.905"
+            stroke-width="1.7"
+          />
+          <line
+            data-a="43"
+            data-b="44"
+            x1="626.083"
+            y1="425.905"
+            x2="672.802"
+            y2="424.477"
+            stroke-width="1.7"
+          />
+          <line
+            data-a="44"
+            data-b="45"
+            x1="672.802"
+            y1="424.477"
+            x2="711.135"
+            y2="450.164"
+            stroke-width="1.7"
+          />
+          <line
+            data-a="45"
+            data-b="46"
+            x1="711.135"
+            y1="450.164"
+            x2="672.802"
+            y2="474.424"
+            stroke-width="1.7"
+          />
+          <line
+            data-a="46"
+            data-b="47"
+            x1="672.802"
+            y1="474.424"
+            x2="628.479"
+            y2="474.424"
+            stroke-width="1.7"
+          />
+          <line
+            data-a="47"
+            data-b="42"
+            x1="628.479"
+            y1="474.424"
+            x2="585.354"
+            y2="460.154"
+            stroke-width="1.7"
+          />
+          <line
+            data-a="48"
+            data-b="49"
+            x1="394.885"
+            y1="732.721"
+            x2="440.406"
+            y2="702.753"
+            stroke-width="1.7"
+          />
+          <line
+            data-a="49"
+            data-b="50"
+            x1="440.406"
+            y1="702.753"
+            x2="477.542"
+            y2="692.764"
+            stroke-width="1.7"
+          />
+          <line
+            data-a="50"
+            data-b="51"
+            x1="477.542"
+            y1="692.764"
+            x2="501.5"
+            y2="701.326"
+            stroke-width="1.7"
+          />
+          <line
+            data-a="51"
+            data-b="52"
+            x1="501.5"
+            y1="701.326"
+            x2="525.458"
+            y2="692.764"
+            stroke-width="1.7"
+          />
+          <line
+            data-a="52"
+            data-b="53"
+            x1="525.458"
+            y1="692.764"
+            x2="562.594"
+            y2="702.753"
+            stroke-width="1.7"
+          />
+          <line
+            data-a="53"
+            data-b="54"
+            x1="562.594"
+            y1="702.753"
+            x2="608.115"
+            y2="732.721"
+            stroke-width="1.7"
+          />
+          <line
+            data-a="54"
+            data-b="55"
+            x1="608.115"
+            y1="732.721"
+            x2="566.188"
+            y2="765.544"
+            stroke-width="1.7"
+          />
+          <line
+            data-a="55"
+            data-b="56"
+            x1="566.188"
+            y1="765.544"
+            x2="529.052"
+            y2="784.095"
+            stroke-width="1.7"
+          />
+          <line
+            data-a="56"
+            data-b="57"
+            x1="529.052"
+            y1="784.095"
+            x2="501.5"
+            y2="786.95"
+            stroke-width="1.7"
+          />
+          <line
+            data-a="57"
+            data-b="58"
+            x1="501.5"
+            y1="786.95"
+            x2="473.948"
+            y2="784.095"
+            stroke-width="1.7"
+          />
+          <line
+            data-a="58"
+            data-b="59"
+            x1="473.948"
+            y1="784.095"
+            x2="436.812"
+            y2="765.544"
+            stroke-width="1.7"
+          />
+          <line
+            data-a="59"
+            data-b="48"
+            x1="436.812"
+            y1="765.544"
+            x2="394.885"
+            y2="732.721"
+            stroke-width="1.7"
+          />
+          <line
+            data-a="60"
+            data-b="61"
+            x1="420.042"
+            y1="732.721"
+            x2="470.354"
+            y2="721.305"
+            stroke-width="1.7"
+          />
+          <line
+            data-a="61"
+            data-b="62"
+            x1="470.354"
+            y1="721.305"
+            x2="501.5"
+            y2="725.586"
+            stroke-width="1.7"
+          />
+          <line
+            data-a="62"
+            data-b="63"
+            x1="501.5"
+            y1="725.586"
+            x2="532.646"
+            y2="721.305"
+            stroke-width="1.7"
+          />
+          <line
+            data-a="63"
+            data-b="64"
+            x1="532.646"
+            y1="721.305"
+            x2="582.958"
+            y2="732.721"
+            stroke-width="1.7"
+          />
+          <line
+            data-a="64"
+            data-b="65"
+            x1="582.958"
+            y1="732.721"
+            x2="532.646"
+            y2="749.846"
+            stroke-width="1.7"
+          />
+          <line
+            data-a="65"
+            data-b="66"
+            x1="532.646"
+            y1="749.846"
+            x2="501.5"
+            y2="755.554"
+            stroke-width="1.7"
+          />
+          <line
+            data-a="66"
+            data-b="67"
+            x1="501.5"
+            y1="755.554"
+            x2="470.354"
+            y2="749.846"
+            stroke-width="1.7"
+          />
+          <line
+            data-a="67"
+            data-b="60"
+            x1="470.354"
+            y1="749.846"
+            x2="420.042"
+            y2="732.721"
+            stroke-width="1.7"
+          />
+          <circle
+            data-node="0"
+            cx="214.0"
+            cy="397.363"
+            r="3"
+            stroke="#f6b446"
+            stroke-width="0.8"
+            fill="#f6b446"
+          />
+          <circle
+            data-node="1"
+            cx="216.396"
+            cy="471.57"
+            r="3"
+            stroke="#f6b446"
+            stroke-width="0.8"
+            fill="#f6b446"
+          />
+          <circle
+            data-node="2"
+            cx="225.979"
+            cy="545.777"
+            r="3"
+            stroke="#f6b446"
+            stroke-width="0.8"
+            fill="#f6b446"
+          />
+          <circle
+            data-node="3"
+            cx="243.948"
+            cy="619.984"
+            r="3"
+            stroke="#f6b446"
+            stroke-width="0.8"
+            fill="#f6b446"
+          />
+          <circle
+            data-node="4"
+            cx="273.896"
+            cy="691.337"
+            r="3"
+            stroke="#f6b446"
+            stroke-width="0.8"
+            fill="#f6b446"
+          />
+          <circle
+            data-node="5"
+            cx="314.625"
+            cy="759.836"
+            r="3"
+            stroke="#f6b446"
+            stroke-width="0.8"
+            fill="#f6b446"
+          />
+          <circle
+            data-node="6"
+            cx="367.333"
+            cy="818.345"
+            r="3"
+            stroke="#f6b446"
+            stroke-width="0.8"
+            fill="#f6b446"
+          />
+          <circle
+            data-node="7"
+            cx="433.219"
+            cy="858.302"
+            r="3"
+            stroke="#f6b446"
+            stroke-width="0.8"
+            fill="#f6b446"
+          />
+          <circle
+            data-node="8"
+            cx="501.5"
+            cy="874.0"
+            r="3"
+            stroke="#f6b446"
+            stroke-width="0.8"
+            fill="#f6b446"
+          />
+          <circle
+            data-node="9"
+            cx="569.781"
+            cy="858.302"
+            r="3"
+            stroke="#f6b446"
+            stroke-width="0.8"
+            fill="#f6b446"
+          />
+          <circle
+            data-node="10"
+            cx="635.667"
+            cy="818.345"
+            r="3"
+            stroke="#f6b446"
+            stroke-width="0.8"
+            fill="#f6b446"
+          />
+          <circle
+            data-node="11"
+            cx="688.375"
+            cy="759.836"
+            r="3"
+            stroke="#f6b446"
+            stroke-width="0.8"
+            fill="#f6b446"
+          />
+          <circle
+            data-node="12"
+            cx="729.104"
+            cy="691.337"
+            r="3"
+            stroke="#f6b446"
+            stroke-width="0.8"
+            fill="#f6b446"
+          />
+          <circle
+            data-node="13"
+            cx="759.052"
+            cy="619.984"
+            r="3"
+            stroke="#f6b446"
+            stroke-width="0.8"
+            fill="#f6b446"
+          />
+          <circle
+            data-node="14"
+            cx="777.021"
+            cy="545.777"
+            r="3"
+            stroke="#f6b446"
+            stroke-width="0.8"
+            fill="#f6b446"
+          />
+          <circle
+            data-node="15"
+            cx="786.604"
+            cy="471.57"
+            r="3"
+            stroke="#f6b446"
+            stroke-width="0.8"
+            fill="#f6b446"
+          />
+          <circle
+            data-node="16"
+            cx="789.0"
+            cy="397.363"
+            r="3"
+            stroke="#f6b446"
+            stroke-width="0.8"
+            fill="#f6b446"
+          />
+          <circle
+            data-node="17"
+            cx="265.51"
+            cy="370.249"
+            r="3"
+            stroke="#f6b446"
+            stroke-width="0.8"
+            fill="#f6b446"
+          />
+          <circle
+            data-node="18"
+            cx="306.24"
+            cy="340.281"
+            r="3"
+            stroke="#f6b446"
+            stroke-width="0.8"
+            fill="#f6b446"
+          />
+          <circle
+            data-node="19"
+            cx="355.354"
+            cy="336.0"
+            r="3"
+            stroke="#f6b446"
+            stroke-width="0.8"
+            fill="#f6b446"
+          />
+          <circle
+            data-node="20"
+            cx="402.073"
+            cy="347.416"
+            r="3"
+            stroke="#f6b446"
+            stroke-width="0.8"
+            fill="#f6b446"
+          />
+          <circle
+            data-node="21"
+            cx="441.604"
+            cy="373.103"
+            r="3"
+            stroke="#f6b446"
+            stroke-width="0.8"
+            fill="#f6b446"
+          />
+          <circle
+            data-node="22"
+            cx="561.396"
+            cy="373.103"
+            r="3"
+            stroke="#f6b446"
+            stroke-width="0.8"
+            fill="#f6b446"
+          />
+          <circle
+            data-node="23"
+            cx="600.927"
+            cy="347.416"
+            r="3"
+            stroke="#f6b446"
+            stroke-width="0.8"
+            fill="#f6b446"
+          />
+          <circle
+            data-node="24"
+            cx="647.646"
+            cy="336.0"
+            r="3"
+            stroke="#f6b446"
+            stroke-width="0.8"
+            fill="#f6b446"
+          />
+          <circle
+            data-node="25"
+            cx="696.76"
+            cy="340.281"
+            r="3"
+            stroke="#f6b446"
+            stroke-width="0.8"
+            fill="#f6b446"
+          />
+          <circle
+            data-node="26"
+            cx="737.49"
+            cy="370.249"
+            r="3"
+            stroke="#f6b446"
+            stroke-width="0.8"
+            fill="#f6b446"
+          />
+          <circle
+            data-node="27"
+            cx="501.5"
+            cy="421.623"
+            r="3"
+            stroke="#f6b446"
+            stroke-width="0.8"
+            fill="#f6b446"
+          />
+          <circle
+            data-node="28"
+            cx="501.5"
+            cy="488.695"
+            r="3"
+            stroke="#f6b446"
+            stroke-width="0.8"
+            fill="#f6b446"
+          />
+          <circle
+            data-node="29"
+            cx="501.5"
+            cy="550.058"
+            r="3"
+            stroke="#f6b446"
+            stroke-width="0.8"
+            fill="#f6b446"
+          />
+          <circle
+            data-node="30"
+            cx="501.5"
+            cy="602.859"
+            r="3"
+            stroke="#f6b446"
+            stroke-width="0.8"
+            fill="#f6b446"
+          />
+          <circle
+            data-node="31"
+            cx="439.208"
+            cy="627.119"
+            r="3"
+            stroke="#f6b446"
+            stroke-width="0.8"
+            fill="#f6b446"
+          />
+          <circle
+            data-node="32"
+            cx="467.958"
+            cy="645.671"
+            r="3"
+            stroke="#f6b446"
+            stroke-width="0.8"
+            fill="#f6b446"
+          />
+          <circle
+            data-node="33"
+            cx="501.5"
+            cy="657.088"
+            r="3"
+            stroke="#f6b446"
+            stroke-width="0.8"
+            fill="#f6b446"
+          />
+          <circle
+            data-node="34"
+            cx="535.042"
+            cy="645.671"
+            r="3"
+            stroke="#f6b446"
+            stroke-width="0.8"
+            fill="#f6b446"
+          />
+          <circle
+            data-node="35"
+            cx="563.792"
+            cy="627.119"
+            r="3"
+            stroke="#f6b446"
+            stroke-width="0.8"
+            fill="#f6b446"
+          />
+          <circle
+            data-node="36"
+            cx="291.865"
+            cy="450.164"
+            r="3"
+            stroke="#f6b446"
+            stroke-width="0.8"
+            fill="#f6b446"
+          />
+          <circle
+            data-node="37"
+            cx="330.198"
+            cy="424.477"
+            r="3"
+            stroke="#f6b446"
+            stroke-width="0.8"
+            fill="#f6b446"
+          />
+          <circle
+            data-node="38"
+            cx="376.917"
+            cy="425.905"
+            r="3"
+            stroke="#f6b446"
+            stroke-width="0.8"
+            fill="#f6b446"
+          />
+          <circle
+            data-node="39"
+            cx="417.646"
+            cy="460.154"
+            r="3"
+            stroke="#f6b446"
+            stroke-width="0.8"
+            fill="#f6b446"
+          />
+          <circle
+            data-node="40"
+            cx="374.521"
+            cy="474.424"
+            r="3"
+            stroke="#f6b446"
+            stroke-width="0.8"
+            fill="#f6b446"
+          />
+          <circle
+            data-node="41"
+            cx="330.198"
+            cy="474.424"
+            r="3"
+            stroke="#f6b446"
+            stroke-width="0.8"
+            fill="#f6b446"
+          />
+          <circle
+            data-node="42"
+            cx="585.354"
+            cy="460.154"
+            r="3"
+            stroke="#f6b446"
+            stroke-width="0.8"
+            fill="#f6b446"
+          />
+          <circle
+            data-node="43"
+            cx="626.083"
+            cy="425.905"
+            r="3"
+            stroke="#f6b446"
+            stroke-width="0.8"
+            fill="#f6b446"
+          />
+          <circle
+            data-node="44"
+            cx="672.802"
+            cy="424.477"
+            r="3"
+            stroke="#f6b446"
+            stroke-width="0.8"
+            fill="#f6b446"
+          />
+          <circle
+            data-node="45"
+            cx="711.135"
+            cy="450.164"
+            r="3"
+            stroke="#f6b446"
+            stroke-width="0.8"
+            fill="#f6b446"
+          />
+          <circle
+            data-node="46"
+            cx="672.802"
+            cy="474.424"
+            r="3"
+            stroke="#f6b446"
+            stroke-width="0.8"
+            fill="#f6b446"
+          />
+          <circle
+            data-node="47"
+            cx="628.479"
+            cy="474.424"
+            r="3"
+            stroke="#f6b446"
+            stroke-width="0.8"
+            fill="#f6b446"
+          />
+          <circle
+            data-node="48"
+            cx="394.885"
+            cy="732.721"
+            r="3"
+            stroke="#f6b446"
+            stroke-width="0.8"
+            fill="#f6b446"
+          />
+          <circle
+            data-node="49"
+            cx="440.406"
+            cy="702.753"
+            r="3"
+            stroke="#f6b446"
+            stroke-width="0.8"
+            fill="#f6b446"
+          />
+          <circle
+            data-node="50"
+            cx="477.542"
+            cy="692.764"
+            r="3"
+            stroke="#f6b446"
+            stroke-width="0.8"
+            fill="#f6b446"
+          />
+          <circle
+            data-node="51"
+            cx="501.5"
+            cy="701.326"
+            r="3"
+            stroke="#f6b446"
+            stroke-width="0.8"
+            fill="#f6b446"
+          />
+          <circle
+            data-node="52"
+            cx="525.458"
+            cy="692.764"
+            r="3"
+            stroke="#f6b446"
+            stroke-width="0.8"
+            fill="#f6b446"
+          />
+          <circle
+            data-node="53"
+            cx="562.594"
+            cy="702.753"
+            r="3"
+            stroke="#f6b446"
+            stroke-width="0.8"
+            fill="#f6b446"
+          />
+          <circle
+            data-node="54"
+            cx="608.115"
+            cy="732.721"
+            r="3"
+            stroke="#f6b446"
+            stroke-width="0.8"
+            fill="#f6b446"
+          />
+          <circle
+            data-node="55"
+            cx="566.188"
+            cy="765.544"
+            r="3"
+            stroke="#f6b446"
+            stroke-width="0.8"
+            fill="#f6b446"
+          />
+          <circle
+            data-node="56"
+            cx="529.052"
+            cy="784.095"
+            r="3"
+            stroke="#f6b446"
+            stroke-width="0.8"
+            fill="#f6b446"
+          />
+          <circle
+            data-node="57"
+            cx="501.5"
+            cy="786.95"
+            r="3"
+            stroke="#f6b446"
+            stroke-width="0.8"
+            fill="#f6b446"
+          />
+          <circle
+            data-node="58"
+            cx="473.948"
+            cy="784.095"
+            r="3"
+            stroke="#f6b446"
+            stroke-width="0.8"
+            fill="#f6b446"
+          />
+          <circle
+            data-node="59"
+            cx="436.812"
+            cy="765.544"
+            r="3"
+            stroke="#f6b446"
+            stroke-width="0.8"
+            fill="#f6b446"
+          />
+          <circle
+            data-node="60"
+            cx="420.042"
+            cy="732.721"
+            r="3"
+            stroke="#f6b446"
+            stroke-width="0.8"
+            fill="#f6b446"
+          />
+          <circle
+            data-node="61"
+            cx="470.354"
+            cy="721.305"
+            r="3"
+            stroke="#f6b446"
+            stroke-width="0.8"
+            fill="#f6b446"
+          />
+          <circle
+            data-node="62"
+            cx="501.5"
+            cy="725.586"
+            r="3"
+            stroke="#f6b446"
+            stroke-width="0.8"
+            fill="#f6b446"
+          />
+          <circle
+            data-node="63"
+            cx="532.646"
+            cy="721.305"
+            r="3"
+            stroke="#f6b446"
+            stroke-width="0.8"
+            fill="#f6b446"
+          />
+          <circle
+            data-node="64"
+            cx="582.958"
+            cy="732.721"
+            r="3"
+            stroke="#f6b446"
+            stroke-width="0.8"
+            fill="#f6b446"
+          />
+          <circle
+            data-node="65"
+            cx="532.646"
+            cy="749.846"
+            r="3"
+            stroke="#f6b446"
+            stroke-width="0.8"
+            fill="#f6b446"
+          />
+          <circle
+            data-node="66"
+            cx="501.5"
+            cy="755.554"
+            r="3"
+            stroke="#f6b446"
+            stroke-width="0.8"
+            fill="#f6b446"
+          />
+          <circle
+            data-node="67"
+            cx="470.354"
+            cy="749.846"
+            r="3"
+            stroke="#f6b446"
+            stroke-width="0.8"
+            fill="#f6b446"
+          />
+        </g>
+      </svg>
+    </main>
+    <p class="sr-only" role="status" aria-live="polite"></p>
+    <script type="application/json" id="composition">
+      {
+        "nodes": [
+          { "id": 0, "x": 214.0, "y": 397.363, "group": "contour" },
+          { "id": 1, "x": 216.396, "y": 471.57, "group": "contour" },
+          { "id": 2, "x": 225.979, "y": 545.777, "group": "contour" },
+          { "id": 3, "x": 243.948, "y": 619.984, "group": "contour" },
+          { "id": 4, "x": 273.896, "y": 691.337, "group": "contour" },
+          { "id": 5, "x": 314.625, "y": 759.836, "group": "contour" },
+          { "id": 6, "x": 367.333, "y": 818.345, "group": "contour" },
+          { "id": 7, "x": 433.219, "y": 858.302, "group": "contour" },
+          { "id": 8, "x": 501.5, "y": 874.0, "group": "contour" },
+          { "id": 9, "x": 569.781, "y": 858.302, "group": "contour" },
+          { "id": 10, "x": 635.667, "y": 818.345, "group": "contour" },
+          { "id": 11, "x": 688.375, "y": 759.836, "group": "contour" },
+          { "id": 12, "x": 729.104, "y": 691.337, "group": "contour" },
+          { "id": 13, "x": 759.052, "y": 619.984, "group": "contour" },
+          { "id": 14, "x": 777.021, "y": 545.777, "group": "contour" },
+          { "id": 15, "x": 786.604, "y": 471.57, "group": "contour" },
+          { "id": 16, "x": 789.0, "y": 397.363, "group": "contour" },
+          { "id": 17, "x": 265.51, "y": 370.249, "group": "brows" },
+          { "id": 18, "x": 306.24, "y": 340.281, "group": "brows" },
+          { "id": 19, "x": 355.354, "y": 336.0, "group": "brows" },
+          { "id": 20, "x": 402.073, "y": 347.416, "group": "brows" },
+          { "id": 21, "x": 441.604, "y": 373.103, "group": "brows" },
+          { "id": 22, "x": 561.396, "y": 373.103, "group": "brows" },
+          { "id": 23, "x": 600.927, "y": 347.416, "group": "brows" },
+          { "id": 24, "x": 647.646, "y": 336.0, "group": "brows" },
+          { "id": 25, "x": 696.76, "y": 340.281, "group": "brows" },
+          { "id": 26, "x": 737.49, "y": 370.249, "group": "brows" },
+          { "id": 27, "x": 501.5, "y": 421.623, "group": "nose" },
+          { "id": 28, "x": 501.5, "y": 488.695, "group": "nose" },
+          { "id": 29, "x": 501.5, "y": 550.058, "group": "nose" },
+          { "id": 30, "x": 501.5, "y": 602.859, "group": "nose" },
+          { "id": 31, "x": 439.208, "y": 627.119, "group": "nose" },
+          { "id": 32, "x": 467.958, "y": 645.671, "group": "nose" },
+          { "id": 33, "x": 501.5, "y": 657.088, "group": "nose" },
+          { "id": 34, "x": 535.042, "y": 645.671, "group": "nose" },
+          { "id": 35, "x": 563.792, "y": 627.119, "group": "nose" },
+          { "id": 36, "x": 291.865, "y": 450.164, "group": "eyes" },
+          { "id": 37, "x": 330.198, "y": 424.477, "group": "eyes" },
+          { "id": 38, "x": 376.917, "y": 425.905, "group": "eyes" },
+          { "id": 39, "x": 417.646, "y": 460.154, "group": "eyes" },
+          { "id": 40, "x": 374.521, "y": 474.424, "group": "eyes" },
+          { "id": 41, "x": 330.198, "y": 474.424, "group": "eyes" },
+          { "id": 42, "x": 585.354, "y": 460.154, "group": "eyes" },
+          { "id": 43, "x": 626.083, "y": 425.905, "group": "eyes" },
+          { "id": 44, "x": 672.802, "y": 424.477, "group": "eyes" },
+          { "id": 45, "x": 711.135, "y": 450.164, "group": "eyes" },
+          { "id": 46, "x": 672.802, "y": 474.424, "group": "eyes" },
+          { "id": 47, "x": 628.479, "y": 474.424, "group": "eyes" },
+          { "id": 48, "x": 394.885, "y": 732.721, "group": "mouth" },
+          { "id": 49, "x": 440.406, "y": 702.753, "group": "mouth" },
+          { "id": 50, "x": 477.542, "y": 692.764, "group": "mouth" },
+          { "id": 51, "x": 501.5, "y": 701.326, "group": "mouth" },
+          { "id": 52, "x": 525.458, "y": 692.764, "group": "mouth" },
+          { "id": 53, "x": 562.594, "y": 702.753, "group": "mouth" },
+          { "id": 54, "x": 608.115, "y": 732.721, "group": "mouth" },
+          { "id": 55, "x": 566.188, "y": 765.544, "group": "mouth" },
+          { "id": 56, "x": 529.052, "y": 784.095, "group": "mouth" },
+          { "id": 57, "x": 501.5, "y": 786.95, "group": "mouth" },
+          { "id": 58, "x": 473.948, "y": 784.095, "group": "mouth" },
+          { "id": 59, "x": 436.812, "y": 765.544, "group": "mouth" },
+          { "id": 60, "x": 420.042, "y": 732.721, "group": "mouth" },
+          { "id": 61, "x": 470.354, "y": 721.305, "group": "mouth" },
+          { "id": 62, "x": 501.5, "y": 725.586, "group": "mouth" },
+          { "id": 63, "x": 532.646, "y": 721.305, "group": "mouth" },
+          { "id": 64, "x": 582.958, "y": 732.721, "group": "mouth" },
+          { "id": 65, "x": 532.646, "y": 749.846, "group": "mouth" },
+          { "id": 66, "x": 501.5, "y": 755.554, "group": "mouth" },
+          { "id": 67, "x": 470.354, "y": 749.846, "group": "mouth" }
+        ],
+        "attachments": {
+          "left-eye": [36, 37, 38, 39, 40, 41],
+          "right-eye": [42, 43, 44, 45, 46, 47],
+          "nose": [27, 28, 29, 30, 31, 32, 33, 34, 35],
+          "mouth": [
+            48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64,
+            65, 66, 67
+          ],
+          "left-brow": [17, 18, 19, 20, 21],
+          "right-brow": [22, 23, 24, 25, 26]
+        },
+        "bounds": {
+          "left-eye": {
+            "x": 243.05749999999995,
+            "y": 393.0913333333333,
+            "w": 221,
+            "h": 117
+          },
+          "right-eye": {
+            "x": 554.9425,
+            "y": 373.0913333333333,
+            "w": 189,
+            "h": 157
+          },
+          "nose": { "x": 453.0, "y": 482.1003333333333, "w": 97, "h": 206 },
+          "mouth": { "x": 383.0, "y": 670.6457, "w": 237, "h": 132 },
+          "left-brow": { "x": 265.6562, "y": 328.9098, "w": 177, "h": 49 },
+          "right-brow": { "x": 576.8438, "y": 335.9098, "w": 144, "h": 35 }
+        }
+      }
+    </script>
+  </body>
+</html>

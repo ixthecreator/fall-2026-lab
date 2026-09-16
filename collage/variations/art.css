@@ -1,0 +1,47 @@
+:root {
+  color-scheme: light;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  background: var(--canvas);
+  overflow: hidden;
+}
+main {
+  min-height: 100svh;
+  display: grid;
+  place-items: center;
+}
+.artwork {
+  display: block;
+  width: min(100vw, 90.909svh);
+  height: auto;
+  max-height: 100svh;
+  user-select: none;
+}
+[data-feature] {
+  cursor: grab;
+  touch-action: none;
+  outline: none;
+}
+[data-feature]:active {
+  cursor: grabbing;
+}
+[data-feature]:focus-visible {
+  filter: drop-shadow(0 0 3px #fff) drop-shadow(0 0 2px #101010);
+}
+.network {
+  pointer-events: none;
+}
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
