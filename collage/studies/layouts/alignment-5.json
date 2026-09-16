@@ -1,0 +1,47 @@
+{
+  "key": "alignment-5",
+  "title": "05 / Alignment anchors",
+  "subtitle": "ArcFace destination template \u00b7 exact source coordinates",
+  "nodes": [
+    {
+      "id": 0,
+      "x": 38.2946,
+      "y": 51.6963,
+      "group": "eyes"
+    },
+    {
+      "id": 1,
+      "x": 73.5318,
+      "y": 51.5014,
+      "group": "eyes"
+    },
+    {
+      "id": 2,
+      "x": 56.0252,
+      "y": 71.7366,
+      "group": "nose"
+    },
+    {
+      "id": 3,
+      "x": 41.5493,
+      "y": 92.3655,
+      "group": "mouth"
+    },
+    {
+      "id": 4,
+      "x": 70.7299,
+      "y": 92.2041,
+      "group": "mouth"
+    }
+  ],
+  "edges": [],
+  "groups": [
+    "eyes",
+    "nose",
+    "mouth"
+  ],
+  "note": "Two eye centres / nose / two mouth corners.",
+  "detail": "Coordinates belong to a 112 \u00d7 112 aligned image; no official edge graph.",
+  "source": "https://github.com/deepinsight/insightface/blob/master/python-package/insightface/utils/face_align.py",
+  "provenance": "Exact arcface_dst coordinates. Dashed measurement guides are diagram annotations only."
+}

@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Face / Structure studies</title>
-    <link rel="stylesheet" href="study.css" />
+    <link rel="stylesheet" href="study.css?v=2" />
   </head>
   <body>
     <header>
@@ -17,7 +17,7 @@
       </p>
       <nav aria-label="Study sections">
         <a href="#layouts">Layouts</a><a href="#regions">Regions</a
-        ><a href="#systems">Systems</a
+        ><a href="#structures">System drawings</a><a href="#systems">Systems</a
         ><a href="exports/node-comparison.svg" download>Download board · SVG</a
         ><a href="RESEARCH.md">中文研究笔记</a>
       </nav>
@@ -181,9 +181,204 @@
           >Download region diagram · SVG</a
         >
       </section>
+      <section id="structures" aria-labelledby="structures-title">
+        <div class="section-heading">
+          <h2 id="structures-title">03 / System drawings</h2>
+          <p>From five anchors to a dense surface</p>
+        </div>
+        <p class="note">
+          These are different ways to locate, align or partition a face.
+          Identity verification adds a separate step: comparing face embeddings.
+          Each drawing distinguishes source data from illustrative geometry.
+        </p>
+        <p class="row-links">
+          <a href="exports/system-structures.svg" download
+            >Download all six drawings · SVG</a
+          ><a href="references/systems/SOURCES.md"
+            >Sources and drawing methods</a
+          >
+        </p>
+        <div class="structure-gallery">
+          <article>
+            <figure>
+              <a
+                href="exports/alignment-5.svg"
+                aria-label="Open Five alignment anchors drawing"
+                ><img
+                  src="exports/alignment-5.svg"
+                  alt="Five alignment anchors. Exact ArcFace destination coordinates for eye centres, nose and mouth corners. Dashed guides illustrate their spatial relationship; the template has no official edge graph."
+                  loading="lazy"
+              /></a>
+              <figcaption>
+                <h3>Five alignment anchors</h3>
+                <p>
+                  Exact ArcFace destination coordinates for eye centres, nose
+                  and mouth corners. Dashed guides illustrate their spatial
+                  relationship; the template has no official edge graph.
+                </p>
+              </figcaption>
+            </figure>
+            <p class="row-links">
+              <a href="exports/alignment-5.svg" download>Download SVG</a
+              ><a href="exports/alignment-5-numbered.svg">Point IDs</a
+              ><a href="layouts/alignment-5.json">Data</a
+              ><a
+                href="https://github.com/deepinsight/insightface/blob/master/python-package/insightface/utils/face_align.py"
+                >Official coordinates</a
+              >
+            </p>
+          </article>
+          <article>
+            <figure>
+              <a
+                href="exports/landmarks-68.svg"
+                aria-label="Open 68-point feature contours drawing"
+                ><img
+                  src="exports/landmarks-68.svg"
+                  alt="68-point feature contours. An original face schematic with dlib’s standard zero-based indices and drawing connections. Colors separate the jaw, brows, eyes, nose and lips."
+                  loading="lazy"
+              /></a>
+              <figcaption>
+                <h3>68-point feature contours</h3>
+                <p>
+                  An original face schematic with dlib’s standard zero-based
+                  indices and drawing connections. Colors separate the jaw,
+                  brows, eyes, nose and lips.
+                </p>
+              </figcaption>
+            </figure>
+            <p class="row-links">
+              <a href="exports/landmarks-68.svg" download>Download SVG</a
+              ><a href="exports/landmarks-68-numbered.svg">Point IDs</a
+              ><a href="layouts/landmarks-68.json">Data</a
+              ><a
+                href="https://github.com/davisking/dlib/blob/master/dlib/image_processing/render_face_detections.h"
+                >Official index groups</a
+              >
+            </p>
+          </article>
+          <article>
+            <figure>
+              <a
+                href="exports/landmarks-106.svg"
+                aria-label="Open 106-point sampling drawing"
+                ><img
+                  src="exports/landmarks-106.svg"
+                  alt="106-point sampling. Manually redrawn from the point markup linked by InsightFace. The coordinates are approximate. This point cloud preserves the feature groups without inventing a connected mesh."
+                  loading="lazy"
+              /></a>
+              <figcaption>
+                <h3>106-point sampling</h3>
+                <p>
+                  Manually redrawn from the point markup linked by InsightFace.
+                  The coordinates are approximate. This point cloud preserves
+                  the feature groups without inventing a connected mesh.
+                </p>
+              </figcaption>
+            </figure>
+            <p class="row-links">
+              <a href="exports/landmarks-106.svg" download>Download SVG</a
+              ><a href="exports/landmarks-106-numbered.svg">Point IDs</a
+              ><a href="layouts/landmarks-106.json">Data</a
+              ><a
+                href="https://github.com/deepinsight/insightface/tree/master/alignment/coordinate_reg"
+                >Official-linked markup</a
+              >
+            </p>
+          </article>
+          <article>
+            <figure>
+              <a
+                href="exports/mesh-468.svg"
+                aria-label="Open 468-point surface mesh drawing"
+                ><img
+                  src="exports/mesh-468.svg"
+                  alt="468-point surface mesh. A front projection of Google’s canonical 3D face, with official triangulation and highlighted feature connections. The JSON retains the original depth coordinates."
+                  loading="lazy"
+              /></a>
+              <figcaption>
+                <h3>468-point surface mesh</h3>
+                <p>
+                  A front projection of Google’s canonical 3D face, with
+                  official triangulation and highlighted feature connections.
+                  The JSON retains the original depth coordinates.
+                </p>
+              </figcaption>
+            </figure>
+            <p class="row-links">
+              <a href="exports/mesh-468.svg" download>Download SVG</a
+              ><a href="exports/mesh-468-numbered.svg">Point IDs</a
+              ><a href="layouts/mesh-468.json">Data</a
+              ><a
+                href="https://github.com/google-ai-edge/mediapipe/blob/master/mediapipe/modules/face_geometry/data/canonical_face_model.obj"
+                >Canonical model</a
+              >
+            </p>
+          </article>
+          <article>
+            <figure>
+              <a
+                href="exports/mesh-478-study.svg"
+                aria-label="Open 478-point iris extension drawing"
+                ><img
+                  src="exports/mesh-478-study.svg"
+                  alt="478-point iris extension. The 468-point base plus ten illustrated iris points. The orange points show the 478-point structure; their positions are schematic because the canonical model only contains 468 vertices."
+                  loading="lazy"
+              /></a>
+              <figcaption>
+                <h3>478-point iris extension</h3>
+                <p>
+                  The 468-point base plus ten illustrated iris points. The
+                  orange points show the 478-point structure; their positions
+                  are schematic because the canonical model only contains 468
+                  vertices.
+                </p>
+              </figcaption>
+            </figure>
+            <p class="row-links">
+              <a href="exports/mesh-478-study.svg" download>Download SVG</a
+              ><a href="exports/mesh-478-study-numbered.svg">Point IDs</a
+              ><a href="layouts/mesh-478-study.json">Data</a
+              ><a
+                href="https://github.com/google-ai-edge/mediapipe/blob/master/mediapipe/tasks/web/vision/face_landmarker/face_landmarks_connections.ts"
+                >Official iris connections</a
+              >
+            </p>
+          </article>
+          <article>
+            <figure>
+              <a
+                href="exports/parsing-19.svg"
+                aria-label="Open 19 semantic classes drawing"
+                ><img
+                  src="exports/parsing-19.svg"
+                  alt="19 semantic classes. An original label-map schematic using CelebAMask-HQ’s official class IDs. Areas represent pixel categories, including background and accessories; this is not a landmark graph or a model prediction."
+                  loading="lazy"
+              /></a>
+              <figcaption>
+                <h3>19 semantic classes</h3>
+                <p>
+                  An original label-map schematic using CelebAMask-HQ’s official
+                  class IDs. Areas represent pixel categories, including
+                  background and accessories; this is not a landmark graph or a
+                  model prediction.
+                </p>
+              </figcaption>
+            </figure>
+            <p class="row-links">
+              <a href="exports/parsing-19.svg" download>Download SVG</a
+              ><a href="layouts/parsing-19.json">Data</a
+              ><a
+                href="https://github.com/switchablenorms/CelebAMask-HQ/blob/master/face_parsing/README.md"
+                >Official class IDs</a
+              >
+            </p>
+          </article>
+        </div>
+      </section>
       <section id="systems" aria-labelledby="systems-title">
         <div class="section-heading">
-          <h2 id="systems-title">03 / Systems</h2>
+          <h2 id="systems-title">04 / Systems</h2>
           <p>Three different jobs—not one system</p>
         </div>
         <div class="systems">

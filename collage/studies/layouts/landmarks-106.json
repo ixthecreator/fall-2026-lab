@@ -1,0 +1,655 @@
+{
+  "key": "landmarks-106",
+  "title": "106 / Dense feature sampling",
+  "subtitle": "InsightFace 2d106 \u00b7 manual trace of official-linked markup",
+  "nodes": [
+    {
+      "id": 0,
+      "x": 319,
+      "y": 694,
+      "group": "contour"
+    },
+    {
+      "id": 1,
+      "x": 51,
+      "y": 165,
+      "group": "contour"
+    },
+    {
+      "id": 2,
+      "x": 128,
+      "y": 501,
+      "group": "contour"
+    },
+    {
+      "id": 3,
+      "x": 147,
+      "y": 536,
+      "group": "contour"
+    },
+    {
+      "id": 4,
+      "x": 168,
+      "y": 570,
+      "group": "contour"
+    },
+    {
+      "id": 5,
+      "x": 187,
+      "y": 603,
+      "group": "contour"
+    },
+    {
+      "id": 6,
+      "x": 211,
+      "y": 636,
+      "group": "contour"
+    },
+    {
+      "id": 7,
+      "x": 239,
+      "y": 665,
+      "group": "contour"
+    },
+    {
+      "id": 8,
+      "x": 274,
+      "y": 687,
+      "group": "contour"
+    },
+    {
+      "id": 9,
+      "x": 49,
+      "y": 204,
+      "group": "contour"
+    },
+    {
+      "id": 10,
+      "x": 50,
+      "y": 243,
+      "group": "contour"
+    },
+    {
+      "id": 11,
+      "x": 53,
+      "y": 282,
+      "group": "contour"
+    },
+    {
+      "id": 12,
+      "x": 60,
+      "y": 320,
+      "group": "contour"
+    },
+    {
+      "id": 13,
+      "x": 68,
+      "y": 358,
+      "group": "contour"
+    },
+    {
+      "id": 14,
+      "x": 80,
+      "y": 397,
+      "group": "contour"
+    },
+    {
+      "id": 15,
+      "x": 94,
+      "y": 431,
+      "group": "contour"
+    },
+    {
+      "id": 16,
+      "x": 111,
+      "y": 468,
+      "group": "contour"
+    },
+    {
+      "id": 17,
+      "x": 581,
+      "y": 162,
+      "group": "contour"
+    },
+    {
+      "id": 18,
+      "x": 512,
+      "y": 503,
+      "group": "contour"
+    },
+    {
+      "id": 19,
+      "x": 493,
+      "y": 538,
+      "group": "contour"
+    },
+    {
+      "id": 20,
+      "x": 474,
+      "y": 572,
+      "group": "contour"
+    },
+    {
+      "id": 21,
+      "x": 452,
+      "y": 604,
+      "group": "contour"
+    },
+    {
+      "id": 22,
+      "x": 427,
+      "y": 636,
+      "group": "contour"
+    },
+    {
+      "id": 23,
+      "x": 399,
+      "y": 666,
+      "group": "contour"
+    },
+    {
+      "id": 24,
+      "x": 363,
+      "y": 686,
+      "group": "contour"
+    },
+    {
+      "id": 25,
+      "x": 585,
+      "y": 201,
+      "group": "contour"
+    },
+    {
+      "id": 26,
+      "x": 585,
+      "y": 242,
+      "group": "contour"
+    },
+    {
+      "id": 27,
+      "x": 583,
+      "y": 280,
+      "group": "contour"
+    },
+    {
+      "id": 28,
+      "x": 578,
+      "y": 317,
+      "group": "contour"
+    },
+    {
+      "id": 29,
+      "x": 571,
+      "y": 356,
+      "group": "contour"
+    },
+    {
+      "id": 30,
+      "x": 559,
+      "y": 396,
+      "group": "contour"
+    },
+    {
+      "id": 31,
+      "x": 546,
+      "y": 432,
+      "group": "contour"
+    },
+    {
+      "id": 32,
+      "x": 531,
+      "y": 468,
+      "group": "contour"
+    },
+    {
+      "id": 33,
+      "x": 181,
+      "y": 211,
+      "group": "eyes"
+    },
+    {
+      "id": 34,
+      "x": 183,
+      "y": 202,
+      "group": "eyes"
+    },
+    {
+      "id": 35,
+      "x": 131,
+      "y": 196,
+      "group": "eyes"
+    },
+    {
+      "id": 36,
+      "x": 154,
+      "y": 205,
+      "group": "eyes"
+    },
+    {
+      "id": 37,
+      "x": 208,
+      "y": 211,
+      "group": "eyes"
+    },
+    {
+      "id": 38,
+      "x": 181,
+      "y": 194,
+      "group": "eyes"
+    },
+    {
+      "id": 39,
+      "x": 235,
+      "y": 208,
+      "group": "eyes"
+    },
+    {
+      "id": 40,
+      "x": 182,
+      "y": 181,
+      "group": "eyes"
+    },
+    {
+      "id": 41,
+      "x": 156,
+      "y": 185,
+      "group": "eyes"
+    },
+    {
+      "id": 42,
+      "x": 211,
+      "y": 190,
+      "group": "eyes"
+    },
+    {
+      "id": 43,
+      "x": 91,
+      "y": 117,
+      "group": "brows"
+    },
+    {
+      "id": 44,
+      "x": 128,
+      "y": 115,
+      "group": "brows"
+    },
+    {
+      "id": 45,
+      "x": 169,
+      "y": 114,
+      "group": "brows"
+    },
+    {
+      "id": 46,
+      "x": 252,
+      "y": 132,
+      "group": "brows"
+    },
+    {
+      "id": 47,
+      "x": 212,
+      "y": 119,
+      "group": "brows"
+    },
+    {
+      "id": 48,
+      "x": 123,
+      "y": 82,
+      "group": "brows"
+    },
+    {
+      "id": 49,
+      "x": 169,
+      "y": 76,
+      "group": "brows"
+    },
+    {
+      "id": 50,
+      "x": 257,
+      "y": 106,
+      "group": "brows"
+    },
+    {
+      "id": 51,
+      "x": 218,
+      "y": 86,
+      "group": "brows"
+    },
+    {
+      "id": 52,
+      "x": 234,
+      "y": 529,
+      "group": "mouth"
+    },
+    {
+      "id": 53,
+      "x": 319,
+      "y": 627,
+      "group": "mouth"
+    },
+    {
+      "id": 54,
+      "x": 268,
+      "y": 566,
+      "group": "mouth"
+    },
+    {
+      "id": 55,
+      "x": 245,
+      "y": 575,
+      "group": "mouth"
+    },
+    {
+      "id": 56,
+      "x": 272,
+      "y": 612,
+      "group": "mouth"
+    },
+    {
+      "id": 57,
+      "x": 366,
+      "y": 566,
+      "group": "mouth"
+    },
+    {
+      "id": 58,
+      "x": 391,
+      "y": 573,
+      "group": "mouth"
+    },
+    {
+      "id": 59,
+      "x": 365,
+      "y": 612,
+      "group": "mouth"
+    },
+    {
+      "id": 60,
+      "x": 318,
+      "y": 583,
+      "group": "mouth"
+    },
+    {
+      "id": 61,
+      "x": 402,
+      "y": 527,
+      "group": "mouth"
+    },
+    {
+      "id": 62,
+      "x": 318,
+      "y": 492,
+      "group": "mouth"
+    },
+    {
+      "id": 63,
+      "x": 291,
+      "y": 465,
+      "group": "mouth"
+    },
+    {
+      "id": 64,
+      "x": 253,
+      "y": 486,
+      "group": "mouth"
+    },
+    {
+      "id": 65,
+      "x": 241,
+      "y": 529,
+      "group": "mouth"
+    },
+    {
+      "id": 66,
+      "x": 271,
+      "y": 502,
+      "group": "mouth"
+    },
+    {
+      "id": 67,
+      "x": 344,
+      "y": 465,
+      "group": "mouth"
+    },
+    {
+      "id": 68,
+      "x": 382,
+      "y": 486,
+      "group": "mouth"
+    },
+    {
+      "id": 69,
+      "x": 390,
+      "y": 529,
+      "group": "mouth"
+    },
+    {
+      "id": 70,
+      "x": 366,
+      "y": 502,
+      "group": "mouth"
+    },
+    {
+      "id": 71,
+      "x": 318,
+      "y": 470,
+      "group": "mouth"
+    },
+    {
+      "id": 72,
+      "x": 317,
+      "y": 193,
+      "group": "nose"
+    },
+    {
+      "id": 73,
+      "x": 318,
+      "y": 248,
+      "group": "nose"
+    },
+    {
+      "id": 74,
+      "x": 319,
+      "y": 303,
+      "group": "nose"
+    },
+    {
+      "id": 75,
+      "x": 270,
+      "y": 213,
+      "group": "nose"
+    },
+    {
+      "id": 76,
+      "x": 251,
+      "y": 333,
+      "group": "nose"
+    },
+    {
+      "id": 77,
+      "x": 236,
+      "y": 378,
+      "group": "nose"
+    },
+    {
+      "id": 78,
+      "x": 260,
+      "y": 394,
+      "group": "nose"
+    },
+    {
+      "id": 79,
+      "x": 289,
+      "y": 400,
+      "group": "nose"
+    },
+    {
+      "id": 80,
+      "x": 318,
+      "y": 410,
+      "group": "nose"
+    },
+    {
+      "id": 81,
+      "x": 363,
+      "y": 214,
+      "group": "nose"
+    },
+    {
+      "id": 82,
+      "x": 385,
+      "y": 332,
+      "group": "nose"
+    },
+    {
+      "id": 83,
+      "x": 403,
+      "y": 378,
+      "group": "nose"
+    },
+    {
+      "id": 84,
+      "x": 378,
+      "y": 394,
+      "group": "nose"
+    },
+    {
+      "id": 85,
+      "x": 350,
+      "y": 400,
+      "group": "nose"
+    },
+    {
+      "id": 86,
+      "x": 319,
+      "y": 359,
+      "group": "nose"
+    },
+    {
+      "id": 87,
+      "x": 445,
+      "y": 211,
+      "group": "eyes"
+    },
+    {
+      "id": 88,
+      "x": 445,
+      "y": 198,
+      "group": "eyes"
+    },
+    {
+      "id": 89,
+      "x": 396,
+      "y": 211,
+      "group": "eyes"
+    },
+    {
+      "id": 90,
+      "x": 422,
+      "y": 212,
+      "group": "eyes"
+    },
+    {
+      "id": 91,
+      "x": 474,
+      "y": 208,
+      "group": "eyes"
+    },
+    {
+      "id": 92,
+      "x": 445,
+      "y": 201,
+      "group": "eyes"
+    },
+    {
+      "id": 93,
+      "x": 499,
+      "y": 196,
+      "group": "eyes"
+    },
+    {
+      "id": 94,
+      "x": 446,
+      "y": 183,
+      "group": "eyes"
+    },
+    {
+      "id": 95,
+      "x": 416,
+      "y": 190,
+      "group": "eyes"
+    },
+    {
+      "id": 96,
+      "x": 475,
+      "y": 185,
+      "group": "eyes"
+    },
+    {
+      "id": 97,
+      "x": 383,
+      "y": 137,
+      "group": "brows"
+    },
+    {
+      "id": 98,
+      "x": 425,
+      "y": 125,
+      "group": "brows"
+    },
+    {
+      "id": 99,
+      "x": 467,
+      "y": 122,
+      "group": "brows"
+    },
+    {
+      "id": 100,
+      "x": 503,
+      "y": 121,
+      "group": "brows"
+    },
+    {
+      "id": 101,
+      "x": 543,
+      "y": 122,
+      "group": "brows"
+    },
+    {
+      "id": 102,
+      "x": 378,
+      "y": 111,
+      "group": "brows"
+    },
+    {
+      "id": 103,
+      "x": 418,
+      "y": 93,
+      "group": "brows"
+    },
+    {
+      "id": 104,
+      "x": 467,
+      "y": 81,
+      "group": "brows"
+    },
+    {
+      "id": 105,
+      "x": 512,
+      "y": 89,
+      "group": "brows"
+    }
+  ],
+  "edges": [],
+  "groups": [
+    "contour",
+    "brows",
+    "eyes",
+    "nose",
+    "mouth"
+  ],
+  "note": "33 contour / 18 brow / 20 eye / 15 nose / 20 mouth.",
+  "detail": "Approximate diagram positions. No invented edge topology.",
+  "source": "https://github.com/deepinsight/insightface/tree/master/alignment/coordinate_reg",
+  "provenance": "Manual approximate trace of nttstar/insightface-resources/alignment/images/2d106markup.jpg, linked by the official README. Mouth corner labels are crowded in that reference; positions are approximate. Region colors are explanatory annotations."
+}

@@ -1,0 +1,753 @@
+{
+  "key": "landmarks-68",
+  "title": "68 / Feature contours",
+  "subtitle": "dlib / iBUG indexing \u00b7 original schematic geometry",
+  "nodes": [
+    {
+      "id": 0,
+      "x": 80,
+      "y": 230,
+      "group": "contour"
+    },
+    {
+      "id": 1,
+      "x": 82,
+      "y": 282,
+      "group": "contour"
+    },
+    {
+      "id": 2,
+      "x": 90,
+      "y": 334,
+      "group": "contour"
+    },
+    {
+      "id": 3,
+      "x": 105,
+      "y": 386,
+      "group": "contour"
+    },
+    {
+      "id": 4,
+      "x": 130,
+      "y": 436,
+      "group": "contour"
+    },
+    {
+      "id": 5,
+      "x": 164,
+      "y": 484,
+      "group": "contour"
+    },
+    {
+      "id": 6,
+      "x": 208,
+      "y": 525,
+      "group": "contour"
+    },
+    {
+      "id": 7,
+      "x": 263,
+      "y": 553,
+      "group": "contour"
+    },
+    {
+      "id": 8,
+      "x": 320,
+      "y": 564,
+      "group": "contour"
+    },
+    {
+      "id": 9,
+      "x": 377,
+      "y": 553,
+      "group": "contour"
+    },
+    {
+      "id": 10,
+      "x": 432,
+      "y": 525,
+      "group": "contour"
+    },
+    {
+      "id": 11,
+      "x": 476,
+      "y": 484,
+      "group": "contour"
+    },
+    {
+      "id": 12,
+      "x": 510,
+      "y": 436,
+      "group": "contour"
+    },
+    {
+      "id": 13,
+      "x": 535,
+      "y": 386,
+      "group": "contour"
+    },
+    {
+      "id": 14,
+      "x": 550,
+      "y": 334,
+      "group": "contour"
+    },
+    {
+      "id": 15,
+      "x": 558,
+      "y": 282,
+      "group": "contour"
+    },
+    {
+      "id": 16,
+      "x": 560,
+      "y": 230,
+      "group": "contour"
+    },
+    {
+      "id": 17,
+      "x": 123,
+      "y": 211,
+      "group": "brows"
+    },
+    {
+      "id": 18,
+      "x": 157,
+      "y": 190,
+      "group": "brows"
+    },
+    {
+      "id": 19,
+      "x": 198,
+      "y": 187,
+      "group": "brows"
+    },
+    {
+      "id": 20,
+      "x": 237,
+      "y": 195,
+      "group": "brows"
+    },
+    {
+      "id": 21,
+      "x": 270,
+      "y": 213,
+      "group": "brows"
+    },
+    {
+      "id": 22,
+      "x": 370,
+      "y": 213,
+      "group": "brows"
+    },
+    {
+      "id": 23,
+      "x": 403,
+      "y": 195,
+      "group": "brows"
+    },
+    {
+      "id": 24,
+      "x": 442,
+      "y": 187,
+      "group": "brows"
+    },
+    {
+      "id": 25,
+      "x": 483,
+      "y": 190,
+      "group": "brows"
+    },
+    {
+      "id": 26,
+      "x": 517,
+      "y": 211,
+      "group": "brows"
+    },
+    {
+      "id": 27,
+      "x": 320,
+      "y": 247,
+      "group": "nose"
+    },
+    {
+      "id": 28,
+      "x": 320,
+      "y": 294,
+      "group": "nose"
+    },
+    {
+      "id": 29,
+      "x": 320,
+      "y": 337,
+      "group": "nose"
+    },
+    {
+      "id": 30,
+      "x": 320,
+      "y": 374,
+      "group": "nose"
+    },
+    {
+      "id": 31,
+      "x": 268,
+      "y": 391,
+      "group": "nose"
+    },
+    {
+      "id": 32,
+      "x": 292,
+      "y": 404,
+      "group": "nose"
+    },
+    {
+      "id": 33,
+      "x": 320,
+      "y": 412,
+      "group": "nose"
+    },
+    {
+      "id": 34,
+      "x": 348,
+      "y": 404,
+      "group": "nose"
+    },
+    {
+      "id": 35,
+      "x": 372,
+      "y": 391,
+      "group": "nose"
+    },
+    {
+      "id": 36,
+      "x": 145,
+      "y": 267,
+      "group": "eyes"
+    },
+    {
+      "id": 37,
+      "x": 177,
+      "y": 249,
+      "group": "eyes"
+    },
+    {
+      "id": 38,
+      "x": 216,
+      "y": 250,
+      "group": "eyes"
+    },
+    {
+      "id": 39,
+      "x": 250,
+      "y": 274,
+      "group": "eyes"
+    },
+    {
+      "id": 40,
+      "x": 214,
+      "y": 284,
+      "group": "eyes"
+    },
+    {
+      "id": 41,
+      "x": 177,
+      "y": 284,
+      "group": "eyes"
+    },
+    {
+      "id": 42,
+      "x": 390,
+      "y": 274,
+      "group": "eyes"
+    },
+    {
+      "id": 43,
+      "x": 424,
+      "y": 250,
+      "group": "eyes"
+    },
+    {
+      "id": 44,
+      "x": 463,
+      "y": 249,
+      "group": "eyes"
+    },
+    {
+      "id": 45,
+      "x": 495,
+      "y": 267,
+      "group": "eyes"
+    },
+    {
+      "id": 46,
+      "x": 463,
+      "y": 284,
+      "group": "eyes"
+    },
+    {
+      "id": 47,
+      "x": 426,
+      "y": 284,
+      "group": "eyes"
+    },
+    {
+      "id": 48,
+      "x": 231,
+      "y": 465,
+      "group": "mouth"
+    },
+    {
+      "id": 49,
+      "x": 269,
+      "y": 444,
+      "group": "mouth"
+    },
+    {
+      "id": 50,
+      "x": 300,
+      "y": 437,
+      "group": "mouth"
+    },
+    {
+      "id": 51,
+      "x": 320,
+      "y": 443,
+      "group": "mouth"
+    },
+    {
+      "id": 52,
+      "x": 340,
+      "y": 437,
+      "group": "mouth"
+    },
+    {
+      "id": 53,
+      "x": 371,
+      "y": 444,
+      "group": "mouth"
+    },
+    {
+      "id": 54,
+      "x": 409,
+      "y": 465,
+      "group": "mouth"
+    },
+    {
+      "id": 55,
+      "x": 374,
+      "y": 488,
+      "group": "mouth"
+    },
+    {
+      "id": 56,
+      "x": 343,
+      "y": 501,
+      "group": "mouth"
+    },
+    {
+      "id": 57,
+      "x": 320,
+      "y": 503,
+      "group": "mouth"
+    },
+    {
+      "id": 58,
+      "x": 297,
+      "y": 501,
+      "group": "mouth"
+    },
+    {
+      "id": 59,
+      "x": 266,
+      "y": 488,
+      "group": "mouth"
+    },
+    {
+      "id": 60,
+      "x": 252,
+      "y": 465,
+      "group": "mouth"
+    },
+    {
+      "id": 61,
+      "x": 294,
+      "y": 457,
+      "group": "mouth"
+    },
+    {
+      "id": 62,
+      "x": 320,
+      "y": 460,
+      "group": "mouth"
+    },
+    {
+      "id": 63,
+      "x": 346,
+      "y": 457,
+      "group": "mouth"
+    },
+    {
+      "id": 64,
+      "x": 388,
+      "y": 465,
+      "group": "mouth"
+    },
+    {
+      "id": 65,
+      "x": 346,
+      "y": 477,
+      "group": "mouth"
+    },
+    {
+      "id": 66,
+      "x": 320,
+      "y": 481,
+      "group": "mouth"
+    },
+    {
+      "id": 67,
+      "x": 294,
+      "y": 477,
+      "group": "mouth"
+    }
+  ],
+  "edges": [
+    {
+      "a": 0,
+      "b": 1,
+      "group": "contour"
+    },
+    {
+      "a": 1,
+      "b": 2,
+      "group": "contour"
+    },
+    {
+      "a": 2,
+      "b": 3,
+      "group": "contour"
+    },
+    {
+      "a": 3,
+      "b": 4,
+      "group": "contour"
+    },
+    {
+      "a": 4,
+      "b": 5,
+      "group": "contour"
+    },
+    {
+      "a": 5,
+      "b": 6,
+      "group": "contour"
+    },
+    {
+      "a": 6,
+      "b": 7,
+      "group": "contour"
+    },
+    {
+      "a": 7,
+      "b": 8,
+      "group": "contour"
+    },
+    {
+      "a": 8,
+      "b": 9,
+      "group": "contour"
+    },
+    {
+      "a": 9,
+      "b": 10,
+      "group": "contour"
+    },
+    {
+      "a": 10,
+      "b": 11,
+      "group": "contour"
+    },
+    {
+      "a": 11,
+      "b": 12,
+      "group": "contour"
+    },
+    {
+      "a": 12,
+      "b": 13,
+      "group": "contour"
+    },
+    {
+      "a": 13,
+      "b": 14,
+      "group": "contour"
+    },
+    {
+      "a": 14,
+      "b": 15,
+      "group": "contour"
+    },
+    {
+      "a": 15,
+      "b": 16,
+      "group": "contour"
+    },
+    {
+      "a": 17,
+      "b": 18,
+      "group": "brows"
+    },
+    {
+      "a": 18,
+      "b": 19,
+      "group": "brows"
+    },
+    {
+      "a": 19,
+      "b": 20,
+      "group": "brows"
+    },
+    {
+      "a": 20,
+      "b": 21,
+      "group": "brows"
+    },
+    {
+      "a": 22,
+      "b": 23,
+      "group": "brows"
+    },
+    {
+      "a": 23,
+      "b": 24,
+      "group": "brows"
+    },
+    {
+      "a": 24,
+      "b": 25,
+      "group": "brows"
+    },
+    {
+      "a": 25,
+      "b": 26,
+      "group": "brows"
+    },
+    {
+      "a": 27,
+      "b": 28,
+      "group": "nose"
+    },
+    {
+      "a": 28,
+      "b": 29,
+      "group": "nose"
+    },
+    {
+      "a": 29,
+      "b": 30,
+      "group": "nose"
+    },
+    {
+      "a": 30,
+      "b": 31,
+      "group": "nose"
+    },
+    {
+      "a": 31,
+      "b": 32,
+      "group": "nose"
+    },
+    {
+      "a": 32,
+      "b": 33,
+      "group": "nose"
+    },
+    {
+      "a": 33,
+      "b": 34,
+      "group": "nose"
+    },
+    {
+      "a": 34,
+      "b": 35,
+      "group": "nose"
+    },
+    {
+      "a": 30,
+      "b": 35,
+      "group": "nose"
+    },
+    {
+      "a": 36,
+      "b": 37,
+      "group": "eyes"
+    },
+    {
+      "a": 37,
+      "b": 38,
+      "group": "eyes"
+    },
+    {
+      "a": 38,
+      "b": 39,
+      "group": "eyes"
+    },
+    {
+      "a": 39,
+      "b": 40,
+      "group": "eyes"
+    },
+    {
+      "a": 40,
+      "b": 41,
+      "group": "eyes"
+    },
+    {
+      "a": 41,
+      "b": 36,
+      "group": "eyes"
+    },
+    {
+      "a": 42,
+      "b": 43,
+      "group": "eyes"
+    },
+    {
+      "a": 43,
+      "b": 44,
+      "group": "eyes"
+    },
+    {
+      "a": 44,
+      "b": 45,
+      "group": "eyes"
+    },
+    {
+      "a": 45,
+      "b": 46,
+      "group": "eyes"
+    },
+    {
+      "a": 46,
+      "b": 47,
+      "group": "eyes"
+    },
+    {
+      "a": 47,
+      "b": 42,
+      "group": "eyes"
+    },
+    {
+      "a": 48,
+      "b": 49,
+      "group": "mouth"
+    },
+    {
+      "a": 49,
+      "b": 50,
+      "group": "mouth"
+    },
+    {
+      "a": 50,
+      "b": 51,
+      "group": "mouth"
+    },
+    {
+      "a": 51,
+      "b": 52,
+      "group": "mouth"
+    },
+    {
+      "a": 52,
+      "b": 53,
+      "group": "mouth"
+    },
+    {
+      "a": 53,
+      "b": 54,
+      "group": "mouth"
+    },
+    {
+      "a": 54,
+      "b": 55,
+      "group": "mouth"
+    },
+    {
+      "a": 55,
+      "b": 56,
+      "group": "mouth"
+    },
+    {
+      "a": 56,
+      "b": 57,
+      "group": "mouth"
+    },
+    {
+      "a": 57,
+      "b": 58,
+      "group": "mouth"
+    },
+    {
+      "a": 58,
+      "b": 59,
+      "group": "mouth"
+    },
+    {
+      "a": 59,
+      "b": 48,
+      "group": "mouth"
+    },
+    {
+      "a": 60,
+      "b": 61,
+      "group": "mouth"
+    },
+    {
+      "a": 61,
+      "b": 62,
+      "group": "mouth"
+    },
+    {
+      "a": 62,
+      "b": 63,
+      "group": "mouth"
+    },
+    {
+      "a": 63,
+      "b": 64,
+      "group": "mouth"
+    },
+    {
+      "a": 64,
+      "b": 65,
+      "group": "mouth"
+    },
+    {
+      "a": 65,
+      "b": 66,
+      "group": "mouth"
+    },
+    {
+      "a": 66,
+      "b": 67,
+      "group": "mouth"
+    },
+    {
+      "a": 67,
+      "b": 60,
+      "group": "mouth"
+    }
+  ],
+  "groups": [
+    "contour",
+    "brows",
+    "eyes",
+    "nose",
+    "mouth"
+  ],
+  "note": "17 jaw / 10 brow / 12 eye / 9 nose / 20 lip points.",
+  "detail": "Official index groups and drawing connections; positions are illustrative.",
+  "source": "https://github.com/davisking/dlib/blob/master/dlib/image_processing/render_face_detections.h",
+  "provenance": "Original drawn face; not a canonical mean shape or inference output."
+}

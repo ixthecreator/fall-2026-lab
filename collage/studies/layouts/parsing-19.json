@@ -1,0 +1,101 @@
+{
+  "provenance": "Original schematic shapes; official category IDs. Not an inference result.",
+  "source": "https://github.com/switchablenorms/CelebAMask-HQ/blob/master/face_parsing/README.md",
+  "classes": [
+    {
+      "id": 0,
+      "label": "Background",
+      "color": "#e9e8df"
+    },
+    {
+      "id": 1,
+      "label": "Skin",
+      "color": "#dabd94"
+    },
+    {
+      "id": 2,
+      "label": "Nose",
+      "color": "#d9994f"
+    },
+    {
+      "id": 3,
+      "label": "Eyeglasses",
+      "color": "#3c535e"
+    },
+    {
+      "id": 4,
+      "label": "Left eye",
+      "color": "#4994ac"
+    },
+    {
+      "id": 5,
+      "label": "Right eye",
+      "color": "#70adbe"
+    },
+    {
+      "id": 6,
+      "label": "Left brow",
+      "color": "#8974a2"
+    },
+    {
+      "id": 7,
+      "label": "Right brow",
+      "color": "#aa8fae"
+    },
+    {
+      "id": 8,
+      "label": "Left ear",
+      "color": "#82a48e"
+    },
+    {
+      "id": 9,
+      "label": "Right ear",
+      "color": "#a2b89a"
+    },
+    {
+      "id": 10,
+      "label": "Mouth",
+      "color": "#623f4f"
+    },
+    {
+      "id": 11,
+      "label": "Upper lip",
+      "color": "#b66779"
+    },
+    {
+      "id": 12,
+      "label": "Lower lip",
+      "color": "#d78a96"
+    },
+    {
+      "id": 13,
+      "label": "Hair",
+      "color": "#726b82"
+    },
+    {
+      "id": 14,
+      "label": "Hat",
+      "color": "#607d8b"
+    },
+    {
+      "id": 15,
+      "label": "Earring",
+      "color": "#d39a39"
+    },
+    {
+      "id": 16,
+      "label": "Necklace",
+      "color": "#bea948"
+    },
+    {
+      "id": 17,
+      "label": "Neck",
+      "color": "#b8a48b"
+    },
+    {
+      "id": 18,
+      "label": "Cloth",
+      "color": "#8b9d99"
+    }
+  ]
+}
