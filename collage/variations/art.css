@@ -45,3 +45,41 @@ main {
   clip-path: inset(50%);
   white-space: nowrap;
 }
+/* In study 04 the mesh controls the images and retains the viewer's traces. */
+.template-network {
+  opacity: 0.18;
+  pointer-events: none;
+}
+.template-network circle {
+  display: none;
+}
+.template-network line {
+  stroke: #44101d;
+}
+.node-system .artwork {
+  touch-action: none;
+}
+.node-handle {
+  fill: transparent;
+  stroke: none;
+  cursor: grab;
+  outline: none;
+}
+.node-handle:hover,
+.node-handle:focus-visible {
+  fill: #eeff9d77;
+  stroke: #fff7ce;
+  stroke-width: 2;
+}
+.node-handle:active {
+  cursor: grabbing;
+}
+.gesture-traces {
+  pointer-events: none;
+  fill: none;
+  stroke: #3812ad;
+  stroke-width: 1.8;
+}
+.gesture-traces line {
+  stroke-dasharray: 3 5;
+}

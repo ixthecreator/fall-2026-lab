@@ -49,3 +49,11 @@ These sources are identified as public domain on their source pages. The sitters
 Each `.html` is a complete static SVG composition with shared CSS and a small JavaScript dragging handler. It displays without JavaScript. Pointer dragging and arrow keys move the focused fragment; Shift + arrow moves farther; Escape restores the arrangement. Points attached to that fragment travel with it and edge endpoints update. Touch dragging uses SVG coordinates, so resizing does not change movement scale.
 
 `build.py` regenerates the six HTML pages, portable SVGs and manifest. Each exported SVG embeds the source photographs so it remains usable outside the site. `exports/six-faces.png` is a browser-rendered comparison board. The index gallery and research-page link are the only new navigation; the original collage remains unchanged.
+
+## Active nodes in study 04 (September 17 revision)
+
+The mesh now acts as an input and a rule for changing the portrait. All 468 nodes can be dragged. A movement travels along the 1,322 mesh edges with influence that decreases with graph distance. Each photographic window follows the mean displacement of its attached region, and its displacement reveals an alternate archival feature. Moving one point therefore changes more than one piece of the face.
+
+After release, the authored template removes 65% of the current displacement over 1.4 seconds. A violet circle records the released position and a dotted line connects it to the node after recovery. Up to twelve gesture traces remain in the current page session; Escape clears them. No data is stored or uploaded. Reduced-motion preferences skip the recovery animation. Fourteen principal nodes and the four image windows support keyboard access, and clicking any other node allows arrow-key movement there too.
+
+This is an artistic response to the struggle over representation described in [Lisson's account of Oursler's facial-recognition works](https://www.lissongallery.com/news/art-basel-ovr-pioneers-with-tony-oursler). It does not claim that Oursler's installations use these interactions. Coupling, image replacement, the recovery amount and the traces are authored rules, not model outputs or identity/confidence scores. The historic photograph remains fixed beneath the active structure, so the photographic expression and the system's description can diverge.

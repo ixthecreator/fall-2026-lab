@@ -51,7 +51,7 @@ class Scene:
     def __init__(self,key,title,modelkey,bg,box=None):
         self.key,self.title,self.modelkey,self.bg=key,title,modelkey,bg
         self.nodes,self.edges=model(modelkey,box) if box else ([],[])
-        self.base=[];self.features=[];self.attachments={};self.bounds={};self.extra=[]
+        self.base=[];self.features=[];self.attachments={};self.bounds={};self.extra=[];self.node_system=False
     def feature(self,id,crop,box,tint='silver',shape='rect',ids=(),angle=0,stroke=None,opacity=1,pattern=True):
         x,y,w,h=box;cid=self.key+'-'+id
         if shape=='ellipse':clip=f'<ellipse cx="{w/2}" cy="{h/2}" rx="{w/2}" ry="{h/2}"/>'
@@ -60,6 +60,9 @@ class Scene:
         else:clip=f'<rect width="{w}" height="{h}"/>'
         src=f'<g data-feature="{id}" tabindex="0" role="button" aria-label="Move {id.replace("-"," ")}. Use arrow keys; Escape resets." transform="translate(0 0)"><title>{html.escape(id.replace("-"," "))}: draggable photograph fragment</title><g transform="translate({x} {y}) rotate({angle} {w/2} {h/2})"><defs><clipPath id="{cid}">{clip}</clipPath></defs><g clip-path="url(#{cid})">'
         src+=photo(crop,0,0,w,h,tint,opacity)
+        if self.node_system:
+            alternate={'left-eye':'h-eye','right-eye':'b-eye','nose':'h-nose','mouth':'b-mouth'}[id]
+            src+='<g class="alternate-image" opacity="0">'+photo(alternate,0,0,w,h,'pink' if id=='mouth' else 'silver')+'</g>'
         if pattern:src+=f'<rect width="{w}" height="{h}" fill="url(#scan)" pointer-events="none"/>'
         src+='</g>'
         if stroke:src+=f'<g fill="none" stroke="{stroke}" stroke-width="2">{clip}</g>'
@@ -81,9 +84,16 @@ class Scene:
     def render(self,network):
         desc='Original collage layout influenced by Tony Oursler’s projected facial fragments and by '+self.modelkey+'. Found photographs by Julia Margaret Cameron, Nadar and Dorothea Lange. Drag facial fragments; arrow keys move the focused fragment; Escape restores the composition. This artwork does not run face recognition.'
         s=f'<svg xmlns="http://www.w3.org/2000/svg" class="artwork" viewBox="0 0 1000 1100" role="group" aria-labelledby="art-title art-desc"><title id="art-title">{self.title}</title><desc id="art-desc">{html.escape(desc)}</desc>'+definitions()+f'<rect width="1000" height="1100" fill="{self.bg}"/>'
-        s+=''.join(self.base)+'<g class="features">'+''.join(self.features)+'</g>'+network+''.join(self.extra)+'</svg>'
+        s+=''.join(self.base)+('<g class="template-network" opacity=".18" aria-hidden="true">'+network+'</g>' if self.node_system else '')+'<g class="features">'+''.join(self.features)+'</g>'+network+''.join(self.extra)+'</svg>'
         config=dict(nodes=self.nodes,attachments=self.attachments,bounds=self.bounds)
+        if self.node_system:
+            config.update(edges=self.edges,mode='template-resistance')
+            handles=''.join(f'<circle class="node-handle" fill="transparent" stroke="none" data-handle="{n["id"]}" cx="{n["x"]}" cy="{n["y"]}" r="12" tabindex="{0 if n["id"] in [1,4,33,133,159,263,362,386,61,291,13,14,152,10] else -1}" role="button" aria-label="Move facial node {n["id"]}. Arrow keys move it. Escape resets."/>' for n in self.nodes)
+            s=s[:-6]+'<g class="node-handles">'+handles+'</g><g class="gesture-traces" aria-hidden="true"/></svg>'
         doc=f'''<!doctype html><html lang="en"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><title>{self.title} / Six borrowed faces</title><meta name="description" content="A draggable photographic face collage influenced by Tony Oursler and computational facial structures."/><link rel="stylesheet" href="art.css"/><script src="drag.js" defer></script></head><body style="--canvas:{self.bg}"><main aria-label="{self.title}">{s}</main><p class="sr-only" role="status" aria-live="polite"></p><script type="application/json" id="composition">{json.dumps(config)}</script></body></html>'''
+        if self.node_system:
+            doc=doc.replace('<script src="drag.js" defer></script>','<script type="module" src="node-system.js"></script>').replace('<body style=', '<body class="node-system" style=')
+            doc=doc.replace('Drag facial fragments; arrow keys', 'Drag any facial node or image window. Nearby nodes and images respond. On release the template pulls the face back, leaving a trace. This is an artistic rule, not a recognition prediction. Arrow keys')
         (R/(self.key+'.html')).write_text(doc)
         export=s.replace('class="artwork"','width="1000" height="1100"')
         for name,path in PHOTOS.items():export=export.replace('../assets/'+name+'.jpg','data:image/jpeg;base64,'+base64.b64encode(path.read_bytes()).decode())
@@ -126,6 +136,7 @@ s.feature('chin','h-mouth',(408,902,161,48),'green','shard',ids=[0,7,8,23,24],an
 scenes.append(s.render(s.network('#b5d483',.8,2.8)))
 # 04 — a photographic head beneath an imposed triangulated skin.
 s=Scene('04-surface','04 / A measured stranger','mesh-468','#dddcd3',(201,180,588,725))
+s.node_system=True
 s.base += [f'<g clip-path="url(#head)"><path d="{HEAD}" fill="#a31424"/>'+photo('h-face',189,115,635,873,'red')+'</g>']
 left=[n['id'] for n in s.nodes if n['group']=='eyes' and n['x']<500];right=[n['id'] for n in s.nodes if n['group']=='eyes' and n['x']>=500];mouth=[n['id'] for n in s.nodes if n['group']=='mouth']
 s.at('left-eye','b-eye',left,178,123,'blue','rect',angle=-3)
